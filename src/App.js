@@ -11,6 +11,9 @@ import Loader from "./components/Loader";
 import NavBar from "./components/NavBar";
 import {Technical} from "./components/Technical"
 import { NonTechnical } from "./components/NonTechnical";
+import { Outdoor } from "./components/Outdoor";
+import { NonTechcal } from "./components/NonTechcal";
+import { Workshop } from "./components/Workshop";
 
 function App() {
   const [showDiv, setShowDiv] = useState(false);
@@ -32,8 +35,10 @@ function App() {
             <NavBar />
             <Banner />
             <Skills />
-            {/* <Technical />
-            <NonTechnical /> */}
+            <Technical />
+            <NonTechcal />
+            <Outdoor />
+            <Workshop />
             <Projects />
             <Footer />
           </div>

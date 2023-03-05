@@ -24,10 +24,9 @@ import pcb from "../assets/img/pcb.png";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import "animate.css";
 import TrackVisibility from "react-on-screen";
-import { Technical } from "./Technical";
-import { NonTechnical } from "./NonTechnical";
+
 export const Projects = () => {
-  const projects = [
+  const technicals = [
     {
       title: "PAPYRUS",
       description: "Paper Presentation",
@@ -165,31 +164,29 @@ export const Projects = () => {
                       id="pills-tab"
                     >
                       <Nav.Item>
-                        <Nav.Link eventKey="first" className="border-0 a ms-2 me-2">TECHNICAL</Nav.Link>
+                        <Nav.Link eventKey="first" className="border-0 a">TECHNICAL</Nav.Link>
                       </Nav.Item>
                       <Nav.Item>
-                        <Nav.Link eventKey="second" className="border-0 a ms-2 me-2">NON-TECH</Nav.Link>
+                        <Nav.Link eventKey="second" className="border-0 a">NON-TECH</Nav.Link>
                       </Nav.Item>
                       <Nav.Item>
-                        <Nav.Link eventKey="third" className="border-0 a ms-2 me-2">WORKSHOP</Nav.Link>
+                        <Nav.Link eventKey="third" className="border-0 a">WORKSHOP</Nav.Link>
                       </Nav.Item>
                       <Nav.Item>
-                        <Nav.Link eventKey="fourth" className="border-0 a ms-2 me-2">OUTDOOR</Nav.Link>
+                        <Nav.Link eventKey="fourth" className="border-0 a">OUTDOOR</Nav.Link>
                       </Nav.Item>
                       
 
                     </Nav>
-
                     <Tab.Content
                       id="slideInUp"
-                      className= "mt-5 mb-5"
-                      
+                      className={
+                        isVisible ? "animate__animated animate__slideInUp" : ""
+                      }
                     >
-                      <Technical />
-                      <NonTechnical/>
                       <Tab.Pane eventKey="first">
                         <Row>
-                          {projects.map((project, index) => {
+                          {technicals.map((project, index) => {
                             return <ProjectCard key={index} {...project} />;
                           })}
                         </Row>
@@ -215,22 +212,10 @@ export const Projects = () => {
                           })}
                         </Row>
                       </Tab.Pane>
-                      <Tab.Pane eventKey="section">
-                        <p>
-                          Lorem ipsum dolor sit amet consectetur adipisicing
-                          elit. Cumque quam, quod neque provident velit, rem
-                          explicabo excepturi id illo molestiae blanditiis,
-                          eligendi dicta officiis asperiores delectus quasi
-                          inventore debitis quo.
-                        </p>
-                      </Tab.Pane>
+                      
                       <Tab.Pane eventKey="third">
                         <p>
-                          Lorem ipsum dolor sit amet consectetur adipisicing
-                          elit. Cumque quam, quod neque provident velit, rem
-                          explicabo excepturi id illo molestiae blanditiis,
-                          eligendi dicta officiis asperiores delectus quasi
-                          inventore debitis quo.
+                          
                         </p>
                       </Tab.Pane>
                     </Tab.Content>
@@ -241,7 +226,7 @@ export const Projects = () => {
           </Col>
         </Row>
       </Container>
-      <img className="background-image-right" src={colorSharp2}></img>
+      <img className="background-image-right" src={colorSharp2} alt=""></img>
     </section>
   );
 };

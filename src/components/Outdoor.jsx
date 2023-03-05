@@ -1,40 +1,33 @@
 import React from 'react'
-import TrackVisibility from "react-on-screen";
 import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
-import papyrus from "../assets/img/papyrus.png";
-import inventino from "../assets/img/invento.png";
-import nyquizest from "../assets/img/nyquizzst.png";
-import enigma from "../assets/img/enigma.png";
-import renegade from "../assets/img/renegade.png";
+import TrackVisibility from "react-on-screen";
+import cric from "../assets/img/cric.png";
+import batminton from "../assets/img/batminton.png";
+import football from "../assets/img/futsal.png";
+import volley from "../assets/img/volleyball.png";
 
-
-export const Technical = () => {
-  const technicals = [
+export const Outdoor = () => {
+  const outdoors = [
     {
-      title: "PAPYRUS",
-      description: "Paper Presentation",
-      imgUrl: papyrus,
+      title: "With in the Boundaries",
+      description: "Box Cricket",
+      imgUrl: cric,
     },
     {
-      title: "INVENTINO",
-      description: "Project Presentation",
-      imgUrl: inventino,
+      title: "SmashZone",
+      description: "Badminton",
+      imgUrl: batminton,
     },
     {
-      title: "NYQUIZZEST",
-      description: "Circuit Redesigning",
-      imgUrl: nyquizest,
+      title: "FUTSAL",
+      description: "Football",
+      imgUrl: football,
     },
     {
-      title: "ENIGMA",
-      description: "Word Guessing Event",
-      imgUrl: enigma,
-    },
-    {
-      title: "RENEGADE",
-      description: "Group Discussion",
-      imgUrl: renegade,
+      title: "VOLLEY",
+      description: "VolleyBall",
+      imgUrl: volley,
     },
   ];
   return (
@@ -49,18 +42,24 @@ export const Technical = () => {
                     isVisible ? "animate__animated animate__fadeIn" : ""
                   }
                 >
-                  <h2>TECHNICAL EVENTS</h2>
-                 
+                  <h2>OUTDOOR</h2>
+                  <p>
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry. Lorem Ipsum has been the industry's
+                    standard dummy text ever since the 1500s, when an unknown
+                    printer took a galley of type and scrambled it to make a
+                    type specimen book.
+                  </p>
                   <Tab.Container id="projects-tabs" defaultActiveKey="first">
                     <Nav
                       variant="pills"
                       className=" justify-content-center align-items-center flex-nowrap "
                       id="pills-tab"
                     >
+                     
                       <Nav.Item>
-                        <Nav.Link eventKey="first" className="border-0 a">TECHNICAL</Nav.Link>
+                        <Nav.Link eventKey="fourth" className="border-0 a">OUTDOOR</Nav.Link>
                       </Nav.Item>
-                 
                       
 
                     </Nav>
@@ -70,17 +69,17 @@ export const Technical = () => {
                         isVisible ? "animate__animated animate__slideInUp" : ""
                       }
                     >
-                      <Tab.Pane eventKey="first">
+                     
+                   
+                      <Tab.Pane eventKey="fourth">
                         <Row>
-                          {technicals.map((project, index) => {
+                          {outdoors.map((project, index) => {
                             return <ProjectCard key={index} {...project} />;
                           })}
                         </Row>
                       </Tab.Pane>
                       
-                     
-                     
-                   
+                 
                     </Tab.Content>
                   </Tab.Container>
                 </div>
@@ -90,7 +89,6 @@ export const Technical = () => {
         </Row>
       </Container>
     </section>
-    
   )
 }
 
