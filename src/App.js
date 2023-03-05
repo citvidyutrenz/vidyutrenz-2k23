@@ -9,11 +9,8 @@ import { useEffect } from "react";
 import { motion } from "framer-motion";
 import Loader from "./components/Loader";
 import NavBar from "./components/NavBar";
-import {Technical} from "./components/Technical"
-import { NonTechnical } from "./components/NonTechnical";
-import { Outdoor } from "./components/Outdoor";
-import { NonTechcal } from "./components/NonTechcal";
-import { Workshop } from "./components/Workshop";
+import { Location } from "./components/Location";
+
 
 function App() {
   const [showDiv, setShowDiv] = useState(false);
@@ -31,15 +28,12 @@ function App() {
     <div>
       {showDiv ? (
         <motion.div animate={{ opacity: 1 }} initial={{ opacity: 0 }}>
-          <div className="App">
+          <div className="App overflow-x-hidden">
             <NavBar />
             <Banner />
-            <Skills />
-            <Technical />
-            <NonTechcal />
-            <Outdoor />
-            <Workshop />
+            <Skills />          
             <Projects />
+           <Location />
             <Footer />
           </div>
         </motion.div>

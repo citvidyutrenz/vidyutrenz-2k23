@@ -181,6 +181,9 @@ function NavBar() {
                   About
                 </Nav.Link>
                 <Nav.Link href="#" className="text-light">
+                  Events
+                </Nav.Link>
+                <Nav.Link href="#" className="text-light">
                   Contact
                 </Nav.Link>
               </Nav>
@@ -188,7 +191,7 @@ function NavBar() {
           </div>
         </>
       ) : (
-        <Navbar expand="lg">
+        <Navbar expand="lg" className=" opacity-75" style={{ background: "linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);"}}>
           <Container>
             <Navbar.Brand href="#">
               <motion.img
@@ -224,7 +227,15 @@ function NavBar() {
                    variants={navbarvariants}
                    initial="hidden"
                    animate="visible"
-                   transition={{delay: 1.4}}
+                   transition={{delay : 1.2}}
+                  >Events</motion.div>
+                </Nav.Link>
+                <Nav.Link href="#" className="text-light ms-2 me-2">
+                  <motion.div
+                   variants={navbarvariants}
+                   initial="hidden"
+                   animate="visible"
+                   transition={{delay: 1.8}}
                   >Contact</motion.div>
                 </Nav.Link>
               </Nav>

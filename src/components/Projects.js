@@ -20,6 +20,8 @@ import iot from "../assets/img/iot.png";
 import nw from "../assets/img/nw.png";
 import ml from "../assets/img/ml.png";
 import pcb from "../assets/img/pcb.png";
+import React, { useState, useEffect } from "react";
+import { ButtonGroup, Button } from "react-bootstrap";
 
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import "animate.css";
@@ -136,6 +138,21 @@ export const Projects = () => {
       imgUrl: pcb,
     },
   ];
+  const [showButtonGroup, setShowButtonGroup] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setShowButtonGroup(window.innerWidth < 780);
+    };
+
+    handleResize();
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+  const isSmallScreen = window.innerWidth < 780;
 
   return (
     <section className="project" id="project">
@@ -157,11 +174,11 @@ export const Projects = () => {
                     printer took a galley of type and scrambled it to make a
                     type specimen book.
                   </p>
-                  <Tab.Container id="projects-tabs" defaultActiveKey="first">
-                    <Nav
+                  <Tab.Container id="" defaultActiveKey="first">
+                    {/* <Nav
                       variant="pills"
                       className=" justify-content-center align-items-center flex-nowrap "
-                      id="pills-tab"
+                      id=""
                     >
                       <Nav.Item>
                         <Nav.Link eventKey="first" className="border-0 a">TECHNICAL</Nav.Link>
@@ -175,9 +192,63 @@ export const Projects = () => {
                       <Nav.Item>
                         <Nav.Link eventKey="fourth" className="border-0 a">OUTDOOR</Nav.Link>
                       </Nav.Item>
-                      
-
-                    </Nav>
+                      </Nav> */}
+                    <div>
+                      {isSmallScreen ? (
+                        <div className="d-flex flex-column">
+                          <ButtonGroup className="my-2 mx-auto" size="sm">
+                            <Button variant="outline-secondary" className="m-1">
+                            <Nav.Link eventKey="first" className="border-0 a">
+                              TECHNICAL
+                            </Nav.Link>
+                            </Button>
+                            <Button variant="outline-secondary" className="m-1">
+                            <Nav.Link eventKey="second" className="border-0 a">
+                              NON-TECH
+                            </Nav.Link>
+                            </Button>
+                          </ButtonGroup>
+                          <ButtonGroup className="my-2 mx-auto" size="sm">
+                            <Button variant="outline-secondary" className="m-1">
+                            <Nav.Link eventKey="third" className="border-0 a">
+                              WORKSHOP
+                            </Nav.Link>
+                            </Button>
+                            <Button variant="outline-secondary" className="m-1">
+                            <Nav.Link eventKey="fourth" className="border-0 a">
+                              OUTDOOR
+                            </Nav.Link>
+                            </Button>
+                          </ButtonGroup>
+                        </div>
+                      ) : (
+                        <Nav
+                          variant="pills"
+                          className="justify-content-center align-items-center flex-nowrap"
+                        >
+                          <Nav.Item>
+                            <Nav.Link eventKey="first" className="border-0 a">
+                              TECHNICAL
+                            </Nav.Link>
+                          </Nav.Item>
+                          <Nav.Item>
+                            <Nav.Link eventKey="second" className="border-0 a">
+                              NON-TECH
+                            </Nav.Link>
+                          </Nav.Item>
+                          <Nav.Item>
+                            <Nav.Link eventKey="third" className="border-0 a">
+                              WORKSHOP
+                            </Nav.Link>
+                          </Nav.Item>
+                          <Nav.Item>
+                            <Nav.Link eventKey="fourth" className="border-0 a">
+                              OUTDOOR
+                            </Nav.Link>
+                          </Nav.Item>
+                        </Nav>
+                      )}
+                    </div>
                     <Tab.Content
                       id="slideInUp"
                       className={
@@ -212,11 +283,9 @@ export const Projects = () => {
                           })}
                         </Row>
                       </Tab.Pane>
-                      
+
                       <Tab.Pane eventKey="third">
-                        <p>
-                          
-                        </p>
+                        <p></p>
                       </Tab.Pane>
                     </Tab.Content>
                   </Tab.Container>

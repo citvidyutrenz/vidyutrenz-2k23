@@ -32,17 +32,9 @@ img{
 .section__location h4{
     font-size: 1.5rem;
 }
-.section__app div{
-    width:30%;
-    max-width:150px;
-    text-align: center;
-    /* height:0%; */
-}
+
 .section__location a{
   text-align: center;
 }
-.section__location img{
-    width:50%;
-    max-width: 250px;
-    height:40%
-}
+    
+

@@ -49,7 +49,7 @@ import citLogo from "../assets/img/citTransLogo2.png";
 // citTransLogo2.png
 export const Footer = ()=>{
   return (
-    <footer className='footer ' style={{height : "80%"}}>
+    <footer className='footer' style={{height : "80%" }}>
       <div className='container'>
         <div className='row'>
           <div className="col-12 col-md-4 mb-3">
@@ -59,20 +59,22 @@ export const Footer = ()=>{
           </div>
 
           <div className="col-6 col-md-4 text-center">
-            <h4>AROUND THE WEB</h4>
-            <div className='links__container'>
-                <a href="https://www.youtube.com/" className="a"><FaYoutube className="ms-3 ms-md-5 me-3 me-md-5 mt-2 mb-2" style={{ fontSize: '20px',color:'#fff'}} /> </a>
-                <a href="https://www.instagram.com/" className="a"><FaInstagram className="ms-3 ms-md-5 me-3 me-md-5 mt-2 mb-2" style={{ fontSize: '16px', }} /></a>
-                <a href="https://www.linkedin.com/" className="a"><FaLinkedinIn className="ms-3 ms-md-5 me-3 me-md-5 mt-2 mb-2" style={{ fontSize: '16px' }} /></a>
-                <a href="https://play.google.com/store" className="a"><SiGmail className="ms-3 ms-md-5 me-3 me-md-5 mt-2 mb-2" style={{ fontSize: '16px' }} /></a>
+            <h4 className="mt-3">AROUND THE WEB</h4>
+            <div className='links__container d-flex justify-content-center'>
+                <a href="https://www.youtube.com/" className="a" style={{textDecoration :"none",color:"grey"}}><FaYoutube className="mt-3 me-2 ms-2 mb-3" style={{ fontSize: '32px',}} /> </a>
+                <a href="https://www.instagram.com/" className="a" style={{textDecoration :"none",color:"grey"}}><FaInstagram className="mt-3 me-2 ms-2 mb-3" style={{ fontSize: '32px', }} /></a>
+                <a href="https://www.linkedin.com/" className="a" style={{textDecoration :"none",color:"grey"}}><FaLinkedinIn className="mt-3 me-2 ms-2 mb-3" style={{ fontSize: '32px' }} /></a>
+                <a href="https://play.google.com/store" className="a" style={{textDecoration :"none",color:"grey"}}><SiGmail className="mt-3 me-2 ms-2 mb-3" style={{ fontSize: '32px' }} /></a>
             </div>
           </div>
 
-          <div className="col-6 col-md-4 footer__committe">
-            <h4>ABOUT</h4>
-            <a href="#">College</a>
-            <a href='#'>Department</a>
-            <a href='#'>Symposium</a>
+          <div className="col-6 col-md-4 footer__committe text-center">
+            <div className="d-flex flex-column mt-2">
+            <h4 >ABOUT</h4>
+            <a href="#" className="mt-2 mb-2" style={{textDecoration :"none",color:"grey"}}>College</a>
+            <a href='#'className="mt-2 mb-2" style={{textDecoration :"none",color:"grey"}}>Department</a>
+            <a href='#'className="mt-2 mb-2" style={{textDecoration :"none",color:"grey"}}>Symposium</a>
+            </div>
           </div>
         </div>
       </div>
