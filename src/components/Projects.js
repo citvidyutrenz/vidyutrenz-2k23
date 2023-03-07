@@ -26,6 +26,9 @@ import { ButtonGroup, Button } from "react-bootstrap";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import "animate.css";
 import TrackVisibility from "react-on-screen";
+import { useInView } from "react-intersection-observer";
+import { useAnimation } from "framer-motion";
+import { motion, variants, whileHover } from "framer-motion";
 
 export const Projects = () => {
   const technicals = [
@@ -33,6 +36,16 @@ export const Projects = () => {
       title: "PAPYRUS",
       description: "Paper Presentation",
       imgUrl: papyrus,
+      // rules:[
+      //   "The applicant must turn in their abstract prior to the deadline",
+      //   "Only two members are allowed per team.", 
+      //   "It is required to send a soft copy of the presentation during registration.",
+      //   "Each team will have a time constraint of 5 to 8 minutes.",
+      //   "The results are accorded to the jury's judgment."],
+    
+      //   roundDetails:[],
+    
+      //   judgingCriteria:"On spot registrations are acceptable only if the candidates have a valid soft copy."
     },
     {
       title: "INVENTINO",
@@ -154,6 +167,53 @@ export const Projects = () => {
   }, []);
   const isSmallScreen = window.innerWidth < 780;
 
+  // const eventsVariants={
+  //   hidden:{opacity:0,scale:0},
+  //   visible:{opacity:1, scale:1,
+  //   transition:{duration:0.5}},
+  // };
+
+  // const textAnimte={
+  //   hidden:{opacity : 0 , scale :0},
+  //   visible:{
+  //   opacity:1,
+  //    scale :1,
+  //    transition: { duration: 0.5 }
+  //   }
+  // }
+  // const {ref, inView} = useInView({
+  //   threshold:0.5
+  // });
+  const [ref, inView] = useInView({ threshold: 0.5   });
+  const [scrollDirection, setScrollDirection] = useState("down");
+
+  const variants = {
+    hidden: { opacity: 0, scale: 0 },
+    visible: { opacity: 1, scale: 1, transition: { duration: 0.5 } },
+  };
+
+  const pillsbarvariants = {
+    hidden: { x: scrollDirection === "down" ? "-100vw" : "100vw" },
+    visible: {
+      x: 0,
+      transition: { type: "spring", bounce: 0.4, delay: 1 },
+    },
+  };
+
+  const handleScroll = () => {
+    setScrollDirection(
+      window.pageYOffset > window.scrollY ? "down" : "up"
+    );
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+ 
+
+
   return (
     <section className="project" id="project">
       <Container>
@@ -166,14 +226,33 @@ export const Projects = () => {
                     isVisible ? "animate__animated animate__fadeIn" : ""
                   }
                 >
-                  <h2>Events</h2>
-                  <p>
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry. Lorem Ipsum has been the industry's
-                    standard dummy text ever since the 1500s, when an unknown
-                    printer took a galley of type and scrambled it to make a
-                    type specimen book.
-                  </p>
+                  <motion.div
+                    className="events_headings"
+                    ref={ref}
+                    variants={variants}
+                    initial="hidden"
+                    animate={inView ? "visible" : "hidden"}
+                  >
+                    <motion.h2
+                    // variants={textAnimate}
+                    // initial="hidden"
+                    // animate="visible"
+                    >
+                      Events
+                    </motion.h2>
+                    <motion.p
+                    // variants={textAnimate}
+                    // initial="hidden"
+                    // animate="visible"
+                    >
+                      Lorem Ipsum is simply dummy text of the printing and
+                      typesetting industry. Lorem Ipsum has been the industry's
+                      standard dummy text ever since the 1500s, when an unknown
+                      printer took a galley of type and scrambled it to make a
+                      type specimen book.
+                    </motion.p>
+                  </motion.div>
+
                   <Tab.Container id="" defaultActiveKey="first">
                     {/* <Nav
                       variant="pills"
@@ -195,58 +274,81 @@ export const Projects = () => {
                       </Nav> */}
                     <div>
                       {isSmallScreen ? (
-                        <div className="d-flex flex-column">
-                          <ButtonGroup className="my-2 mx-auto" size="sm">
-                            <Button variant="outline-secondary" className="m-1">
-                            <Nav.Link eventKey="first" className="border-0 a">
-                              TECHNICAL
-                            </Nav.Link>
-                            </Button>
-                            <Button variant="outline-secondary" className="m-1">
-                            <Nav.Link eventKey="second" className="border-0 a">
-                              NON-TECH
-                            </Nav.Link>
-                            </Button>
-                          </ButtonGroup>
-                          <ButtonGroup className="my-2 mx-auto" size="sm">
-                            <Button variant="outline-secondary" className="m-1">
-                            <Nav.Link eventKey="third" className="border-0 a">
-                              WORKSHOP
-                            </Nav.Link>
-                            </Button>
-                            <Button variant="outline-secondary" className="m-1">
-                            <Nav.Link eventKey="fourth" className="border-0 a">
-                              OUTDOOR
-                            </Nav.Link>
-                            </Button>
-                          </ButtonGroup>
-                        </div>
-                      ) : (
-                        <Nav
-                          variant="pills"
-                          className="justify-content-center align-items-center flex-nowrap"
+                        <motion.div
+                          variants={pillsbarvariants}
+                          initial="hidden"
+                          animate={inView ? "visible" : "hidden"}
+                          className="d-flex flex-column"
                         >
-                          <Nav.Item>
-                            <Nav.Link eventKey="first" className="border-0 a">
-                              TECHNICAL
-                            </Nav.Link>
-                          </Nav.Item>
-                          <Nav.Item>
-                            <Nav.Link eventKey="second" className="border-0 a">
-                              NON-TECH
-                            </Nav.Link>
-                          </Nav.Item>
-                          <Nav.Item>
-                            <Nav.Link eventKey="third" className="border-0 a">
-                              WORKSHOP
-                            </Nav.Link>
-                          </Nav.Item>
-                          <Nav.Item>
-                            <Nav.Link eventKey="fourth" className="border-0 a">
-                              OUTDOOR
-                            </Nav.Link>
-                          </Nav.Item>
-                        </Nav>
+                          <ButtonGroup className="my-2 mx-auto" size="sm">
+                            <Button variant="outline-secondary" className="m-1">
+                              <Nav.Link eventKey="first" className="border-0 a">
+                                TECHNICAL
+                              </Nav.Link>
+                            </Button>
+                            <Button variant="outline-secondary" className="m-1">
+                              <Nav.Link
+                                eventKey="second"
+                                className="border-0 a"
+                              >
+                                NON-TECH
+                              </Nav.Link>
+                            </Button>
+                          </ButtonGroup>
+                          <ButtonGroup className="my-2 mx-auto" size="sm">
+                            <Button variant="outline-secondary" className="m-1">
+                              <Nav.Link eventKey="third" className="border-0 a">
+                                WORKSHOP
+                              </Nav.Link>
+                            </Button>
+                            <Button variant="outline-secondary" className="m-1">
+                              <Nav.Link
+                                eventKey="fourth"
+                                className="border-0 a"
+                              >
+                                OUTDOOR
+                              </Nav.Link>
+                            </Button>
+                          </ButtonGroup>
+                        </motion.div>
+                      ) : (
+                        <motion.div
+                          variants={pillsbarvariants}
+                          initial="hidden"
+                          animate={inView ? "visible" : "hidden"}
+                        >
+                          <Nav
+                            variant="pills"
+                            className="justify-content-center align-items-center flex-nowrap"
+                          >
+                            <Nav.Item>
+                              <Nav.Link eventKey="first" className="border-0 a">
+                                TECHNICAL
+                              </Nav.Link>
+                            </Nav.Item>
+                            <Nav.Item>
+                              <Nav.Link
+                                eventKey="second"
+                                className="border-0 a"
+                              >
+                                NON-TECH
+                              </Nav.Link>
+                            </Nav.Item>
+                            <Nav.Item>
+                              <Nav.Link eventKey="third" className="border-0 a">
+                                WORKSHOP
+                              </Nav.Link>
+                            </Nav.Item>
+                            <Nav.Item>
+                              <Nav.Link
+                                eventKey="fourth"
+                                className="border-0 a"
+                              >
+                                OUTDOOR
+                              </Nav.Link>
+                            </Nav.Item>
+                          </Nav>
+                        </motion.div>
                       )}
                     </div>
                     <Tab.Content

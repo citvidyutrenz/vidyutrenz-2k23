@@ -30,9 +30,9 @@ export const ProjectCard = ({ title, description, imgUrl }) => {
 
   return (
     <>
-      <Col size={12} sm={6} md={4} >
+      <Col size={12} sm={6} md={6} >
         <div className="d-flex justify-content-center">
-          <img src={imgUrl} alt="" onClick={handleModalOpen} />
+          <img src={imgUrl} alt="" onClick={handleModalOpen} className="w-50"/>
         </div>
       </Col>
 
@@ -41,7 +41,7 @@ export const ProjectCard = ({ title, description, imgUrl }) => {
           <Modal.Title className="text-dark">{title}</Modal.Title>
         </Modal.Header>
         <Modal.Body >
-          <img src={imgUrl} alt="" className="w-50" />
+          {/* <p>{}</p> */}
           <p className="text-dark">{description}</p>
         </Modal.Body>
         <Modal.Footer>

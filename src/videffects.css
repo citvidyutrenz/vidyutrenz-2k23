@@ -1,0 +1,25 @@
+
+
+h2 {
+  position: absolute;
+  top: 135vh;
+  
+  transform: translate(-50%,-50%);
+  z-index: 1;
+}
+h3 {
+  font-family: monospace; /* Use a monospace font for typewriter effect */
+  overflow: hidden; /* Hide the overflow text */
+  white-space: nowrap; /* Don't wrap the text */
+  border-right: 0.15em solid; /* Create a typing cursor */
+  animation: typing 6s steps(30) infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
