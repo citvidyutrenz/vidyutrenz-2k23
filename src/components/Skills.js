@@ -27,7 +27,7 @@ export const Skills = () => {
     },
     tablet: {
       breakpoint: { max: 1024, min: 464 },
-      items: 2,
+      items: 1,
     },
     mobile: {
       breakpoint: { max: 464, min: 0 },
@@ -42,7 +42,7 @@ export const Skills = () => {
   };
 
   return (
-    <section className="skill" id="skills">
+    <section className="skill " id="skills">
       <motion.div
         ref={ref}
         variants={variants}
@@ -53,7 +53,16 @@ export const Skills = () => {
         <div className="row">
           <div className="col-12">
             <div className="skill-bx wow zoomIn">
-              <h2>Events</h2>
+              <h2
+              style={{ background:
+                "linear-gradient(to right, #f1e906, #ec6205, #ecca08, #d33e03)",
+              WebkitBackgroundClip: "text",
+              backgroundClip: "text",
+              color: "transparent",
+              fontFamily:"Voice In My Head",
+              letterSpacing: "0.15em"}}
+
+              >Events</h2>
               <p>
                 Lorem Ipsum is simply dummy text of the printing and typesetting
                 industry.<br></br> Lorem Ipsum has been the industry's standard
@@ -65,19 +74,19 @@ export const Skills = () => {
                 className="owl-carousel owl-theme skill-slider"
               >
                 <div className="item">
-                  <img src={tech} alt="Image" size={34} />
+                  <img src={tech} alt="" size={34} />
                   <h5>Technical</h5>
                 </div>
                 <div className="item">
-                  <img src={nontech} alt="Image" />
+                  <img src={nontech} alt="" />
                   <h5>Non-Technical</h5>
                 </div>
                 <div className="item">
-                  <img src={workshop} alt="Image" />
+                  <img src={workshop} alt="" />
                   <h5>Workshops</h5>
                 </div>
                 <div className="item">
-                  <img src={outdoor} alt="Image" />
+                  <img src={outdoor} alt="" />
                   <h5>Outdoor Events</h5>
                 </div>
               </Carousel>
@@ -85,7 +94,7 @@ export const Skills = () => {
           </div>
         </div>
       </motion.div>
-      <img className="background-image-left" src={colorSharp} alt="Image" />
+      <img className="background-image-left" src={colorSharp} alt="" />
     </section>
   );
 };

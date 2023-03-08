@@ -10,7 +10,7 @@ import { motion } from "framer-motion";
 import Loader from "./components/Loader";
 import NavBar from "./components/NavBar";
 import { Location } from "./components/Location";
-
+// import VidEffects from "./components/VidEffects";
 
 function App() {
   const [showDiv, setShowDiv] = useState(false);
@@ -23,7 +23,6 @@ function App() {
     return () => clearTimeout(timeoutId);
   }, []); // run once on mount
 
-  
   return (
     <div>
       {showDiv ? (
@@ -31,15 +30,18 @@ function App() {
           <div className="App overflow-x-hidden">
             <NavBar />
             <Banner />
-            <Skills />          
+            <Skills />
+            {/* <VidEffects /> */}
             <Projects />
-           <Location />
+            <Location />
             <Footer />
           </div>
         </motion.div>
       ) : (
-       
-        <div className="w-100 mt-5 d-flex align-items-center justify-content-sm-center" style={{minHeight : "90vh"}}>
+        <div
+          className="w-100 mt-5 d-flex align-items-center justify-content-sm-center"
+          style={{ minHeight: "90vh" }}
+        >
           <Loader />
         </div>
       )}

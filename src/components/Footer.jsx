@@ -53,8 +53,8 @@ export const Footer = ()=>{
       <div className='container'>
         <div className='row'>
           <div className="col-12 col-md-4 mb-3">
-            <div className='w-50 mx-auto '>
-               <a href='#' target="_blank" ><img src={citLogo} alt="Logo" /></a>
+            <div className='d-flex justify-content-start  '>
+               <a href='#' target="_blank" ><img src={citLogo} alt="Logo" className="w-50 mx-auto" /></a>
             </div>
           </div>
 

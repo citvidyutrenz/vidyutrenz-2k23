@@ -140,7 +140,7 @@ function NavBar() {
               <div className="d-flex flex-row-reverse">
                 <Button
                   variant="outline-secondary"
-                  className="mb-2 mt-4 btn-lg me-3"
+                  className="mb-2 mt-4 btn-lg me-2"
                   data-bs-toggle="offcanvas"
                   href="#offcanvasNav"
                   role="button"

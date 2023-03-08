@@ -16,3 +16,10 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+@font-face {
+  font-family: 'Voice In My Head';
+  src: url('./assets/font/Voice\ In\ My\ Head.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
