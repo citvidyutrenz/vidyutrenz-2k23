@@ -46,16 +46,29 @@ import "../location.css";
 import { FaYoutube, FaInstagram, FaLinkedinIn } from "react-icons/fa";
 import { SiGmail } from "react-icons/si";
 import citLogo from "../assets/img/citTransLogo2.png";
+import { useInView } from "framer-motion";
+import {motion } from "framer-motion"
 // citTransLogo2.png
 export const Footer = ()=>{
+
+  
+  const variants = {
+  hover:{
+    scale :1.1
+  }
+  };
   return (
-    <footer className='footer' style={{height : "80%" }}>
+    <motion.footer 
+    className='footer' style={{height : "80%" }}>
       <div className='container'>
         <div className='row'>
           <div className="col-12 col-md-4 mb-3">
-            <div className='d-flex justify-content-start  '>
+            <motion.div 
+              variants={variants}
+              whileHover="hover"
+            className='d-flex justify-content-start  '>
                <a href='#' target="_blank" ><img src={citLogo} alt="Logo" className="w-50 mx-auto" /></a>
-            </div>
+            </motion.div>
           </div>
 
           <div className="col-6 col-md-4 text-center">
@@ -79,7 +92,7 @@ export const Footer = ()=>{
         </div>
       </div>
       {/* <p>&copy; VIDYUTRENZ</p> */}
-    </footer>
+    </motion.footer>
   );
 }
 
