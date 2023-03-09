@@ -16,7 +16,7 @@ import cric from "../assets/img/cric.png";
 import batminton from "../assets/img/batminton.png";
 import football from "../assets/img/futsal.png";
 import volley from "../assets/img/volleyball.png";
-import iot from "../assets/img/iot.png";
+import iot from "../assets/img/74036-iot-transparent.gif";
 import nw from "../assets/img/nw.png";
 import ml from "../assets/img/ml.png";
 import pcb from "../assets/img/pcb.png";
@@ -29,7 +29,10 @@ import TrackVisibility from "react-on-screen";
 import { useInView } from "react-intersection-observer";
 import { useAnimation } from "framer-motion";
 import { motion, variants, whileHover } from "framer-motion";
-
+import NavBar from "./NavBar";
+import { Location } from "./Location";
+import { Footer } from "./Footer";
+import Loader from "./Loader";
 
 export const Projects = () => {
   const technicals = [
@@ -38,7 +41,6 @@ export const Projects = () => {
       description: "Paper Presentation",
       imgUrl: papyrus,
       rules: [
-
         "The applicant must turn in their abstract prior to the deadline",
         "Only two members are allowed per team.",
         "It is required to send a soft copy of the presentation during registration.",
@@ -56,7 +58,6 @@ export const Projects = () => {
       description: "Project Presentation",
       imgUrl: inventino,
       rules: [
-
         "Ensure the team is limited to 3 members.",
         "The electronics and communication domains should be the focus of the project.",
         "To ensure that all teams participate, each team will be given a specified time window between 8 to 10 minutes.",
@@ -68,14 +69,13 @@ export const Projects = () => {
 
       roundDetails: [],
 
-      judgingCriteria: null,
+      judgingCriteria: "The final decision will be taken by the invited jury.",
     },
     {
       title: "NYQUIZZEST",
       description: "Circuit Redesigning",
       imgUrl: nyquizest,
       rules: [
-
         "Team size: 2 per team.",
         "Time limit of the event.",
         "Teams with top scores will be qualified.",
@@ -95,7 +95,6 @@ export const Projects = () => {
       description: "Word Guessing Event",
       imgUrl: enigma,
       rules: [
-
         "1.Team size: 2 per team.",
         "2.Game time: 2minutes.",
         "3.Participants can skip and move to the next word.",
@@ -114,7 +113,6 @@ export const Projects = () => {
       description: "Group Discussion",
       imgUrl: renegade,
       rules: [
-
         "Group Discussion - 6 members per batch.",
         "Professional discussion should be maintained. The participants will not be evaluate batchwise (Two or more can be selected from a single batch)",
         "Participants will not be given any time after the commencement of the event.",
@@ -135,7 +133,6 @@ export const Projects = () => {
       description: "Anime Quiz",
       imgUrl: animeQuiz,
       rules: [
-
         "The event consists of four rounds",
         "No extra time will be provided to any participant under any circumstance.",
         "In case of any conflict or misconduct, decisions taken by the management will be final and no excuses will be entertained.",
@@ -156,7 +153,6 @@ export const Projects = () => {
       description: "Photography competition",
       imgUrl: fotography,
       rules: [
-
         "Within the stipulated time participant can come to college and participate and take pictures",
       ],
 
@@ -172,7 +168,6 @@ export const Projects = () => {
       description: "Guess the Movie",
       imgUrl: freeze,
       rules: [
-
         "The game will consist of three rounds.",
         "Participants should have their mobile phones with proper internet connectivity to participate",
         "The first and second rounds will be conducted in Kahoot, an online quiz platform",
@@ -196,7 +191,6 @@ export const Projects = () => {
       description: "Rapid Quiz Competition",
       imgUrl: funFued,
       rules: [
-
         "Team should consist of 4 to 6 members.",
         "Two teams should play at a time.",
         "For a question there will be approximately 10 answers. Each answer will consist of different points (Highest to Lowest).",
@@ -219,13 +213,23 @@ export const Projects = () => {
       title: "FILMLET",
       description: "Find the film",
       imgUrl: filmlet,
+      rules: [
+        "Theme is your choice. Vulgar contents are prohibited.",
+        "Musical videos can also be submitted",
+        "Total duration of your short film shouldn't exceed more than 20 minutes which also includes the opening and closing credits.",
+        "Top 5 impressive short films will be selected and will be presented before the judges .",
+        "Finally one team will be choosen as a winner based on thier judging criteria.",
+      ],
+      roundDetails: [
+        "There is only one round in which top 5 short films will be shortlisted and presented before the judges ",
+      ],
+      judgingCriteria: "The final decision will be taken by the invited jury.",
     },
     {
       title: "BUZZ CONCORRENZA",
       description: "Buzzed Quiz",
       imgUrl: buzz,
       rules: [
-
         "Within the stipulated time the participants must create/design the memes.",
 
         "Participants can use design software of their choice.",
@@ -237,16 +241,19 @@ export const Projects = () => {
         "your meme must have a watermark ( Watermark must be your name ).",
         "Don’t try to copy a meme from online sources. Any plagiarism will lead to direct disqualification.",
       ],
-      roundDetails: [],
+      roundDetails: [
+        "Participants will be qualified on the basis of INSTAGRAM impression. Selected members will participate in ROUND 2. ",
+        "Round 1 qualifiers must create a meme on a given topic. Topic will be given and you can choose your own template. ROUND 3: For Round 2 qualifiers, 5 templates will be given under a specific topic. Participants should create a meme and must have to submit their with in the given time.",
+      ],
 
-      judgingCriteria: null,
+      judgingCriteria:
+        "The participants will be judged on the basis of creativity, content, and adherence to the theme.The memes must not be containing any absurd visuals or vulgar language. Final round judgment will be based on overall humor, social media reach and engagement and comments from the followers.",
     },
     {
       title: "BGMI",
       description: "Battles ground Mobile India",
       imgUrl: cod,
-      rules: [
-      "The matches will be held in 2 modes."],
+      rules: ["The matches will be held in 2 modes."],
 
       roundDetails: [
         "The 1st match will be a classic match, that is either Karakin or Livik. The top 3 winning squads will be qualified for the next round.",
@@ -273,7 +280,7 @@ export const Projects = () => {
 
       roundDetails: [],
 
-      judgingCriteria: null,
+      judgingCriteria: "The final decision will be taken by the invited jury.",
     },
     {
       title: "SmashZone",
@@ -297,7 +304,7 @@ export const Projects = () => {
 
       roundDetails: [],
 
-      judgingCriteria: null,
+      judgingCriteria: "The final decision will be taken by the invited jury.",
     },
     {
       title: "FUTSAL",
@@ -315,7 +322,7 @@ export const Projects = () => {
 
       roundDetails: [],
 
-      judgingCriteria: null,
+      judgingCriteria: "The final decision will be taken by the invited jury.",
     },
     {
       title: "VOLLEY",
@@ -332,7 +339,7 @@ export const Projects = () => {
 
       roundDetails: [],
 
-      judgingCriteria: null,
+      judgingCriteria: "The final decision will be taken by the invited jury.",
     },
   ];
   const workshops = [
@@ -360,20 +367,18 @@ export const Projects = () => {
         "Learn how to connect to cloud IOT Platforms.",
       ],
       pre: ["  Notepads ", "Basics of  Programming "],
-
     },
     {
       title: "BASICS OF MACHINE LEARNING AND MEDICAL IMAGING",
       description: "Machine Learning and Medical Imaging Workshop",
       imgUrl: ml,
       outcomes: [
-        "Know how to  Design, Code and Build IOT products.",
-        "Learn to code using Arduino IDE.",
-        "Knowledge about how to work with Micro controllers , Sensors , Relays.",
-        "Learn how to connect to cloud IOT Platforms.",
+        "Introduction to Machine Learning in Medical Image Processing.",
+        "Introduction to Image processing.",
+        "Use of Python for Image processing.",
+        "A basic project on Medical Image Processing.",
       ],
       pre: ["  Notepads ", "Basics of  Programming "],
-
     },
     {
       title: "MAKE YOUR PCB",
@@ -386,7 +391,6 @@ export const Projects = () => {
         "Learn how to connect to cloud IOT Platforms.",
       ],
       pre: ["  Notepads ", "Basics of  Programming "],
-
     },
   ];
   const [showButtonGroup, setShowButtonGroup] = useState(false);
@@ -422,7 +426,7 @@ export const Projects = () => {
   // const {ref, inView} = useInView({
   //   threshold:0.5
   // });
-  const [ref, inView] = useInView({ threshold: 0.5 });
+  const [ref, inView] = useInView({ threshold: 0.5, triggerOnce: true });
   const [scrollDirection, setScrollDirection] = useState("down");
 
   const variants = {
@@ -431,7 +435,7 @@ export const Projects = () => {
   };
 
   const pillsbarvariants = {
-    hidden: { x: scrollDirection === "down" ? "-100vw" : "100vw" },
+    hidden: { x: scrollDirection === "down" ? "-100vw" : "-100vw" },
     visible: {
       x: 0,
       transition: { type: "spring", bounce: 0.4, delay: 0.5 },
@@ -447,238 +451,335 @@ export const Projects = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  return (
-    <section className="project" id="project">
-      <Container>
-        <Row>
-          <Col size={12}>
-            <TrackVisibility>
-              {({ isVisible }) => (
-                <div
-                  className={
-                    isVisible ? "animate__animated animate__fadeIn" : ""
-                  }
-                >
-                  <motion.div
-                    className="events_headings"
-                    ref={ref}
-                    variants={variants}
-                    initial="hidden"
-                    animate={inView ? "visible" : "hidden"}
-                  >
-                    <motion.h2
-                    // variants={textAnimate}
-                    // initial="hidden"
-                    // animate="visible"
-                    >
-                      Events
-                    </motion.h2>
-                    <motion.p
-                    // variants={textAnimate}
-                    // initial="hidden"
-                    // animate="visible"
-                    >
-                      Lorem Ipsum is simply dummy text of the printing and
-                      typesetting industry. Lorem Ipsum has been the industry's
-                      standard dummy text ever since the 1500s, when an unknown
-                      printer took a galley of type and scrambled it to make a
-                      type specimen book.
-                    </motion.p>
-                  </motion.div>
+  const [showDiv, setShowDiv] = useState(false);
 
-                  <Tab.Container id="" defaultActiveKey="first">
-                    {/* <Nav
-                      variant="pills"
-                      className=" justify-content-center align-items-center flex-nowrap "
-                      id=""
-                    >
-                      <Nav.Item>
-                        <Nav.Link eventKey="first" className="border-0 a">TECHNICAL</Nav.Link>
-                      </Nav.Item>
-                      <Nav.Item>
-                        <Nav.Link eventKey="second" className="border-0 a">NON-TECH</Nav.Link>
-                      </Nav.Item>
-                      <Nav.Item>
-                        <Nav.Link eventKey="third" className="border-0 a">WORKSHOP</Nav.Link>
-                      </Nav.Item>
-                      <Nav.Item>
-                        <Nav.Link eventKey="fourth" className="border-0 a">OUTDOOR</Nav.Link>
-                      </Nav.Item>
-                      </Nav> */}
-                    <div>
-                      {isSmallScreen ? (
-                        <motion.div
-                          variants={pillsbarvariants}
-                          initial="hidden"
-                          animate={inView ? "visible" : "hidden"}
-                          className="d-flex flex-column"
-                        >
-                          <ButtonGroup className="my-2 mx-auto" size="sm">
-                            <Button variant="outline-secondary" className="m-1">
-                              <Nav.Link 
-                                style={{
-                                  background:
-                                    "linear-gradient(to right, #f1e906, #ec6205, #ecca08, #d33e03)",
-                                  WebkitBackgroundClip: "text",
-                                  backgroundClip: "text",
-                                  color: "transparent",
-                                  fontFamily:"Voice In My Head",
-                                  letterSpacing: "0.15 em"// or any value that suits your design
-                
-                
-                                }}
-                              eventKey="first" className="border-0 a">
-                                TECHNICAL
-                              </Nav.Link>
-                            </Button>
-                            <Button variant="outline-secondary" className="m-1">
-                              <Nav.Link
-                                style={{
-                                  background:
-                                    "linear-gradient(to right, #f1e906, #ec6205, #ecca08, #d33e03)",
-                                  WebkitBackgroundClip: "text",
-                                  backgroundClip: "text",
-                                  color: "transparent",
-                                  fontFamily:"Voice In My Head",
-                                  letterSpacing: "0.15 em"// or any value that suits your design
-                
-                
-                                }}
-                                eventKey="second"
-                                className="border-0 a"
-                              >
-                                NON-TECH
-                              </Nav.Link>
-                            </Button>
-                          </ButtonGroup>
-                          <ButtonGroup className="my-2 mx-auto" size="sm">
-                            <Button variant="outline-secondary" className="m-1">
-                              <Nav.Link 
-                                style={{
-                                  background:
-                                    "linear-gradient(to right, #f1e906, #ec6205, #ecca08, #d33e03)",
-                                  WebkitBackgroundClip: "text",
-                                  backgroundClip: "text",
-                                  color: "transparent",
-                                  fontFamily:"Voice In My Head",
-                                  letterSpacing: "0.15 em"// or any value that suits your design
-                
-                
-                                }}
-                              eventKey="third" className="border-0 a">
-                                WORKSHOP
-                              </Nav.Link>
-                            </Button>
-                            <Button variant="outline-secondary" className="m-1">
-                              <Nav.Link
-                                  style={{
-                                    background:
-                                      "linear-gradient(to right, #f1e906, #ec6205, #ecca08, #d33e03)",
-                                    WebkitBackgroundClip: "text",
-                                    backgroundClip: "text",
-                                    color: "transparent",
-                                    fontFamily:"Voice In My Head",
-                                    letterSpacing: "0.15 em"// or any value that suits your design
-                  
-                  
-                                  }}
-                                eventKey="fourth"
-                                className="border-0 a"
-                              >
-                                OUTDOOR
-                              </Nav.Link>
-                            </Button>
-                          </ButtonGroup>
-                        </motion.div>
-                      ) : (
-                        <motion.div
-                          variants={pillsbarvariants}
-                          initial="hidden"
-                          animate={inView ? "visible" : "hidden"}
-                        >
-                          <Nav
-                            variant="pills"
-                            className="justify-content-center align-items-center flex-nowrap"
-                          >
-                            <Nav.Item>
-                              <Nav.Link 
-                              
-                              eventKey="first" className="border-0 a">
-                                TECHNICAL
-                              </Nav.Link>
-                            </Nav.Item>
-                            <Nav.Item>
-                              <Nav.Link
-                                eventKey="second"
-                                className="border-0 a"
-                              >
-                                NON-TECH
-                              </Nav.Link>
-                            </Nav.Item>
-                            <Nav.Item>
-                              <Nav.Link eventKey="third" className="border-0 a">
-                                WORKSHOP
-                              </Nav.Link>
-                            </Nav.Item>
-                            <Nav.Item>
-                              <Nav.Link
-                                eventKey="fourth"
-                                className="border-0 a"
-                              >
-                                OUTDOOR
-                              </Nav.Link>
-                            </Nav.Item>
-                          </Nav>
-                        </motion.div>
-                      )}
+  useEffect(() => {
+    const timeoutId = setTimeout(() => {
+      setShowDiv(true);
+    }, 8500);
+
+    return () => clearTimeout(timeoutId);
+  }, []);
+
+  const headers = [
+    { 
+      id :"Technical",
+      about: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheet",
+    },
+    { 
+      id :"Non Technical",
+
+      about: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheet",
+    },
+    { 
+      id :"Workshop",
+
+      about: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheet",
+    },
+    { 
+      id :"OutDoor",
+
+      about: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheet",
+    },
+  ];
+
+  function Abt() {
+    return(
+      <div className="border border-3 border-light mt-5">
+
+{headers.map((head, index) => {
+                return (
+                  <div className="row">
+                    <div className="col">
+                      {head.id}
                     </div>
-                    <Tab.Content
-                      id="slideInUp"
-                      className={
-                        isVisible ? "animate__animated animate__slideInUp" : ""
-                      }
-                    >
-                      <Tab.Pane eventKey="first">
-                        <Row>
-                          {technicals.map((project, index) => {
-                            return <ProjectCard key={index} state = {"technical"} project={project} />;
-                          })}
-                        </Row>
-                      </Tab.Pane>
-                      <Tab.Pane eventKey="second">
-                        <Row>
-                          {nonTechs.map((project, index) => {
-                            return <ProjectCard key={index} state = {"non-technical"} project={project} />;
-                          })}
-                        </Row>
-                      </Tab.Pane>
-                      <Tab.Pane eventKey="third">
-                        <Row>
-                          {workshops.map((project, index) => {
-                            return <ProjectCard key={index} state = {"workshop"} project={project} />;
-                          })}
-                        </Row>
-                      </Tab.Pane>
-                      <Tab.Pane eventKey="fourth">
-                        <Row>
-                          {outdoors.map((project, index) => {
-                            return <ProjectCard key={index} state = {"outdoor"} project={project} />;
-                          })}
-                        </Row>
-                      </Tab.Pane>
+                    <div className="col">
+                       {head.about}
+                      </div>
+                  </div>
+                );
+              })}
 
-                      <Tab.Pane eventKey="third">
-                        <p></p>
-                      </Tab.Pane>
-                    </Tab.Content>
-                  </Tab.Container>
-                </div>
-              )}
-            </TrackVisibility>
-          </Col>
-        </Row>
-      </Container>
-      <img className="background-image-right" src={colorSharp2} alt=""></img>
-    </section>
+      </div>
+    )
+  }
+
+  return (
+    <div>
+      {showDiv ? (
+        <motion.div animate={{ opacity: 1 }} initial={{ opacity: 0 }}>
+          <div className="App overflow-x-hidden">
+            <NavBar />
+           
+
+            <section className="project" id="project">
+            <Abt />
+              <Container>
+                <Row>
+                  <Col size={12}>
+                    <TrackVisibility>
+                      {({ isVisible }) => (
+                        <div
+                          className={
+                            isVisible ? "animate__animated animate__fadeIn" : ""
+                          }
+                        >
+                          <motion.div
+                            className="events_headings"
+                            ref={ref}
+                            variants={variants}
+                            initial="hidden"
+                            animate={inView ? "visible" : "hidden"}
+                          >
+                            <motion.h2>Events</motion.h2>
+                            <motion.p>
+                              Lorem Ipsum is simply dummy text of the printing
+                              and typesetting industry. Lorem Ipsum has been the
+                              industry's standard dummy text ever since the
+                              1500s, when an unknown printer took a galley of
+                              type and scrambled it to make a type specimen
+                              book.
+                            </motion.p>
+                          </motion.div>
+
+                          <Tab.Container id="" defaultActiveKey="first">
+                            <div>
+                              {isSmallScreen ? (
+                                <motion.div
+                                  variants={pillsbarvariants}
+                                  initial="hidden"
+                                  animate={inView ? "visible" : "hidden"}
+                                  className="d-flex flex-column"
+                                >
+                                  <Nav>
+                                    <ButtonGroup
+                                      className="my-2 mx-auto"
+                                      size="sm"
+                                    >
+                                      <Button
+                                        variant="outline-secondary"
+                                        className="m-1"
+                                      >
+                                        <Nav.Link
+                                          style={{
+                                            background:
+                                              "linear-gradient(to right, #f1e906, #ec6205, #ecca08, #d33e03)",
+                                            WebkitBackgroundClip: "text",
+                                            backgroundClip: "text",
+                                            color: "transparent",
+                                            fontFamily: "Voice In My Head",
+                                            letterSpacing: "0.15 em", // or any value that suits your design
+                                          }}
+                                          eventKey="first"
+                                          className="border-0 a"
+                                        >
+                                          TECHNICAL
+                                        </Nav.Link>
+                                      </Button>
+                                      <Button
+                                        variant="outline-secondary"
+                                        className="m-1"
+                                      >
+                                        <Nav.Link
+                                          style={{
+                                            background:
+                                              "linear-gradient(to right, #f1e906, #ec6205, #ecca08, #d33e03)",
+                                            WebkitBackgroundClip: "text",
+                                            backgroundClip: "text",
+                                            color: "transparent",
+                                            fontFamily: "Voice In My Head",
+                                            letterSpacing: "0.15 em", // or any value that suits your design
+                                          }}
+                                          eventKey="second"
+                                          className="border-0 a"
+                                        >
+                                          NON-TECH
+                                        </Nav.Link>
+                                      </Button>
+                                    </ButtonGroup>
+                                    <ButtonGroup
+                                      className="my-2 mx-auto"
+                                      size="sm"
+                                    >
+                                      <Button
+                                        variant="outline-secondary"
+                                        className="m-1"
+                                      >
+                                        <Nav.Link
+                                          style={{
+                                            background:
+                                              "linear-gradient(to right, #f1e906, #ec6205, #ecca08, #d33e03)",
+                                            WebkitBackgroundClip: "text",
+                                            backgroundClip: "text",
+                                            color: "transparent",
+                                            fontFamily: "Voice In My Head",
+                                            letterSpacing: "0.15 em", // or any value that suits your design
+                                          }}
+                                          eventKey="third"
+                                          className="border-0 a"
+                                        >
+                                          WORKSHOP
+                                        </Nav.Link>
+                                      </Button>
+                                      <Button
+                                        variant="outline-secondary"
+                                        className="m-1"
+                                      >
+                                        <Nav.Link
+                                          style={{
+                                            background:
+                                              "linear-gradient(to right, #f1e906, #ec6205, #ecca08, #d33e03)",
+                                            WebkitBackgroundClip: "text",
+                                            backgroundClip: "text",
+                                            color: "transparent",
+                                            fontFamily: "Voice In My Head",
+                                            letterSpacing: "0.15 em", // or any value that suits your design
+                                          }}
+                                          eventKey="fourth"
+                                          className="border-0 a"
+                                        >
+                                          OUTDOOR
+                                        </Nav.Link>
+                                      </Button>
+                                    </ButtonGroup>
+                                  </Nav>
+                                </motion.div>
+                              ) : (
+                                <motion.div
+                                  variants={pillsbarvariants}
+                                  initial="hidden"
+                                  animate={inView ? "visible" : "hidden"}
+                                >
+                                  <Nav
+                                    variant="pills"
+                                    className="justify-content-center align-items-center flex-nowrap"
+                                  >
+                                    <Nav.Item>
+                                      <Nav.Link
+                                        eventKey="first"
+                                        className="border-0 a"
+                                      >
+                                        TECHNICAL
+                                      </Nav.Link>
+                                    </Nav.Item>
+                                    <Nav.Item>
+                                      <Nav.Link
+                                        eventKey="second"
+                                        className="border-0 a"
+                                      >
+                                        NON-TECH
+                                      </Nav.Link>
+                                    </Nav.Item>
+                                    <Nav.Item>
+                                      <Nav.Link
+                                        eventKey="third"
+                                        className="border-0 a"
+                                      >
+                                        WORKSHOP
+                                      </Nav.Link>
+                                    </Nav.Item>
+                                    <Nav.Item>
+                                      <Nav.Link
+                                        eventKey="fourth"
+                                        className="border-0 a"
+                                      >
+                                        OUTDOOR
+                                      </Nav.Link>
+                                    </Nav.Item>
+                                  </Nav>
+                                </motion.div>
+                              )}
+                            </div>
+                            <Tab.Content
+                              id="slideInUp"
+                              className={
+                                isVisible
+                                  ? "animate__animated animate__slideInUp"
+                                  : ""
+                              }
+                            >
+                              <Tab.Pane eventKey="first">
+                                <Row>
+                                  {technicals.map((project, index) => {
+                                    return (
+                                      <ProjectCard
+                                        key={index}
+                                        state={"technical"}
+                                        project={project}
+                                      />
+                                    );
+                                  })}
+                                </Row>
+                              </Tab.Pane>
+                              <Tab.Pane eventKey="second">
+                                <Row>
+                                  {nonTechs.map((project, index) => {
+                                    return (
+                                      <ProjectCard
+                                        key={index}
+                                        state={"non-technical"}
+                                        project={project}
+                                      />
+                                    );
+                                  })}
+                                </Row>
+                              </Tab.Pane>
+                              <Tab.Pane eventKey="third">
+                                <Row>
+                                  {workshops.map((project, index) => {
+                                    return (
+                                      <ProjectCard
+                                        key={index}
+                                        state={"workshop"}
+                                        project={project}
+                                      />
+                                    );
+                                  })}
+                                </Row>
+                              </Tab.Pane>
+                              <Tab.Pane eventKey="fourth">
+                                <Row>
+                                  {outdoors.map((project, index) => {
+                                    return (
+                                      <ProjectCard
+                                        key={index}
+                                        state={"outdoor"}
+                                        project={project}
+                                      />
+                                    );
+                                  })}
+                                </Row>
+                              </Tab.Pane>
+
+                              <Tab.Pane eventKey="third">
+                                <p></p>
+                              </Tab.Pane>
+                            </Tab.Content>
+                          </Tab.Container>
+                        </div>
+                      )}
+                    </TrackVisibility>
+                  </Col>
+                </Row>
+              </Container>
+              <img
+                className="background-image-right"
+                src={colorSharp2}
+                alt=""
+              ></img>
+            </section>
+            <Location />
+            <Footer />
+          </div>
+        </motion.div>
+      ) : (
+        <div
+          className="w-100 mt-5 d-flex align-items-center justify-content-sm-center"
+          style={{ minHeight: "90vh" }}
+        >
+          <Loader />
+        </div>
+      )}
+    </div>
   );
 };

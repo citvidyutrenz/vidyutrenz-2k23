@@ -43,7 +43,7 @@ const Loader = ({ count = 5 }) => {
       pathLength: 1,
       transition: {
         delay: 3,
-        duration: 5,
+        duration: 4,
       },
     },
   };
@@ -57,8 +57,8 @@ const Loader = ({ count = 5 }) => {
       opacity: 1,
       pathLength: 1,
       transition: {
-        delay: 6,
-        duration: 6,
+        delay: 4.5,
+        duration: 5,
       },
     },
   };

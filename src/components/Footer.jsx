@@ -59,7 +59,7 @@ export const Footer = ()=>{
   };
   return (
     <motion.footer 
-    className='footer' style={{height : "80%" }}>
+    className='footer mb-5 mt-5' style={{height : "80%" }}>
       <div className='container'>
         <div className='row'>
           <div className="col-12 col-md-4 mb-3">
@@ -87,6 +87,7 @@ export const Footer = ()=>{
             <a href="#" className="mt-2 mb-2" style={{textDecoration :"none",color:"grey"}}>College</a>
             <a href='#'className="mt-2 mb-2" style={{textDecoration :"none",color:"grey"}}>Department</a>
             <a href='#'className="mt-2 mb-2" style={{textDecoration :"none",color:"grey"}}>Symposium</a>
+            {/* <a href=""></a> */}
             </div>
           </div>
         </div>

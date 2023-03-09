@@ -71,6 +71,7 @@ import { Navbar, Nav, Container, Button } from "react-bootstrap";
 // import cit from "../assets/img/clogo.1be2cd3b.png";
 import logo from "../assets/img/gold logo.png";
 import { motion } from "framer-motion";
+import { useNavigate } from "react-router-dom";
 
 function NavBar() {
   const [isMobile, setIsMobile] = useState(false);
@@ -119,6 +120,9 @@ function NavBar() {
 
     }
   };
+
+  const navigate = useNavigate();
+
 
   return (
     <>
@@ -174,16 +178,16 @@ function NavBar() {
             </div>
             <div className="offcanvas-body">
               <Nav className="flex-column">
-                <Nav.Link href="#" className="text-light">
+                <Nav.Link href="#" className="text-light" onClick={() => navigate("/events")}>
                   <div>Home</div>
                 </Nav.Link>
-                <Nav.Link href="#" className="text-light">
+                <Nav.Link href="#" className="text-light"  onClick={() => navigate("/about")}>
                   About
                 </Nav.Link>
-                <Nav.Link href="#" className="text-light">
+                <Nav.Link href="#" className="text-light"  onClick={() => navigate("/events")}>
                   Events
                 </Nav.Link>
-                <Nav.Link href="#" className="text-light">
+                <Nav.Link href="#" className="text-light"  onClick={() => navigate("/contact")}>
                   Contact
                 </Nav.Link>
               </Nav>
@@ -206,7 +210,7 @@ function NavBar() {
             <Navbar.Toggle aria-controls="navbar-nav" />
             <Navbar.Collapse id="navbar-nav">
               <Nav className="ms-auto">
-                <Nav.Link href="#" className="text-light ms-2 me-2">
+                <Nav.Link href="#" className="text-light ms-2 me-2"  onClick={() => navigate("/")} >
                   <motion.div
                   variants={navbarvariants}
                   initial="hidden"
@@ -214,7 +218,7 @@ function NavBar() {
              
                   >Home</motion.div>
                 </Nav.Link>
-                <Nav.Link href="#" className="text-light ms-2 me-2">
+                <Nav.Link href="#" className="text-light ms-2 me-2"  onClick={() => navigate("/about")}>
                   <motion.div
                    variants={navbarvariants}
                    initial="hidden"
@@ -222,7 +226,7 @@ function NavBar() {
                    transition={{delay : 0.7}}
                   >About</motion.div>
                 </Nav.Link>
-                <Nav.Link href="#" className="text-light ms-2 me-2">
+                <Nav.Link href="#" className="text-light ms-2 me-2" onClick={() => navigate("/events")}>
                   <motion.div
                    variants={navbarvariants}
                    initial="hidden"

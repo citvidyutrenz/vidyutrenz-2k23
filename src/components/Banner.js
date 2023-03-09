@@ -8,6 +8,7 @@ import videobg from "../assets/img/vid bg vid (online-video-cutter.com).mp4";
 import { useRef } from "react";
 import { motion } from "framer-motion";
 import { useLayoutEffect } from "react";
+import Coundown from "./Coundown";
 
 // import metaverse from "../assets/img/metaverse-115035.mp4"
 export const Banner = () => {
@@ -107,7 +108,7 @@ export const Banner = () => {
         playsInline
         loop
         className="w-100 object-cover opacity-25"
-        style={{ minHeight: 400 }}
+        style={{ minHeight: 450 }}
         onLoadedData={handleVideoLoaded}
       />
 
@@ -150,17 +151,14 @@ export const Banner = () => {
               </motion.p>
               </div>
               <br></br>
-
-              {/* <p className="mt-5">
-              DEPARTMENT OF ELECTRONICS AND COMMUNICATION ENGINEERING
-PROUDLY PRESENTS
-NATIONAL LEVEL TECHNICAL SYMPOSIUM
-
-          </p> */}
+              {/* <Coundown /> */}
             </Col>
           </Row>
+
         </Container>
+
       </div>
+
     </div>
   );
 };

@@ -23,3 +23,12 @@ code {
   font-weight: normal;
   font-style: normal;
 }
+
+:root {
+  --primary-color:linear-gradient(to right, #f1e906, #ec6205, #ecca08, #d33e03)
+
+}
+
+.btn-primary {
+  background-image: var(--primary-color);
+}

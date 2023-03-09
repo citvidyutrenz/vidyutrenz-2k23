@@ -18,7 +18,7 @@ function App() {
   useEffect(() => {
     const timeoutId = setTimeout(() => {
       setShowDiv(true);
-    }, 12000);
+    }, 8500);
 
     return () => clearTimeout(timeoutId);
   }, []); // run once on mount
@@ -31,8 +31,7 @@ function App() {
             <NavBar />
             <Banner />
             <Skills />
-            {/* <VidEffects /> */}
-            <Projects />
+            {/* <Projects /> */}
             <Location />
             <Footer />
           </div>
