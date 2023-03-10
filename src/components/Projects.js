@@ -33,6 +33,8 @@ import NavBar from "./NavBar";
 import { Location } from "./Location";
 import { Footer } from "./Footer";
 import Loader from "./Loader";
+import VrLoader from "./VrLoader";
+import Abt from "./Abt";
 
 export const Projects = () => {
   const technicals = [
@@ -40,6 +42,8 @@ export const Projects = () => {
       title: "PAPYRUS",
       description: "Paper Presentation",
       imgUrl: papyrus,
+      oneLiner: "",
+
       rules: [
         "The applicant must turn in their abstract prior to the deadline",
         "Only two members are allowed per team.",
@@ -52,6 +56,9 @@ export const Projects = () => {
 
       judgingCriteria:
         "On spot registrations are acceptable only if the candidates have a valid soft copy.",
+      num :[{phn : "tel:9942787733" , name :"Ratheesh "}, {phn : "tel:8778947054" , name :"Ariharavelava "}],
+      
+      link:" https://forms.gle/WduLM8kZDzxkoVSg7",  
     },
     {
       title: "INVENTINO",
@@ -70,11 +77,16 @@ export const Projects = () => {
       roundDetails: [],
 
       judgingCriteria: "The final decision will be taken by the invited jury.",
+      num :[{phn : "tel:9942787733" , name :"Ratheesh "}, {phn : "tel:6379204221" , name :"HARI "}],
+
+      link:" https://forms.gle/k5uLNCAnXBUxFR6aA",  
     },
     {
-      title: "NYQUIZZEST",
+      title: "NYQUIZST",
       description: "Circuit Redesigning",
       imgUrl: nyquizest,
+      oneLiner: "",
+
       rules: [
         "Team size: 2 per team.",
         "Time limit of the event.",
@@ -89,11 +101,16 @@ export const Projects = () => {
       ],
       judgingCriteria:
         "Participants who design the circuit faster and accurately will be considered as the winner.",
+        num :[{phn : "tel:9942787733" , name :"Ratheesh "}, {phn : "tel:6369395801" , name :"LOHITHA "}],
+
+        link:" https://forms.gle/ZE27T8my1t1i4JPx5",  
     },
     {
       title: "ENIGMA",
       description: "Word Guessing Event",
       imgUrl: enigma,
+      oneLiner: "",
+
       rules: [
         "1.Team size: 2 per team.",
         "2.Game time: 2minutes.",
@@ -107,11 +124,18 @@ export const Projects = () => {
       ],
       judgingCriteria:
         "The points earned by each team depends upon the time taken by them to complete the task. Finally, the team with more points will be considered as winners.",
-    },
+        num :[{phn : "tel:9942787733" , name :"Ratheesh "}, {phn : "tel:6380630430" , name :"Balaji "}],
+
+        link:" https://forms.gle/hsJcNNdnA7kMYccm9",  
+
+    
+      },
     {
       title: "RENEGADE",
       description: "Group Discussion",
       imgUrl: renegade,
+      oneLiner: "",
+
       rules: [
         "Group Discussion - 6 members per batch.",
         "Professional discussion should be maintained. The participants will not be evaluate batchwise (Two or more can be selected from a single batch)",
@@ -124,36 +148,54 @@ export const Projects = () => {
       ],
 
       judgingCriteria: "Top three participants will be considered as winners.",
+      num :[{phn : "tel:9942787733" , name :"Ratheesh"}, {phn : "tel:6374965630" , name :"Sriman "}],
+
+      link:" https://forms.gle/yvkwp5VJwwShQFiT6",  
     },
   ];
 
   const nonTechs = [
     {
       title: "ANIMESHON KUIZU",
-      description: "Anime Quiz",
+      description:
+        "Test your otaku knowledge and compete with fellow anime fans in our AnimeQuiz - are you ready to become the ultimate anime champion?Trivia Series:Naruto, Death Note, Bleach, Spy x family, One piece, Dragon Ball, Attack on Titan , Jujutsu Kaisen, Demon Slayer, Blue Lock, Black Clover, Tokyo Revengers, Vinland Saga, Tokyo Ghoul, My Hero Academia, Haikyuu!!, My Dress-Up Darling, Hunter X Hunter, Mob Psycho 100, Seven Deadly Sins, Chainsaw man, Fire Force, One Punch Man, Parasyte, Fairy Tail.",
       imgUrl: animeQuiz,
+      oneLiner:
+        "Hola weebs!!! Come test your knowledge of these anime and have a lot of fun.",
       rules: [
         "The event consists of four rounds",
-        "No extra time will be provided to any participant under any circumstance.",
+        "Participants will not be given extra time under any circumstances.",
         "In case of any conflict or misconduct, decisions taken by the management will be final and no excuses will be entertained.",
         "In this quiz, participants will be asked to answer the questions based on the above mentioned anime.",
+        "The first three rounds will be on the Kahoot platform, and the platform for the final round will be announced on the day of the event.",
+        "Participants are requested to install the Kahoot app beforehand.",
       ],
 
       roundDetails: [
         "For round 1, participants will get 25 to 30 easy questions.This round of quiz will be taken on the kahoot platform.According to ranking 60% of the participants will be moved from round one to round two.",
         "For round 2, participants will get 20 to 30 moderate questions.This round of quiz will be taken on the kahoot platform.From the second round 30% of the participants will be moved to round three",
         "For round 3, participants will get 20 hard questions.This round of quiz will be taken on the kahoot platform.Top 3 participants will be selected to the final round.",
-        "Three Difficult questions will be asked here for selection criteria.The mode of the quiz for this round will be  physical mode. The participant with the highest points in this round wins and becomes Shosha(winner).",
+        "For the final round, three difficult questions will be asked here for selection criteria.The mode of the quiz for this round will be  physical mode. The participant with the highest points in this round wins and becomes Shosha(winner).",
       ],
       judgingCriteria:
         "The winners will be decided on the basis of correct answers provided by them In case of the same number of correct answers, the time taken by the participants will be taken into consideration",
-    },
+        num :[{phn : "tel:9940295593" , name :"Stutish Baluni "}, {phn : "tel: 9500792304" , name :"Srivathsan"}],
+
+        link:" https://forms.gle/PSkN6ft5TjZJ4pJw5",  
+      },
     {
       title: "FOTOGRAFIA",
-      description: "Photography competition",
+      description:
+        "The world is a canvas, and you, the photographers are the paintbrushes that bring it to life. Discover the beauty and grandeur around us, and experience the magic of capturing life's most precious moments.",
       imgUrl: fotography,
+      oneLiner:
+        "Unleash the power of your lens and capture the world's splendor as you showcase your talent in our Fotografia.",
       rules: [
-        "Within the stipulated time participant can come to college and participate and take pictures",
+        " College ID is mandatory.",
+        " Participants can come to the college within the stipulated time frame to take pictures and participate in the contest. ",
+        " All submitted photos must be the original work of the individual which must be taken on the day of event .",
+        " The usage of photographs taken from Google or other social media platforms is strictly prohibited.",
+        " Candidates are requested to bring their own camera (either camera or mobile)",
       ],
 
       roundDetails: [
@@ -162,16 +204,22 @@ export const Projects = () => {
       ],
       judgingCriteria:
         "The winners will be decided on the basis of good quality and creative photographs.",
-    },
+        num :[{phn : "tel:7904480286" , name :"BALAJI SHANKAR"}, {phn : "tel:8870877433" , name :"KOUSIGA"}],
+
+        link:" https://forms.gle/5HL6xJV9rDoJv5DU9",  
+      },
     {
       title: "FREEZE FRAME",
-      description: "Guess the Movie",
+      description:
+        "Unleash your inner movie buff and join us in our thrilling game! With a mysterious movie frame devoid of any hints, it's up to your sharp detective skills to uncover the title. Think you have what it takes to emerge victorious? Join us and put your movie knowledge to the ultimate test!  ",
       imgUrl: freeze,
+      oneLiner:
+        " Tap into your inner detective and put your movie knowledge to the test in our Find the freeze frame  contest - can you spot them all?",
       rules: [
         "The game will consist of three rounds.",
-        "Participants should have their mobile phones with proper internet connectivity to participate",
+        "Participants should have their mobile phones with proper internet connectivity",
         "The first and second rounds will be conducted in Kahoot, an online quiz platform",
-        "The final round will be a buzzer round conducted manually.",
+        "The final round will be a manual buzzer round.",
         "The participant who identifies the maximum number of movies correctly in the final round will be declared the winner.",
       ],
 
@@ -185,11 +233,17 @@ export const Projects = () => {
       ],
       judgingCriteria:
         "Judging is based on Accuracy , Speed , Consistency, FairPlay and  Sportsmanship",
-    },
+        num :[{phn : "tel:6379485269" , name :"Ramya.A"}, {phn : "tel:9042188077" , name :"M.D.Balaji"}],
+
+        link:" https://forms.gle/xSCK59fcP8No7aWy6",  
+      },
     {
       title: "FUN FUED",
-      description: "Rapid Quiz Competition",
+      description:
+        "This event is based on the TV show FAMILY FEUD.         Two teams compete against each other and have to give out the most popular answers for the survey questions that come in the 1st rank.       The team that wins can take away the awards!",
       imgUrl: funFued,
+      oneLiner:
+        "Get ready for endless laughter and wacky challenges with Funfued - the ultimate party game!",
       rules: [
         "Team should consist of 4 to 6 members.",
         "Two teams should play at a time.",
@@ -208,11 +262,17 @@ export const Projects = () => {
         "The winners of round 1 will be playing round 2. Round 2 is the same as round 1 but with a slight twist. (Twist will be announced at the event) The game continues till we have a winning team.",
       ],
       judgingCriteria: "Winners will be decided on final points",
+      num :[{phn : "tel:6382658122" , name :"KARPAGAM "}, {phn : "tel:9176284410" , name :"VISHAL "}],
+
+      link:"https://forms.gle/Bnha3PpHkNBepKeD9      ",  
     },
     {
       title: "FILMLET",
-      description: "Find the film",
+      description:
+        "Gear up your mind, start your journey as a script writer, turn on your vision camera, put all your ideas in action and exhibit it as a short film in our event START CAMERA ACTION.",
       imgUrl: filmlet,
+      oneLiner:
+        "Calling all storytellers! Show off your skills and bring your scripts to life with our start camera action",
       rules: [
         "Theme is your choice. Vulgar contents are prohibited.",
         "Musical videos can also be submitted",
@@ -224,22 +284,29 @@ export const Projects = () => {
         "There is only one round in which top 5 short films will be shortlisted and presented before the judges ",
       ],
       judgingCriteria: "The final decision will be taken by the invited jury.",
+      num :[{phn : "tel:6369345296" , name :"Giriprasath "}, {phn : "tel:9360034648" , name :"Sanjana "}],
+
+      link:" https://forms.gle/qhZUPBZhcneNGxqL6",  
     },
     {
       title: "BUZZ CONCORRENZA",
-      description: "Buzzed Quiz",
+      description:
+        "Social Media nowadays is flooded with Meme's, but can you make one and make someone smile with your mind?The funniest of the funny, the most creative of the creative, bring your best memes to the battlefield and fight for the title of Meme Master.",
       imgUrl: buzz,
+      oneLiner:
+        "Get ready to laugh out loud and show off your meme-making skills in our meme event - the ultimate battle of the wits!",
       rules: [
-        "Within the stipulated time the participants must create/design the memes.",
+        "Participants must create/design memes within the stipulated time.",
 
-        "Participants can use design software of their choice.",
-        "Use of abusive language or controversial memes will not be considered.",
-        "The meme should be only of Image format.",
-        "The meme may be of any language/dialect ( Tamil, English, Telugu, Tanglish, Tenglish).",
-        "Each participant can submit 1 entry (Only JPEG) in the Google Form provided on the day of the event.",
-        "Absurd visuals or vulgar language is prohibited. Contents in the memes should not hurt feelings or anyone’s sentiments.",
-        "your meme must have a watermark ( Watermark must be your name ).",
-        "Don’t try to copy a meme from online sources. Any plagiarism will lead to direct disqualification.",
+        "Design software of participant's choice can be used.",
+        "Abusive language or controversial memes will not be considered.",
+        "Meme should only be of Image format.",
+        "Any language/dialect can be used.",
+        "Participants can submit 1 entry (Only JPEG) in the provided Google Form.",
+        " Absurd visuals or vulgar language is prohibited.",
+        "Contents in the memes should not hurt feelings or anyone's sentiments.",
+        "Meme must have a watermark with the participant's name.",
+        "Plagiarism will lead to direct disqualification.",
       ],
       roundDetails: [
         "Participants will be qualified on the basis of INSTAGRAM impression. Selected members will participate in ROUND 2. ",
@@ -248,11 +315,15 @@ export const Projects = () => {
 
       judgingCriteria:
         "The participants will be judged on the basis of creativity, content, and adherence to the theme.The memes must not be containing any absurd visuals or vulgar language. Final round judgment will be based on overall humor, social media reach and engagement and comments from the followers.",
-    },
+        num :[{phn : "tel:8124722810" , name :"Dharshinamoorthi"}, {phn : "tel:8939759393" , name :"Madhu Varshini "}],
+
+        link:" https://forms.gle/VwXBHuxfK3mcWpHg7 ",  
+      },
     {
       title: "BGMI",
       description: "Battles ground Mobile India",
       imgUrl: cod,
+      oneLiner: "",
       rules: ["The matches will be held in 2 modes."],
 
       roundDetails: [
@@ -261,39 +332,54 @@ export const Projects = () => {
         "The semi-finals will be  between Team2 (2nd place) & Team3 (3rd place). The winner of the semi-finals will be qualified for the finals.Team1 (1st position) and Team (semifinal winner) will play match 3 in TDM mode. The winner of match 3rd will be declared as the winner.",
       ],
       judgingCriteria: "Based on The performance of the entire Team",
+      num :[{phn : "tel:9087115451" , name :"Ahmed Nafil"}, {phn : "tel:9884212555" , name :"Sujarith"}],
+
+      link:" https://forms.gle/Aau33ZS9JD94ZFwX8",  
     },
   ];
 
   const outdoors = [
     {
       title: "With in the Boundaries",
-      description: "Box Cricket",
+      description:
+        "Get ready to play the ultimate game of box cricket! Showcase your cricket skills, battle it out with the best. Don’t miss the chance to be part of the action-packed box cricket tournament! Register now and secure your spot in the game. ",
       imgUrl: cric,
+      oneLiner:
+        "A perfect opportunity for all the cricket lovers out there!Chase your dreams as you chase the runs and defend your team. ",
       rules: [
-        "Each Team should have 8 players (including 2 substitutes).",
-        "Overs will be decided on that day.",
+        "Each Team should have 8 players, including 2 substitutes.",
+        "Number of Overs will be decided on the day of the match.",
         "Only Throw bowling is allowed.",
-        "Umpire’s decision will be considered the final call. ",
-        "No ABUSIVE Language will be encouraged If it is found so. The team will simply be disqualified.",
-        "Disqualification will be at every round so be sure you win every round.",
+        "The umpire’s decision is final.",
+        "No abusive language will be encouraged. If such behavior is observed, the team will be disqualified.",
       ],
 
-      roundDetails: [],
+      roundDetails: [
+        "The specific details regarding the round will be communicated on-site.",
+      ],
 
       judgingCriteria: "The final decision will be taken by the invited jury.",
+      num :[{phn : "tel:91775 37341" , name :"Sudha Praveen R"}, {phn : "tel:8438515217" , name :"Heubert Akash"}],
+
+      link:" https://forms.gle/hci3JwpkHbXJzmVb8",  
     },
     {
       title: "SmashZone",
-      description: "Badminton",
+      description:
+        "We are thrilled to invite you to our upcoming badminton extravaganza! This is not your typical badminton tournament - we have crafted an event packed with excitement, entertainment, and sportsmanship.",
       imgUrl: batminton,
+      oneLiner:
+        "As you walk in here, build your confidence for a feather on your cap by making everyone else's shuttle feathers down. Show them your strength and courage in an exciting match ahead.",
       rules: [
         "Every individual should bring his/her own racquet for the event. Shuttlecocks will be provided by the organizing team.",
 
-        "The tournament will be conducted in a knockout based format and each losing team/player will be eliminated after every round.",
+        "The tournament will be conducted in a knockout-based format, with each losing team/player being eliminated after each round.",
+
+        " The winning team/player will move on to the next round.",
 
         "Points will be awarded based on the rally point system",
 
-        "Referee/Line Umpire decision is considered as the final call and arguments are not tolerated after the final decision is made",
+        "The referee/line umpire’s decision is final and arguments will not be 	tolerated after the final decision is made.",
 
         "All players are requested to behave in the spirit of sportsmanship and fair play in order to enjoy the game.",
 
@@ -302,44 +388,66 @@ export const Projects = () => {
         "Participation Certificates will be provided to all the participants and the winners will be awarded with a special cash prize.",
       ],
 
-      roundDetails: [],
+      roundDetails: [
+        "The specific details regarding the round will be communicated on-site.",
+      ],
 
       judgingCriteria: "The final decision will be taken by the invited jury.",
+      num :[{phn : "tel:+919080504831" , name :"Krishna Kumar"}, {phn : "tel:+91 82486 39843" , name :"Sudharshini "}],
+
+      link:" https://forms.gle/DMD9hTsfo3osV1bT8",  
     },
     {
       title: "FUTSAL",
-      description: "Football",
+      description:
+        "Calling out all the football fanatics out there. It's time to go head-to-head. Step into the field, feel the rush of adrenaline inside you, and win it all.Pull up your socks, lace up your shoes, and go for the shots. After all, what is life without goals?",
       imgUrl: football,
+      oneLiner:
+        "Here is a call for the passionates of Football to show your athletic skills and pride for an edge-of-the-seat match. ",
       rules: [
-        "Each team consists of 5+3 players including the goalkeeper.",
-        "Throw is not allowed for the away ball, goalkeeper should not kick over half ground.",
+        "Each team consists of 5+3 players, including a goalkeeper.",
+        "Throw is not allowed for the away ball and the goalkeeper should not kick over half-ground.",
         "Match fixtures will be revealed on match day.",
         "All players must wear a full kit.",
-        "In case of a draw, a penalty will be conducted.",
-        "Referee's decision will be final. ",
+        "In case of a draw, a penalty shootout  will be conducted.",
+        "The Referee's decision will be final. ",
         "Refunds will not be available after registration.",
       ],
 
-      roundDetails: [],
+      roundDetails: [
+        "The specific details regarding the round will be communicated on-site.",
+      ],
 
       judgingCriteria: "The final decision will be taken by the invited jury.",
+      num :[{phn : "tel:8531021339" , name :"Sam vinston "}, {phn : "tel:7397704994" , name :"Ram prasath"}],
+
+      link:"https://forms.gle/njTdZhFGBhiw9QGSA",  
     },
     {
       title: "VOLLEY",
-      description: "VolleyBall",
+      description:
+        "To be a better volleyball player than you've ever been. You have to do something you've never done - Pass it better, set it higher, hit it harder, smash it with all your might. Talent wins games, but teamwork and intelligence win championships.Use this amazing opportunity to showcase your team's potential to the sports circle.",
+      oneLiner:
+        "Get ready to throw your hands up and get your wings to fly high to reach the skies.",
       imgUrl: volley,
       rules: [
-        ".Only college students are only allowed to participate",
-        "A college ID is mandatory.",
-        "A team can have 10 players(6 main 4 sub)",
-        "Matches will be held on the basis of the knock out process. ",
-        "The teams should follow their allocated times respectively.",
-        "Qualifier rounds having 1 set(21 points ) .semi- finals and finals having 3 sets.",
+        "Only college students are allowed to participate.",
+        "College ID is mandatory for all players.",
+        " A team can have 10 players (6 main & 4 subs).",
+        "Matches will be held on a knock-out basis.",
+        "The umpire’s decision is final.",
+        "The teams should follow their allocated times strictly.",
+        " Qualifier rounds have 1 set (21 points) and semi-finals and finals will have 3 sets.",
       ],
 
-      roundDetails: [],
+      roundDetails: [
+        "The specific details regarding the round will be communicated on-site.",
+      ],
 
       judgingCriteria: "The final decision will be taken by the invited jury.",
+      num :[{phn : "tel:9025435476" , name :"ANBAZHAGAN S"}, {phn : "tel:8838307489" , name :"Santhosh R"}],
+
+      link:" https://forms.gle/U8aGxY6B991ZGm4q7",  
     },
   ];
   const workshops = [
@@ -355,7 +463,10 @@ export const Projects = () => {
         "Learn how to connect to cloud IOT Platforms.",
       ],
       pre: ["  Notepads ", "Basics of  Programming "],
-    },
+  
+      num :[{phn : "tel:6374412610" , name :"Ranjith Kumar A"}, {phn : "tel:8870310990" , name :"Joseph Peter J"}],
+
+        link:" https://forms.gle/sAM1W3KHq9AtDaQb8",    },
     {
       title: "NETWORKING AND CYBERSECURITY",
       description: "Networking & Cybersecurity workshop",
@@ -367,6 +478,9 @@ export const Projects = () => {
         "Learn how to connect to cloud IOT Platforms.",
       ],
       pre: ["  Notepads ", "Basics of  Programming "],
+      num :[{phn : "tel: 9360964582  " , name :"Saminathan S"}, {phn : "tel: 8098003617" , name :"Hemaranjani M"}],
+
+        link:"https://forms.gle/k2htwVJWQp3WJYC37",  
     },
     {
       title: "BASICS OF MACHINE LEARNING AND MEDICAL IMAGING",
@@ -379,6 +493,9 @@ export const Projects = () => {
         "A basic project on Medical Image Processing.",
       ],
       pre: ["  Notepads ", "Basics of  Programming "],
+      num :[{phn : "tel:8072335322" , name :"Ajaymalolan K V "}, {phn : "tel:9148962377" , name :"Swarshaa S"}],
+
+      link:" https://forms.gle/9DFv8JSj1JLhzt1W7",  
     },
     {
       title: "MAKE YOUR PCB",
@@ -391,6 +508,9 @@ export const Projects = () => {
         "Learn how to connect to cloud IOT Platforms.",
       ],
       pre: ["  Notepads ", "Basics of  Programming "],
+      num :[{phn : "tel:8940496469" , name :"Sanjeev V "}, {phn : "tel:9486788449" , name :"Sriram R"}],
+
+      link:"https://forms.gle/CdM55GzSPgRipQGW9",  
     },
   ];
   const [showButtonGroup, setShowButtonGroup] = useState(false);
@@ -409,23 +529,6 @@ export const Projects = () => {
   }, []);
   const isSmallScreen = window.innerWidth < 780;
 
-  // const eventsVariants={
-  //   hidden:{opacity:0,scale:0},
-  //   visible:{opacity:1, scale:1,
-  //   transition:{duration:0.5}},
-  // };
-
-  // const textAnimte={
-  //   hidden:{opacity : 0 , scale :0},
-  //   visible:{
-  //   opacity:1,
-  //    scale :1,
-  //    transition: { duration: 0.5 }
-  //   }
-  // }
-  // const {ref, inView} = useInView({
-  //   threshold:0.5
-  // });
   const [ref, inView] = useInView({ threshold: 0.5, triggerOnce: true });
   const [scrollDirection, setScrollDirection] = useState("down");
 
@@ -456,64 +559,34 @@ export const Projects = () => {
   useEffect(() => {
     const timeoutId = setTimeout(() => {
       setShowDiv(true);
-    }, 8500);
+    },3600);
 
     return () => clearTimeout(timeoutId);
   }, []);
 
-  const headers = [
-    { 
-      id :"Technical",
-      about: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheet",
+ 
+
+  const borderVariants = {
+    animate: {
+      borderColor: ["yellow", "blue", "yellow"],
+      transition: {
+        yoyo: true,
+        repeat: Infinity,
+        duration: 2,
+      },
     },
-    { 
-      id :"Non Technical",
+  };
 
-      about: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheet",
-    },
-    { 
-      id :"Workshop",
-
-      about: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheet",
-    },
-    { 
-      id :"OutDoor",
-
-      about: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheet",
-    },
-  ];
-
-  function Abt() {
-    return(
-      <div className="border border-3 border-light mt-5">
-
-{headers.map((head, index) => {
-                return (
-                  <div className="row">
-                    <div className="col">
-                      {head.id}
-                    </div>
-                    <div className="col">
-                       {head.about}
-                      </div>
-                  </div>
-                );
-              })}
-
-      </div>
-    )
-  }
-
+ 
   return (
     <div>
       {showDiv ? (
         <motion.div animate={{ opacity: 1 }} initial={{ opacity: 0 }}>
           <div className="App overflow-x-hidden">
             <NavBar />
-           
 
             <section className="project" id="project">
-            <Abt />
+              <Abt />
               <Container>
                 <Row>
                   <Col size={12}>
@@ -530,17 +603,7 @@ export const Projects = () => {
                             variants={variants}
                             initial="hidden"
                             animate={inView ? "visible" : "hidden"}
-                          >
-                            <motion.h2>Events</motion.h2>
-                            <motion.p>
-                              Lorem Ipsum is simply dummy text of the printing
-                              and typesetting industry. Lorem Ipsum has been the
-                              industry's standard dummy text ever since the
-                              1500s, when an unknown printer took a galley of
-                              type and scrambled it to make a type specimen
-                              book.
-                            </motion.p>
-                          </motion.div>
+                          ></motion.div>
 
                           <Tab.Container id="" defaultActiveKey="first">
                             <div>
@@ -652,7 +715,7 @@ export const Projects = () => {
                                 >
                                   <Nav
                                     variant="pills"
-                                    className="justify-content-center align-items-center flex-nowrap"
+                                    className="justify-content-center align-items-center flex-nowrap mt-5"
                                   >
                                     <Nav.Item>
                                       <Nav.Link

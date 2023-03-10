@@ -32,3 +32,25 @@ code {
 .btn-primary {
   background-image: var(--primary-color);
 }
+
+/* width and height of the scrollbar */
+::-webkit-scrollbar {
+  width: 16px;
+  height: 6px;
+}
+
+/* scrollbar track */
+::-webkit-scrollbar-track {
+  background-color: #f5f5f5;
+}
+
+/* scrollbar thumb */
+::-webkit-scrollbar-thumb {
+  background-color:#f4c90b;
+    border-radius: 3px;
+}
+
+/* scrollbar thumb on hover */
+::-webkit-scrollbar-thumb:hover {
+  background-color:#FB8A3E;
+}

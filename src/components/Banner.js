@@ -128,12 +128,10 @@ export const Banner = () => {
                   backgroundClip: "text",
                   color: "transparent",
                   fontFamily:"Voice In My Head",
-                  letterSpacing: "0.15em" // or any value that suits your design
-
-
-                }}
+                  letterSpacing: "0.15em"
+ }}
               >
-                VIDYUTRENZ
+                VIDYUTRENZ '23
               </motion.h1>
               <br></br>
               <div className="mt-3">
@@ -167,34 +165,3 @@ export const Banner = () => {
 // git checkout master
 // git merge feature-a (in master)
 
-{
-  /* <div class="absolute top-0 left-0 flex justify-center items-center md:w-1/2 md:h-80 md:transform md:-translate-y-1/2 sm:w-4/5 sm:h-80 sm:transform sm:-translate-y-1/2 w-full h-full">
-          <h1 className="text-3xl font-bold text-white">
-           { `VIDYUTRENZ 23`}{" "}
-            <span
-              className="txt-rotate"
-              dataPeriod="1000"
-              data-rotate='[ "TECHNICAL", "NON-TECHNICAL", "WORKSHOP" ]'
-            >
-              <span className="wrap">{text}</span>
-            </span>
-          </h1>
-          <p>
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text
-            ever since the 1500s, when an unknown printer took a galley of type
-            and scrambled it to make a type specimen book.
-          </p>
-          <button onClick={() => {}}>
-            Let’s explore <ArrowRightCircle size={25} />
-          </button>
-        </div>
-
-        <div className="absolute bottom-0 right-0 px-4 py-2 bg-gray-800 text-white">
-          <h1 className="text-warning">VIDYUTRENZ</h1>
-            </div>
-
-        <Col xs={12} md={6} xl={5}> 
-           <img src={""} alt="" />
-        </Col> */
-}

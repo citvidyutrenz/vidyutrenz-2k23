@@ -1,9 +1,14 @@
 import { motion } from "framer-motion";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useLayoutEffect } from "react";
 
 const Loader = ({ count = 5 }) => {
   let [width, setWidth] = useState(window.innerWidth);
+
+  // useEffect(() => {
+  //   console.log("LOADER STARTED");
+  //   sessionStorage.setItem("loader", true);
+  // }, []);
 
   useLayoutEffect(() => {
     function updateWidth() {
@@ -14,8 +19,12 @@ const Loader = ({ count = 5 }) => {
   }, []);
 
   const svgvariants = {
-    hidden: {  opacity: 0, scale:0 },
-    visible: {  opacity: 1, scale: width > 768 ? 1.7 : 1.2 ,transition :{delay:1,duration:2}},
+    hidden: { opacity: 0, scale: 0.5 },
+    visible: {
+      opacity: 1,
+      scale: width > 768 ? 1.7 : 1.2,
+      transition: { duration: 1 },
+    },
   };
 
   const pathvariants1 = {
@@ -27,8 +36,7 @@ const Loader = ({ count = 5 }) => {
       opacity: 1,
       pathLength: 1,
       transition: {
-        delay:1,
-        duration: 3,
+        duration: 1,
       },
     },
   };
@@ -42,8 +50,8 @@ const Loader = ({ count = 5 }) => {
       opacity: 1,
       pathLength: 1,
       transition: {
-        delay: 3,
-        duration: 4,
+        delay: 1,
+        duration: 2,
       },
     },
   };
@@ -57,8 +65,8 @@ const Loader = ({ count = 5 }) => {
       opacity: 1,
       pathLength: 1,
       transition: {
-        delay: 4.5,
-        duration: 5,
+        delay: 2.5,
+        duration: 2,
       },
     },
   };

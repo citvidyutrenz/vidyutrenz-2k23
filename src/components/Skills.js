@@ -34,10 +34,10 @@ export const Skills = () => {
       items: 1,
     },
   };
-  const [ref, inView] = useInView({ threshold: 0.5 });
+  const [ref, inView] = useInView({ threshold: 0.65 });
 
   const variants = {
-    hidden: { opacity: 0,scale :0 },
+    hidden: { opacity: 0,scale :0.5 },
     visible: { opacity: 1, scale: 1, transition: { duration: 0.5 } },
   };
 
@@ -95,6 +95,10 @@ export const Skills = () => {
         </div>
       </motion.div>
       <img className="background-image-left" src={colorSharp} alt="" />
+
+      <div className='w-50 mx-auto bg-dark m-5' style={{height :700}}>
+
+</div>
     </section>
   );
 };

@@ -1,69 +1,3 @@
-// import { useState, useEffect } from "react";
-// import { Navbar, Nav, Container } from "react-bootstrap";
-// // import logo from '../assets/img/logo.svg';
-// import navIcon1 from '../assets/img/nav-icon1.svg';
-// import navIcon2 from '../assets/img/nav-icon2.svg';
-// import navIcon3 from '../assets/img/nav-icon3.svg';
-// import { HashLink } from 'react-router-hash-link';
-// import {
-//   BrowserRouter as Router
-// } from "react-router-dom";
-// import vidyutrenz from '../assets/img/vidyu.png';
-
-// export const NavBar = () => {
-
-//   const [activeLink, setActiveLink] = useState('home');
-//   const [scrolled, setScrolled] = useState(false);
-
-//   useEffect(() => {
-//     const onScroll = () => {
-//       if (window.scrollY > 50) {
-//         setScrolled(true);
-//       } else {
-//         setScrolled(false);
-//       }
-//     }
-
-//     window.addEventListener("scroll", onScroll);
-
-//     return () => window.removeEventListener("scroll", onScroll);
-//   }, [])
-
-//   const onUpdateActiveLink = (value) => {
-//     setActiveLink(value);
-//   }
-
-//   return (
-//     <Router>
-//       <Navbar expand="md" className={scrolled ? "scrolled" : ""}>
-//         <Container>
-//             <Navbar.Brand href="https://www.citchennai.edu.in/">
-//             <img src={vidyutrenz} alt="Logo" className="vidyulogo"/>
-
-//           </Navbar.Brand>
-//           <Navbar.Toggle aria-controls="basic-navbar-nav">
-//             <span className="navbar-toggler-icon"></span>
-//           </Navbar.Toggle>
-//           <Navbar.Collapse id="basic-navbar-nav">
-//             <Nav className="ms-auto">
-//               <Nav.Link href="#home" className={activeLink === 'home' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('home')}>Home</Nav.Link>
-//               <Nav.Link href="#skills" className={activeLink === 'skills' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('skills')}>Contact us</Nav.Link>
-//               <Nav.Link href="#projects" className={activeLink === 'projects' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('projects')}>About Us</Nav.Link>
-//             </Nav>
-//             {/* <span className="navbar-text">
-//               <div className="social-icon">
-
-//               </div>
-//               <HashLink to='#connect'>
-//                 <button className="vvd"><span>REGISTERATION</span></button>
-//               </HashLink>
-//             </span> */}
-//           </Navbar.Collapse>
-//         </Container>
-//       </Navbar>
-//     </Router>
-//   )
-// }
 
 import { useState, useEffect } from "react";
 import { Navbar, Nav, Container, Button } from "react-bootstrap";
@@ -96,7 +30,6 @@ function NavBar() {
   const logovariants = {
     hidden: {
       opacity: 0,
-   
     },
     visible: {
       opacity: 1,
@@ -114,15 +47,19 @@ function NavBar() {
     visible: {
       opacity: 1,
       y: 0,
-       
+      background:
+        "linear-gradient(to right, #f1e906, #ec6205, #ecca08, #d33e03)",
+      WebkitBackgroundClip: "text",
+      backgroundClip: "text",
+      color: "transparent",
+      fontFamily: 'Kanit',
+      letterSpacing: "0.15em",
+      scale:1.2
     },
-    hover:{
-
-    }
+   
   };
 
   const navigate = useNavigate();
-
 
   return (
     <>
@@ -178,24 +115,41 @@ function NavBar() {
             </div>
             <div className="offcanvas-body">
               <Nav className="flex-column">
-                <Nav.Link href="#" className="text-light" onClick={() => navigate("/events")}>
+                <Nav.Link
+                  href="#"
+                  className="text-light"
+                  onClick={() => navigate("/events")}
+                >
                   <div>Home</div>
                 </Nav.Link>
-                <Nav.Link href="#" className="text-light"  onClick={() => navigate("/about")}>
+                <Nav.Link
+                  href="#"
+                  className="text-light"
+                  onClick={() => navigate("/about")}
+                >
                   About
                 </Nav.Link>
-                <Nav.Link href="#" className="text-light"  onClick={() => navigate("/events")}>
+                <Nav.Link
+                  href="#"
+                  className="text-light"
+                  onClick={() => navigate("/events")}
+                >
                   Events
-                </Nav.Link>
-                <Nav.Link href="#" className="text-light"  onClick={() => navigate("/contact")}>
-                  Contact
                 </Nav.Link>
               </Nav>
             </div>
           </div>
         </>
       ) : (
-        <Navbar expand="lg" className=" opacity-75" style={{ background: "linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);"}}>
+        <Navbar
+          expand="lg"
+          className="opacity-50"
+          style={{
+            background:
+              "linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%)",
+            maxHeight: "12%",
+          }}
+        >
           <Container>
             <Navbar.Brand href="#">
               <motion.img
@@ -210,37 +164,57 @@ function NavBar() {
             <Navbar.Toggle aria-controls="navbar-nav" />
             <Navbar.Collapse id="navbar-nav">
               <Nav className="ms-auto">
-                <Nav.Link href="#" className="text-light ms-2 me-2"  onClick={() => navigate("/")} >
+                <Nav.Link
+                  href="#"
+                  className="text-light ms-2 me-2"
+                  onClick={() => navigate("/")}
+                >
+                  <motion.div
+                    variants={navbarvariants}
+                    initial="hidden"
+                    animate="visible"
+                    whileHover="hover"
+                    whileFocus="hover"
+
+
+                  >
+                    Home
+                  </motion.div>
+                </Nav.Link>
+                <Nav.Link
+                  href="#"
+                  className="text-light ms-2 me-2"
+                  onClick={() => navigate("/about")}
+                >
                   <motion.div
                   variants={navbarvariants}
                   initial="hidden"
                   animate="visible"
-             
-                  >Home</motion.div>
+                  whileHover="hover"
+                  whileFocus="hover"
+
+                    transition={{ delay: 0.7 }}
+
+                  >
+                    About
+                  </motion.div>
                 </Nav.Link>
-                <Nav.Link href="#" className="text-light ms-2 me-2"  onClick={() => navigate("/about")}>
+                <Nav.Link
+                  href="#"
+                  className="text-light ms-2 me-2"
+                  onClick={() => navigate("/events")}
+                >
                   <motion.div
                    variants={navbarvariants}
                    initial="hidden"
                    animate="visible"
-                   transition={{delay : 0.7}}
-                  >About</motion.div>
-                </Nav.Link>
-                <Nav.Link href="#" className="text-light ms-2 me-2" onClick={() => navigate("/events")}>
-                  <motion.div
-                   variants={navbarvariants}
-                   initial="hidden"
-                   animate="visible"
-                   transition={{delay : 1.2}}
-                  >Events</motion.div>
-                </Nav.Link>
-                <Nav.Link href="#" className="text-light ms-2 me-2">
-                  <motion.div
-                   variants={navbarvariants}
-                   initial="hidden"
-                   animate="visible"
-                   transition={{delay: 1.8}}
-                  >Contact</motion.div>
+                   whileHover="hover"
+                   whileFocus="hover"
+                   transition={{ delay: 1.2 }}
+
+                  >
+                    Events
+                  </motion.div>
                 </Nav.Link>
               </Nav>
             </Navbar.Collapse>

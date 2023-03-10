@@ -10,15 +10,23 @@ import { motion } from "framer-motion";
 import Loader from "./components/Loader";
 import NavBar from "./components/NavBar";
 import { Location } from "./components/Location";
+import VrLoader from "./components/VrLoader";
 // import VidEffects from "./components/VidEffects";
 
 function App() {
   const [showDiv, setShowDiv] = useState(false);
+  const [loader, setLoader] = useState(false);
+
+  // useEffect(()=>{
+  //   console.log("APP STARTED");
+  //   console.log(sessionStorage.getItem("loader"));
+  //   setLoader(sessionStorage.getItem("loader"));
+  // }, [])
 
   useEffect(() => {
     const timeoutId = setTimeout(() => {
       setShowDiv(true);
-    }, 8500);
+    }, 3600);
 
     return () => clearTimeout(timeoutId);
   }, []); // run once on mount
@@ -31,7 +39,6 @@ function App() {
             <NavBar />
             <Banner />
             <Skills />
-            {/* <Projects /> */}
             <Location />
             <Footer />
           </div>

@@ -38,7 +38,7 @@ function VrLoader() {
          height="150" >
     <style type="text/css">
     {`
-        .st0{fill:none;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+        .st0{fill:none;stroke:#fff;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
         `}
 
         </style>

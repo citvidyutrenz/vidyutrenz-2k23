@@ -14,10 +14,10 @@ export const ProjectCard = ({ project, state }) => {
     setTimeout(() => {
       setIsLoading(false);
     }, 2000);
+    console.log(project);
   };
   const handleModalClose = () => {
     setIsLoading(true);
-
     setShowModal(false);
   };
 
@@ -34,11 +34,11 @@ export const ProjectCard = ({ project, state }) => {
       return (
         <div className="row">
           <div className="col border border-md border-dark">
-            <h3 className="text-dark ms-3">Rules:</h3>
+            <h3 className="text-light ms-3">Rules:</h3>
             <ol className="text-dark" style={{ listStyleType: "decimal" }}>
               {project.rules.map((rule, index) => {
                 return (
-                  <li className="text-dark" key={index}>
+                  <li className="text-info" key={index}>
                     {rule}
                   </li>
                 );
@@ -46,20 +46,20 @@ export const ProjectCard = ({ project, state }) => {
             </ol>
           </div>
           <div className="col border border-md border-dark">
-            <h3 className="text-dark  ms-3">Round Details :</h3>
+            <h3 className="text-light  ms-3">Round Details :</h3>
 
             <ol className="text-dark" style={{ listStyleType: "decimal" }}>
               {project.roundDetails.map((rd, index) => {
                 return (
-                  <li className="text-dark" key={index}>
+                  <li className="text-info" key={index}>
                     {rd}
                   </li>
                 );
               })}
             </ol>
           </div>
-          <h3 className="text-dark">Judging Criteria :</h3>
-          <p className="text-dark">{project.judgingCriteria}</p>
+          <h3 className="text-light">Judging Criteria :</h3>
+          <p className="text-info">{project.judgingCriteria}</p>
 
           {/* <button className=""></button> */}
           {/* <p className="text-dark">{project.description}</p> */}
@@ -81,11 +81,11 @@ export const ProjectCard = ({ project, state }) => {
     <>
       <Col size={12} sm={6} md={4}>
         <motion.div
-          
-          whileHover={{ scale: 1.2 }}
-          className="d-flex flex-column justify-content-center align-items-center"
+          whileHover={{ scale: 1.1 }}
+          whileFocus={{ scale: 1.1 }}
+          className="d-flex flex-column justify-content-center align-items-center "
         >
-         <p className="text-light mt-5">{project.title}</p>
+          <p className="text-light mt-5 bg-dark">{project.title}</p>
 
           <img
             src={project.imgUrl}
@@ -93,7 +93,7 @@ export const ProjectCard = ({ project, state }) => {
             onClick={handleModalOpen}
             className="w-50 border border-rounded rounded-4"
           />
-          <p className="text-light">{project.description}</p>
+          <p className="text-light bg-dark">{project.oneLiner}</p>
         </motion.div>
       </Col>
 
@@ -106,11 +106,12 @@ export const ProjectCard = ({ project, state }) => {
         <Modal.Header
           closeButton
           onHide={handleModalClose}
-          style={{ backgroundColor: "#9DE3FF" }}
+          style={{   background:
+            "linear-gradient(to right, #ec6205, #F8DA2F)", }}
         >
-          <Modal.Title className="text-dark fs-2">{project.title}</Modal.Title>
+          <Modal.Title className="text-light fs-2">{project.title}</Modal.Title>
         </Modal.Header>
-        <Modal.Body style={{ backgroundColor: "#9DE3FF" }}>
+        <Modal.Body style={{ backgroundColor: "black" }}>
           {isLoading ? (
             <div className="d-flex justify-content-center">
               <VrLoader />
@@ -119,10 +120,25 @@ export const ProjectCard = ({ project, state }) => {
             <Rules />
           )}
         </Modal.Body>
-        <Modal.Footer style={{ backgroundColor: "#9DE3FF" }}>
-          <Button variant="secondary" onClick={handleModalClose}>
-            Close
-          </Button>
+        <Modal.Footer
+          style={{ backgroundColor: "black" }}
+          className="d-flex justify-content-between"
+        >
+          <div className="d-flex">
+            {project.num.map((val) => (
+              <div>
+                <a href={val.phn} target="_blank">
+                  <button className="btn btn-outline-info m-2">
+                    <i class="fa-solid fa-phone"></i>
+                    {val.name}
+                  </button>
+                </a>
+              </div>
+            ))}
+          </div>
+          <a href={project.link} target="_blank">
+            <Button variant="outline-success">Register</Button>
+          </a>
         </Modal.Footer>
       </Modal>
     </>
