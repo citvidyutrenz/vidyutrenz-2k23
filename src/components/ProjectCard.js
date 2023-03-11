@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import VrLoader from "./VrLoader";
 
+
 export const ProjectCard = ({ project, state }) => {
   const [showModal, setShowModal] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
@@ -25,9 +26,36 @@ export const ProjectCard = ({ project, state }) => {
     if (state === "workshop") {
       return (
         <div>
-          <p className="text-dark">{project.outcomes}</p>
+          {/* <p className="text-dark">{project.outcomes}</p>
           <p className="text-dark">{project.pre}</p>
-          <p className="text-dark">{project.description}</p>
+          <p className="text-dark">{project.description}</p> */}
+          <div className="row">
+            <div className="col border border-md border-dark">
+              <h3>OutComes :</h3>
+              <ul className="text-light" >
+                {project.outcomes.map((out, index) => {
+                  return (
+                    <li className="text-tertiary" key={index}>
+                      {out}
+                    </li>
+                  );
+                })}
+              </ul>
+            </div>
+            <div className="col border border-md border-dark">
+              <h3>Pre-Requesites</h3>
+              <ul className="text-light" >
+                {project.pre.map((pre, index) => {
+                  return (
+                    <li className="text-tertiary" key={index}>
+                      {pre}
+                    </li>
+                  );
+                })}
+              </ul>
+            </div>
+          </div>
+          <p className="text-light">{project.description}</p>
         </div>
       );
     } else {
@@ -35,31 +63,31 @@ export const ProjectCard = ({ project, state }) => {
         <div className="row">
           <div className="col border border-md border-dark">
             <h3 className="text-light ms-3">Rules:</h3>
-            <ol className="text-dark" style={{ listStyleType: "decimal" }}>
+            <ul className="text-dark" >
               {project.rules.map((rule, index) => {
                 return (
-                  <li className="text-info" key={index}>
+                  <li className="text-tertiary" key={index}>
                     {rule}
                   </li>
                 );
               })}
-            </ol>
+            </ul>
           </div>
           <div className="col border border-md border-dark">
             <h3 className="text-light  ms-3">Round Details :</h3>
 
-            <ol className="text-dark" style={{ listStyleType: "decimal" }}>
+            <ul className="text-dark" style={{ listStyleType: "decimal" }}>
               {project.roundDetails.map((rd, index) => {
                 return (
-                  <li className="text-info" key={index}>
+                  <li className="text-tertiary" key={index}>
                     {rd}
                   </li>
                 );
               })}
-            </ol>
+            </ul>
           </div>
           <h3 className="text-light">Judging Criteria :</h3>
-          <p className="text-info">{project.judgingCriteria}</p>
+          <p className="text-tertiary">{project.judgingCriteria}</p>
 
           {/* <button className=""></button> */}
           {/* <p className="text-dark">{project.description}</p> */}
@@ -85,7 +113,7 @@ export const ProjectCard = ({ project, state }) => {
           whileFocus={{ scale: 1.1 }}
           className="d-flex flex-column justify-content-center align-items-center "
         >
-          <p className="text-light mt-5 bg-dark">{project.title}</p>
+          <h4 className="text-primar text-center mt-5">{project.title}</h4>
 
           <img
             src={project.imgUrl}
@@ -93,7 +121,7 @@ export const ProjectCard = ({ project, state }) => {
             onClick={handleModalOpen}
             className="w-50 border border-rounded rounded-4"
           />
-          <p className="text-light bg-dark">{project.oneLiner}</p>
+          <p className="text-light">{project.oneLiner}</p>
         </motion.div>
       </Col>
 
@@ -101,17 +129,17 @@ export const ProjectCard = ({ project, state }) => {
         show={showModal}
         onHide={handleModalClose}
         size="lg"
-        style={{ marginTop: "70px", maxHeight: "600px" }}
+        style={{ marginTop: "80px", maxHeight: "650px" }}
       >
         <Modal.Header
           closeButton
           onHide={handleModalClose}
-          style={{   background:
-            "linear-gradient(to right, #ec6205, #F8DA2F)", }}
+          style={{ background: "linear-gradient(to right,  #F8DA2F, #ec6205)" }}
         >
-          <Modal.Title className="text-light fs-2">{project.title}</Modal.Title>
+
+          <Modal.Title className="fs-2" style={{color :"#AA367C"}}>{project.title}</Modal.Title>
         </Modal.Header>
-        <Modal.Body style={{ backgroundColor: "black" }}>
+        <Modal.Body style={{ backgroundColor: "black" ,overflowY: "auto" }}>
           {isLoading ? (
             <div className="d-flex justify-content-center">
               <VrLoader />
@@ -121,15 +149,15 @@ export const ProjectCard = ({ project, state }) => {
           )}
         </Modal.Body>
         <Modal.Footer
-          style={{ backgroundColor: "black" }}
+          style={{ background: "linear-gradient(to right,  #F8DA2F, #ec6205)" }}
           className="d-flex justify-content-between"
         >
           <div className="d-flex">
             {project.num.map((val) => (
               <div>
                 <a href={val.phn} target="_blank">
-                  <button className="btn btn-outline-info m-2">
-                    <i class="fa-solid fa-phone"></i>
+                  <button className="btn btn-tertiary m-2 text-light">
+                    <i class="fa-solid fa-phone m-1"></i>
                     {val.name}
                   </button>
                 </a>
@@ -137,7 +165,7 @@ export const ProjectCard = ({ project, state }) => {
             ))}
           </div>
           <a href={project.link} target="_blank">
-            <Button variant="outline-success">Register</Button>
+            <Button variant="tertiary" className="text-light">Register</Button>
           </a>
         </Modal.Footer>
       </Modal>

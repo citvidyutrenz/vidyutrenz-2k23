@@ -47,9 +47,8 @@ function NavBar() {
     visible: {
       opacity: 1,
       y: 0,
-      background:
-        "linear-gradient(to right, #f1e906, #ec6205, #ecca08, #d33e03)",
-      WebkitBackgroundClip: "text",
+      background:"#fff",
+     WebkitBackgroundClip: "text",
       backgroundClip: "text",
       color: "transparent",
       fontFamily: 'Kanit',
@@ -143,10 +142,10 @@ function NavBar() {
       ) : (
         <Navbar
           expand="lg"
-          className="opacity-50"
+          className="opacity-100"
           style={{
             background:
-              "linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%)",
+              "linear-gradient(90.21deg, #4A2FBD -5.91%, #AA367C 111.58%)",
             maxHeight: "12%",
           }}
         >

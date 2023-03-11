@@ -37,7 +37,7 @@ export const Skills = () => {
   const [ref, inView] = useInView({ threshold: 0.65 });
 
   const variants = {
-    hidden: { opacity: 0,scale :0.5 },
+    hidden: { opacity: 0, scale: 0.5 },
     visible: { opacity: 1, scale: 1, transition: { duration: 0.5 } },
   };
 
@@ -54,15 +54,18 @@ export const Skills = () => {
           <div className="col-12">
             <div className="skill-bx wow zoomIn">
               <h2
-              style={{ background:
-                "linear-gradient(to right, #f1e906, #ec6205, #ecca08, #d33e03)",
-              WebkitBackgroundClip: "text",
-              backgroundClip: "text",
-              color: "transparent",
-              fontFamily:"Voice In My Head",
-              letterSpacing: "0.15em"}}
-
-              >Events</h2>
+                style={{
+                  background:
+                    "linear-gradient(to right, #f1e906, #ec6205, #ecca08, #d33e03)",
+                  WebkitBackgroundClip: "text",
+                  backgroundClip: "text",
+                  color: "transparent",
+                  fontFamily: "Voice In My Head",
+                  letterSpacing: "0.15em",
+                }}
+              >
+                Events
+              </h2>
               <p>
                 Lorem Ipsum is simply dummy text of the printing and typesetting
                 industry.<br></br> Lorem Ipsum has been the industry's standard
@@ -96,9 +99,44 @@ export const Skills = () => {
       </motion.div>
       <img className="background-image-left" src={colorSharp} alt="" />
 
-      <div className='w-50 mx-auto bg-dark m-5' style={{height :700}}>
 
-</div>
+      <div class="container">
+  <div class="row">
+      <div
+        className="w-75 w-md-50 w-lg-50 mx-auto text-center m-5"
+        style={{ height: "auto" }}
+      >
+        <h1
+          className="mt-3"
+          style={{
+            background:
+              "linear-gradient(to right, #f1e906, #ec6205, #ecca08, #d33e03)",
+            WebkitBackgroundClip: "text",
+            backgroundClip: "text",
+            color: "transparent",
+            fontFamily: "Voice In My Head",
+            letterSpacing: "0.15em",
+          }}
+        >
+          DIGIVERZE
+        </h1>
+        <h3 style={{fontFamily :"Inconsolata" , letterSpacing :"0.02em" ,lineHeight :1.3}}>
+          {" "}
+          The Digital and Physical world are starting to come together more
+          seamlessly. We're all moving into a new digital world where we are
+          gonna have the little clone versions of ourselves to represent our
+          identity. The web makes people hypocritical it encourages to take
+          pseudonyms. There are no boundaries in digital era. Digiverze breaks
+          the limitations of the reality. We are analog human beings in the
+          digital world facing the quantum era, with technology we can achieve
+          the unimaginable. People think digital universe depends on AI but it's
+          actually on Neural Networks. Communication and Connection Makes
+          everything better.{" "}
+        </h3>
+        <h4 className="text-end text-primar mt-3" style={{fontFamily :"Kanit" , letterSpacing :"0.05em" }}>A Way To Future...! </h4>
+      </div>
+      </div>
+      </div>
     </section>
   );
 };
