@@ -76,7 +76,7 @@ const Loader = ({ count = 5 }) => {
       variants={svgvariants}
       initial="hidden"
       animate="visible"
-      width="400"
+      width="95%"
       height="300"
       viewBox="0 0 2000 2500"
       fill="none"

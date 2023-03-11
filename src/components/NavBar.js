@@ -59,13 +59,7 @@ function NavBar() {
   };
 
   const navigate = useNavigate();
-//   const offcanvas = new bootstrap.Offcanvas(document.querySelector('#offcanvasNav'))
-// offcanvas._element.addEventListener('shown.bs.offcanvas', function () {
-//   document.body.style.overflow = 'visible'
-// })
-// offcanvas._element.addEventListener('hidden.bs.offcanvas', function () {
-//   document.body.style.overflow = ''
-// })
+
 
   return (
     <>
