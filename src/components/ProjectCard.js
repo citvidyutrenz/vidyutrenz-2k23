@@ -76,7 +76,7 @@ export const ProjectCard = ({ project, state }) => {
           <div className="col border border-md border-dark">
             <h3 className="text-light  ms-3">Round Details :</h3>
 
-            <ul className="text-dark" style={{ listStyleType: "decimal" }}>
+            <ul className="text-dark">
               {project.roundDetails.map((rd, index) => {
                 return (
                   <li className="text-tertiary" key={index}>
@@ -107,6 +107,17 @@ export const ProjectCard = ({ project, state }) => {
 
   return (
     <>
+     <style>
+        {`
+          ul {
+            list-style: none; 
+          }
+          li::before {
+            content: "\\2192"; 
+            margin-right: 0.5em;
+          }
+        `}
+      </style>
       <Col size={12} sm={6} md={4}>
         <motion.div
           whileHover={{ scale: 1.1 }}

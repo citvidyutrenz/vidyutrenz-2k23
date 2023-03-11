@@ -64,7 +64,8 @@ function NavBar() {
     <>
       {isMobile ? (
         <>
-          <div className="row container-fluid">
+          <div className="row container-fluid" style={{ background:
+              "linear-gradient(90.21deg, #4A2FBD -5.91%, #AA367C 111.58%)", padding:0 ,margin :0}}>
             <div className="col">
               <div className="d-flex flex-row">
                 <img
@@ -79,7 +80,7 @@ function NavBar() {
             <div className="col">
               <div className="d-flex flex-row-reverse">
                 <Button
-                  variant="outline-secondary"
+                  variant="outline-dark"
                   className="mb-2 mt-4 btn-lg me-2"
                   data-bs-toggle="offcanvas"
                   href="#offcanvasNav"
@@ -95,10 +96,13 @@ function NavBar() {
           </div>
 
           <div
-            className="offcanvas offcanvas-end bg-dark"
+            className="offcanvas offcanvas-end"
             tabIndex="-1"
             id="offcanvasNav"
             aria-labelledby="offcanvasNavLabel"
+            style={{ background:
+              "linear-gradient(90.21deg, #4A2FBD -5.91%, #AA367C 111.58%)", padding:0 ,margin :0}}
+
           >
             <div className="offcanvas-header">
               <h5 className="offcanvas-title" id="offcanvasNavLabel">

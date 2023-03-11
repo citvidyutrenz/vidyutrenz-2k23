@@ -108,7 +108,7 @@ export const Banner = () => {
         playsInline
         loop
         className="w-100 object-cover opacity-25"
-        style={{ minHeight: 450 }}
+        style={{ minHeight: 550 }}
         onLoadedData={handleVideoLoaded}
       />
 
@@ -149,11 +149,11 @@ export const Banner = () => {
               </motion.p>
               </div>
               <br></br>
-              {/* <Coundown /> */}
             </Col>
           </Row>
 
         </Container>
+        <Coundown />
 
       </div>
 

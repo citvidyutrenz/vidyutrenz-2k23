@@ -44,7 +44,7 @@ function About() {
     <div>
     {showDiv ? (
       <motion.div animate={{ opacity: 1 }} initial={{ opacity: 0 }}>
-        <div className="App overflow-x-hidden">
+        <div className="">
           <NavBar />
           
           <div className='w-75 mx-auto border border-info p-2' style={{height :"auto" ,marginTop : 100 , marginBottom :50}}>

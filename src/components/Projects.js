@@ -684,6 +684,7 @@ export const Projects = () => {
     <div>
       {showDiv ? (
         <motion.div animate={{ opacity: 1 }} initial={{ opacity: 0 }}>
+          
           <div className="App overflow-x-hidden">
             <NavBar />
 

@@ -78,11 +78,3 @@ code {
   background-color:#7300ff;
 }
 
-ul {
-  list-style: none; /* Remove default list style */
-}
-
-li::before {
-  content: "\2192"; /* Use unicode value for right arrow */
-  margin-right: 0.5em; /* Add some space between the arrow and text */
-}
