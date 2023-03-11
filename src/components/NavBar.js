@@ -141,7 +141,6 @@ function NavBar() {
                   About
                 </Nav.Link>
                 <Nav.Link
-                  // href="#"
                   className="text-light"
                   onClick={() => navigate("/events")}
                 >
