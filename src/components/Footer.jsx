@@ -5,11 +5,26 @@ import { SiGmail } from "react-icons/si";
 import citLogo from "../assets/img/citTransLogo2.png";
 import { useInView } from "framer-motion";
 import { motion } from "framer-motion";
+import { useNavigate } from "react-router-dom";
+
 // citTransLogo2.png
 export const Footer = () => {
+
+  const navigate = useNavigate();
+
   const variants = {
     hover: {
       scale: 1.1,
+    },
+  };
+  const variants2 = {
+    hover: {
+      scale: 1.1,
+      background:
+      "linear-gradient(to right, #f1e906, #ec6205, #ecca08, #d33e03)",
+    WebkitBackgroundClip: "text",
+    backgroundClip: "text",
+    color: "transparent",
     },
   };
   
@@ -23,7 +38,7 @@ export const Footer = () => {
             whileHover="hover"
               className="d-flex justify-content-start  "
             >
-              <a href="#" target="_blank">
+              <a href="https://www.citchennai.edu.in/" target="_blank">
                 <img src={citLogo} alt="Logo" className="w-50 mx-auto" />
               </a>
             </motion.div>
@@ -43,7 +58,8 @@ export const Footer = () => {
                   color: "#f22d00",
                   scale: 1.2,
                 }}
-                href="https://www.youtube.com/"
+                href="https://www.youtube.com/@citvidyutrenz9576/featured"
+                target={"_blank"}
                 className="a"
                 style={{ textDecoration: "none",color: "white" }}
               >
@@ -57,7 +73,9 @@ export const Footer = () => {
                 color: "#E1306C",
                 scale: 1.2,
               }}
-                href="https://www.instagram.com/"
+                href="https://www.instagram.com/cit.vidyutrenz/"
+                target={"_blank"}
+
                 className="a"
                 style={{ textDecoration: "none", color: "white" }}
               >
@@ -71,7 +89,9 @@ export const Footer = () => {
                 color: "#0099FE",
                 scale: 1.2,
               }}
-                href="https://www.linkedin.com/"
+                href="https://www.linkedin.com/company/cit-vidyutrenz/about/"
+                target={"_blank"}
+
                 className="a"
                 style={{ textDecoration: "none", color: "white"  }}
               >
@@ -85,10 +105,11 @@ export const Footer = () => {
                 color: "#12D8ED",
                 scale: 1.2,
               }}
-                href="https://play.google.com/store"
+                href="mailto:vidyutrenz.ece@citchennai.net"
                 className="a"
                 style={{ textDecoration: "none", color: "white"  }}
               >
+                
                 <SiGmail
                   className="mt-3 me-2 ms-2 mb-3"
                   style={{ fontSize: "32px" }}
@@ -107,23 +128,35 @@ export const Footer = () => {
             color: "transparent",
             letterSpacing: "0.15em",}}>ABOUT</motion.h4>
               <motion.a
+              variants={variants2}
+              whileHover="hover"
                 href="#"
                 className="mt-2 mb-2"
                 style={{ textDecoration: "none", color: "white"  }}
+                onClick={() => navigate("/about")}
+
               >
                 College
               </motion.a>
               <motion.a
+              variants={variants2}
+              whileHover="hover"
                 href="#"
                 className="mt-2 mb-2"
                 style={{ textDecoration: "none", color: "white"  }}
+                onClick={() => navigate("/about")}
+
               >
                 Department
               </motion.a>
               <motion.a
+              variants={variants2}
+              whileHover="hover"
                 href="#"
                 className="mt-2 mb-2"
                 style={{ textDecoration: "none", color: "white"  }}
+                onClick={() => navigate("/about")}
+
               >
                 Symposium
               </motion.a>

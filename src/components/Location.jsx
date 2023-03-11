@@ -57,8 +57,7 @@ export const Location = () => {
   return (
     <section className="section" style={{ backgroundColor: "black" }}>
       <hr />
-      <div className="row mt-5 mb-5 "
->
+      <div className="row mt-5 mb-5 ">
         <motion.div
           ref={ref}
           variants={variants}
@@ -66,19 +65,25 @@ export const Location = () => {
           animate={inView ? "visible" : "visible"}
           className="section__app mx-auto col text-center mt-5 mb-5"
         >
-          <h4 style={{ background:
-        "linear-gradient(to right, #f1e906, #ec6205, #ecca08, #d33e03)",
-      WebkitBackgroundClip: "text",
-      backgroundClip: "text",
-      color: "transparent",
-      letterSpacing: "0.15em",}}>Get our App on playstore</h4>
+          <h4
+            style={{
+              background:
+                "linear-gradient(to right, #f1e906, #ec6205, #ecca08, #d33e03)",
+              WebkitBackgroundClip: "text",
+              backgroundClip: "text",
+              color: "transparent",
+              letterSpacing: "0.15em",
+            }}
+          >
+            Get our App on playstore
+          </h4>
           <div>
-            <a href="#">
+            <a href="https://play.google.com/store/apps/details?id=com.vidyutrenz.vidyutrenz_app" target={"_blank"}>
               <motion.svg
                 // variants={svgvariants}
                 // initial="hidden"
                 // animate="visible"
-                height="150px"
+                height="100px"
                 width="200px"
                 version="1.1"
                 id="Layer_1"
@@ -163,16 +168,22 @@ export const Location = () => {
           animate={inView ? "visible" : "visible"}
           className="section__location mx-auto col mt-5 mb-5"
         >
-          <h4 style={{ background:
-        "linear-gradient(to right, #f1e906, #ec6205, #ecca08, #d33e03)",
-      WebkitBackgroundClip: "text",
-      backgroundClip: "text",
-      color: "transparent",
-      letterSpacing: "0.15em",}}>Location</h4>
+          <h4
+            style={{
+              background:
+                "linear-gradient(to right, #f1e906, #ec6205, #ecca08, #d33e03)",
+              WebkitBackgroundClip: "text",
+              backgroundClip: "text",
+              color: "transparent",
+              letterSpacing: "0.15em",
+            }}
+          >
+            Location
+          </h4>
           <a href="https://goo.gl/maps/u4Uo9Kq6WwNquFVr5" target="_blank">
             <svg
               width="200px"
-              height="150px"
+              height="100px"
               viewBox="-55.5 0 367 367"
               version="1.1"
               xmlns="http://www.w3.org/2000/svg"

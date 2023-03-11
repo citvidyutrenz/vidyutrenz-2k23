@@ -1,25 +1,25 @@
 import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
-import papyrus from "../assets/img/papyrus.png";
-import inventino from "../assets/img/invento.png";
-import nyquizest from "../assets/img/nyquizzst.png";
-import enigma from "../assets/img/enigma.png";
-import renegade from "../assets/img/renegade.png";
-import animeQuiz from "../assets/img/anime quiz.png";
-import fotography from "../assets/img/photogra.png";
-import freeze from "../assets/img/frreze frame.png";
-import funFued from "../assets/img/fun fued.png";
-import filmlet from "../assets/img/filmlet.png";
-import buzz from "../assets/img/buzz conc.png";
-import cod from "../assets/img/cod.png";
-import cric from "../assets/img/cric.png";
-import batminton from "../assets/img/batminton.png";
-import football from "../assets/img/futsal.png";
-import volley from "../assets/img/volleyball.png";
-import iot from "../assets/img/74036-iot-transparent.gif";
-import nw from "../assets/img/nw.png";
-import ml from "../assets/img/ml.png";
-import pcb from "../assets/img/pcb.png";
+import papyrus from "../assets/img/papyrus.gif";
+import inventino from "../assets/img/inventino.gif";
+import nyquizest from "../assets/img/nyquist.gif";
+import enigma from "../assets/img/enigma.gif";
+import renegade from "../assets/img/renegade.gif";
+import animeQuiz from "../assets/img/anime.gif";
+import fotography from "../assets/img/photographyy.gif";
+import freeze from "../assets/img/freeze frame.gif";
+import funFued from "../assets/img/a1.gif";
+import filmlet from "../assets/img/flimlet.gif";
+import buzz from "../assets/img/meme.gif";
+import cod from "../assets/img/bgmi.gif";
+import cric from "../assets/img/cricket.gif";
+import batminton from "../assets/img/badminton.gif";
+import football from "../assets/img/football.gif";
+import volley from "../assets/img/volleyball.gif";
+import iot from "../assets/img/iot.gif";
+import nw from "../assets/img/cybersecurity.gif";
+import ml from "../assets/img/machine learning.gif";
+import pcb from "../assets/img/pcb.gif";
 import React, { useState, useEffect } from "react";
 import { ButtonGroup, Button } from "react-bootstrap";
 
@@ -40,9 +40,11 @@ export const Projects = () => {
   const technicals = [
     {
       title: "PAPYRUS",
-      description: "Paper Presentation",
+      description:
+        "A Healthy Competition always helps us to do our best. The success of your presentation will be judged not only by the knowledge you send but also by what the listener receives. This is the right opportunity! Come and prove yourself!      ",
       imgUrl: papyrus,
-      oneLiner: "",
+      oneLiner:
+        "Words are power. Words have power. Words could be your power. It is a great opportunity to show your stuff through your paper presentations.      ",
 
       rules: [
         "The applicant must turn in their abstract prior to the deadline",
@@ -50,49 +52,62 @@ export const Projects = () => {
         "It is required to send a soft copy of the presentation during registration.",
         "Each team will have a time constraint of 5 to 8 minutes.",
         "The results are accorded to the jury's judgment.",
+        "On spot registrations are acceptable only if the candidates have a valid soft copy.        ",
       ],
 
-      roundDetails: [],
+      roundDetails: ["The event has only one round.The participants have to present their paper in front of the judges for at least 5 to 6 minutes and they will be questioned about their paper by the judges for a time limit of 2 minutes.Based on these criteria, winners will be selected.      "],
 
       judgingCriteria:
-        "On spot registrations are acceptable only if the candidates have a valid soft copy.",
-      num :[{phn : "tel:9942787733" , name :"Ratheesh "}, {phn : "tel:8778947054" , name :"Ariharavelava "}],
-      
-      link:" https://forms.gle/WduLM8kZDzxkoVSg7",  
+        "Presentation will be judged based on the originality of the content, clarity and content delivery. The questions that will be asked by the judges will play a major role.",
+      num: [
+        { phn: "tel:9942787733", name: "Ratheesh " },
+        { phn: "tel:8778947054", name: "Ariharavelava " },
+      ],
+
+      link: " https://forms.gle/WduLM8kZDzxkoVSg7",
     },
     {
       title: "INVENTINO",
-      description: "Project Presentation",
+      description:
+        "Inventino is an engaging project presentation event that aims to showcase the hard work and achievements of talented individuals or teams. Through clear and concise presentations, participants have the opportunity to share their objectives, processes, and outcomes, while inspiring others with their creativity and innovation.       ",
       imgUrl: inventino,
+      oneLiner:
+        "Join us at Inventino, showcase your project, where innovation meets communication, and creativity knows no bounds.",
       rules: [
-        "Ensure the team is limited to 3 members.",
-        "The electronics and communication domains should be the focus of the project.",
-        "To ensure that all teams participate, each team will be given a specified time window between 8 to 10 minutes.",
-        "Following each presentation, there will be a viva session in which the participants will be questioned about their work. Marks will be assigned based on the response given, and these marks will be counted towards the final evaluation.",
-        "Working prototype is mandatory.",
-        "A Hardcopy of abstract and prototype must be brought.",
-        "The decision of the Adjudication Panel is final.",
+        "Teams must be limited to 3 members.        ",
+        "Projects must focus on the electronics and communication domains.",
+        "Each team will be given a specified time window of 8 to 10 minutes for their presentation.        ",
+        "Following each presentation, there will be a viva session in which participants will be questioned about their work.        ",
+        "Marks will be assigned based on the response given during the viva session and these marks will be counted towards the final evaluation.",
+        "A working prototype is mandatory for all projects.",
+        "A hardcopy of the abstract and prototype must be brought to the event.",
+        "The decision of the Adjudication Panel is final.        ",
       ],
 
-      roundDetails: [],
+      roundDetails: [""],
 
       judgingCriteria: "The final decision will be taken by the invited jury.",
-      num :[{phn : "tel:9942787733" , name :"Ratheesh "}, {phn : "tel:6379204221" , name :"HARI "}],
+      num: [
+        { phn: "tel:9942787733", name: "Ratheesh " },
+        { phn: "tel:6379204221", name: "HARI " },
+      ],
 
-      link:" https://forms.gle/k5uLNCAnXBUxFR6aA",  
+      link: " https://forms.gle/k5uLNCAnXBUxFR6aA",
     },
     {
       title: "NYQUIZST",
-      description: "Circuit Redesigning",
+      description:
+        "Nyquizzzst is an exhilarating challenge that tests participant’s ability to creatively redesign a circuit diagram under pressure. With limited time, competitors must tap into their problem-solving skills and innovative thinking to produce an improved circuit design.      ",
       imgUrl: nyquizest,
-      oneLiner: "",
+      oneLiner:
+        "Design is not just what it looks like and feels like. Design it how it works. Train your hands to design some circuits      ",
 
       rules: [
         "Team size: 2 per team.",
-        "Time limit of the event.",
-        "Teams with top scores will be qualified.",
+        "Participants must maintain the time limit of the event.        ",
+        "Teams with top scores will be qualified.        ",
         "Each team will have a time constraint of 5 to 8 minutes.",
-        "Participants should redesign the circuit in tinkercad.",
+        "Participants should redesign the circuit in tinkercad        .",
       ],
 
       roundDetails: [
@@ -101,56 +116,70 @@ export const Projects = () => {
       ],
       judgingCriteria:
         "Participants who design the circuit faster and accurately will be considered as the winner.",
-        num :[{phn : "tel:9942787733" , name :"Ratheesh "}, {phn : "tel:6369395801" , name :"LOHITHA "}],
+      num: [
+        { phn: "tel:9942787733", name: "Ratheesh " },
+        { phn: "tel:6369395801", name: "LOHITHA " },
+      ],
 
-        link:" https://forms.gle/ZE27T8my1t1i4JPx5",  
+      link: " https://forms.gle/ZE27T8my1t1i4JPx5",
     },
     {
       title: "ENIGMA",
-      description: "Word Guessing Event",
+      description:
+        "It is a word guessing team event. Each participant from a team will be given a clue card with few words written on it. Get ready to put your word wizardry to the test as you compete against other teams to solve a series of clues and uncover the hidden words.      ",
       imgUrl: enigma,
-      oneLiner: "",
+      oneLiner:
+        "Here's  to all the mystery lovers. Awaken your instincts and get ready to act and guess. You're in for a great treat.      ",
 
       rules: [
-        "1.Team size: 2 per team.",
-        "2.Game time: 2minutes.",
-        "3.Participants can skip and move to the next word.",
-        "4.Teams with the highest scores will be qualified for the next-round.",
-        "5. Negative markings will be carried forward for further rounds.",
+        "Each team will consist of 2 participants.        ",
+        "The game will be timed for 2 minutes.        ",
+        "Participants may choose to skip a word and move on to the next one.        ",
+        "Teams will be scored based on the number of correct answers they provide within the time limit.        ",
+        "Teams with the highest scores will qualify for the next round.",
+        "Negative markings will be carried forward to further rounds, meaning incorrect answers will lower a team's overall score.        ",
       ],
 
       roundDetails: [
         "The number of rounds will be flexible, it depends on the total number of teams participating in the event.",
       ],
       judgingCriteria:
-        "The points earned by each team depends upon the time taken by them to complete the task. Finally, the team with more points will be considered as winners.",
-        num :[{phn : "tel:9942787733" , name :"Ratheesh "}, {phn : "tel:6380630430" , name :"Balaji "}],
+        "The score for each team will be based on how quickly they complete the task, with more points awarded to teams who finish faster. The team with the highest score at the end of the game will be declared the winners.        ",
+      num: [
+        { phn: "tel:9942787733", name: "Ratheesh " },
+        { phn: "tel:6380630430", name: "Balaji " },
+      ],
 
-        link:" https://forms.gle/hsJcNNdnA7kMYccm9",  
-
-    
-      },
+      link: " https://forms.gle/hsJcNNdnA7kMYccm9",
+    },
     {
       title: "RENEGADE",
-      description: "Group Discussion",
+      description:
+        "Challenge your beliefs and push boundaries at our event! Discuss a technical topic in round 1, then analyze from an opposing perspective. Playing for both teams adds excitement. Are you ready to explore different viewpoints?      ",
       imgUrl: renegade,
-      oneLiner: "",
+      oneLiner:
+        "Have you ever challenged yourself? Be prepared to get down the battlefield just to see yourself at the opposing end! Let the battle of words begin      ",
 
       rules: [
         "Group Discussion - 6 members per batch.",
-        "Professional discussion should be maintained. The participants will not be evaluate batchwise (Two or more can be selected from a single batch)",
+        "Professional discussion should be maintained.",
+        "The participants will not be evaluate batchwise (Two or more can be selected from a single batch)",
         "Participants will not be given any time after the commencement of the event.",
       ],
 
       roundDetails: [
-        "The participants will be divided as equal groups. Each group will be given a specific technical topic for discussion.The one with valid points will be selected from each group and will compete individually in round 2.",
-        "The selected participants will be given a technical topic on spot and time will be given to prepare the pros and cons of the topic.For every buzzer the participant must go between the pros and cons of the topic. The top 3 members with valuable points will be declared as winners",
+        "For round 1, the participants will be divided as equal groups. Each group will be given a specific technical topic for discussion.The one with valid points will be selected from each group and will compete individually in round 2.        ",
+        "For round 2, the selected participants will be given a technical topic on spot and time will be given to prepare the pros and cons of the topic.For every buzzer the participant must go between the pros and cons of the topic. The top 3 members with valuable points will be declared as winners",
       ],
 
-      judgingCriteria: "Top three participants will be considered as winners.",
-      num :[{phn : "tel:9942787733" , name :"Ratheesh"}, {phn : "tel:6374965630" , name :"Sriman "}],
+      judgingCriteria:
+        "Participants with overall good performance in both round 1 and round 2 will be evaluated by event Judges.Participants with Innovative ideas and Conclusions will get an Advantage and special awards.Top three participants will be considered as winners.",
+      num: [
+        { phn: "tel:9942787733", name: "Ratheesh" },
+        { phn: "tel:6374965630", name: "Sriman " },
+      ],
 
-      link:" https://forms.gle/yvkwp5VJwwShQFiT6",  
+      link: " https://forms.gle/yvkwp5VJwwShQFiT6",
     },
   ];
 
@@ -179,10 +208,13 @@ export const Projects = () => {
       ],
       judgingCriteria:
         "The winners will be decided on the basis of correct answers provided by them In case of the same number of correct answers, the time taken by the participants will be taken into consideration",
-        num :[{phn : "tel:9940295593" , name :"Stutish Baluni "}, {phn : "tel: 9500792304" , name :"Srivathsan"}],
+      num: [
+        { phn: "tel:9940295593", name: "Stutish Baluni " },
+        { phn: "tel: 9500792304", name: "Srivathsan" },
+      ],
 
-        link:" https://forms.gle/PSkN6ft5TjZJ4pJw5",  
-      },
+      link: " https://forms.gle/PSkN6ft5TjZJ4pJw5",
+    },
     {
       title: "FOTOGRAFIA",
       description:
@@ -196,18 +228,22 @@ export const Projects = () => {
         " All submitted photos must be the original work of the individual which must be taken on the day of event .",
         " The usage of photographs taken from Google or other social media platforms is strictly prohibited.",
         " Candidates are requested to bring their own camera (either camera or mobile)",
+        "Participation Certificates will be provided to all the participants.        ",
       ],
 
       roundDetails: [
-        "Photographs taken should be  original work of the individuals.Photos taken from google and other social media platforms are strictly prohibited.First round will be an offline round at CIT campus. Shortlisted members  selected in the first round will proceed  to the final round.",
-        "Final round will also be conducted at CIT campus.Participants are requested to bring their own gadgets.Final decisions will be made by the judges.",
+        "For round 1, Participants will be given an hour of time on the day of the event to pick their own interest.        ",
+        "            Selected students will be given an hour of time to take pictures.        ",
       ],
       judgingCriteria:
         "The winners will be decided on the basis of good quality and creative photographs.",
-        num :[{phn : "tel:7904480286" , name :"BALAJI SHANKAR"}, {phn : "tel:8870877433" , name :"KOUSIGA"}],
+      num: [
+        { phn: "tel:7904480286", name: "BALAJI SHANKAR" },
+        { phn: "tel:8870877433", name: "KOUSIGA" },
+      ],
 
-        link:" https://forms.gle/5HL6xJV9rDoJv5DU9",  
-      },
+      link: " https://forms.gle/5HL6xJV9rDoJv5DU9",
+    },
     {
       title: "FREEZE FRAME",
       description:
@@ -221,26 +257,30 @@ export const Projects = () => {
         "The first and second rounds will be conducted in Kahoot, an online quiz platform",
         "The final round will be a manual buzzer round.",
         "The participant who identifies the maximum number of movies correctly in the final round will be declared the winner.",
+        "Participation Certificates will be provided to all the participants.        ",
       ],
 
       roundDetails: [
         "Round 1 & 2 is based on Kahoot Quiz and 3rd round is a Online Buzzer round",
-        " In round 1 a set of freeze frames from different movies will be displayed on the screen.The participants will be given multiple choice questions with options to identify the movie from the displayed frame. The participants will have to choose the correct answer within the given time limit. The top performers will qualify for the next round.",
+        " In round 1, Participants will have to identify movies from the displayed freeze frames via multiple-choice questions within a time limit.Top performers will advance to the next round.        ",
 
-        "A set of more challenging freeze frames from different movies will be displayed on the screen.The participants will be given multiple choice questions with options to identify the movie from the displayed frame. The participants will have to choose the correct answer within the given time limit.The top performers will qualify for the final round.Final Round: Buzzer Round ",
+        "In round 2, A set of more challenging freeze frames from different movies will be displayed on the screen.The participants will be given multiple choice questions with options to identify the movie from the displayed frame. The participants will have to choose the correct answer within the given time limit.The top performers will qualify for the final round.Final Round: Buzzer Round ",
 
-        "A freeze frame from a movie will be displayed on the screen.The participants  qualified forthe final round will be given a buzzer each.The first participant to identify the movie by buzzing in will be asked to give the answer.If the answer is correct, the participant will be awarded a point.If the answer is incorrect, the participant will lose a point The participant with the maximum number of points at the end of the round will be declared the winner.",
+        "In round 3, The finalists will be given buzzers to identify movies from freeze frames, with the first participant to identify the correct answer earning a point and an incorrect answer resulting in a point deduction",
       ],
       judgingCriteria:
         "Judging is based on Accuracy , Speed , Consistency, FairPlay and  Sportsmanship",
-        num :[{phn : "tel:6379485269" , name :"Ramya.A"}, {phn : "tel:9042188077" , name :"M.D.Balaji"}],
+      num: [
+        { phn: "tel:6379485269", name: "Ramya.A" },
+        { phn: "tel:9042188077", name: "M.D.Balaji" },
+      ],
 
-        link:" https://forms.gle/xSCK59fcP8No7aWy6",  
-      },
+      link: " https://forms.gle/xSCK59fcP8No7aWy6",
+    },
     {
       title: "FUN FUED",
       description:
-        "This event is based on the TV show FAMILY FEUD.         Two teams compete against each other and have to give out the most popular answers for the survey questions that come in the 1st rank.       The team that wins can take away the awards!",
+        "This event is based on the TV show FAMILY FEUD.Two teams compete against each other and have to give out the most popular answers for the survey questions that come in the 1st rank.       The team that wins can take away the awards!",
       imgUrl: funFued,
       oneLiner:
         "Get ready for endless laughter and wacky challenges with Funfued - the ultimate party game!",
@@ -254,17 +294,21 @@ export const Projects = () => {
         "If the team 2’s  answer has a point higher than the team 1’s  answer, then members of team 2’s  will get a chance to answer,  otherwise team 1’s  members will get a chance.",
         "If the answer given is not in the answer list, a strike will be given.",
         "If a team gets 3 strikes, the points of this team will be awarded to the opponent team.",
+        "Participation Certificates will be provided to all the participants.        ",
       ],
 
       roundDetails: [
-        "A representative from each team should come forward for the buzzer round, the person who presses the online buzzer first will get the chance to answer first.If the answer given is less than the highest point, team 2’s representative will get a chance to answer.If the team 2’s  answer has a  point higher than the team 1’s  answer, then team 2’s  team members will get a chance to answer, otherwise team 1’s  members will get a chance.If the answer given is not in the answer list, a strike will be given. If a team gets 3 strikes, the points of this team will be awarded to the opponent team and this will continue till the opponent gets 3 strikes.If all the options are not revealed before all strikes, the team with the latest 3 strikes gets eliminated.",
+        "For round 1, Each team should send a representative for the buzzer round,the person who presses the online buzzer first will get the chance to answer first.If the answer given is less than the highest point, team 2's representative will get a chance to answer.If team 2's answer has a point higher than team 1's answer, then team 2's members will get a chance to answer, otherwise team 1's members will get a chance.If the answer given is not in the answer list, a strike will be given.If a team gets 3 strikes, the points of this team will be awarded to the opponent team.This will continue till the opponent gets 3 strikes.If all options are not revealed before all strikes, the team with the latest 3 strikes gets eliminated.        ",
 
-        "The winners of round 1 will be playing round 2. Round 2 is the same as round 1 but with a slight twist. (Twist will be announced at the event) The game continues till we have a winning team.",
+        "The winners of round 1 will play round 2.Round 2 is similar to round 1 with a twist (to be announced at the event).The game will continue until there is a winning team.        ",
       ],
       judgingCriteria: "Winners will be decided on final points",
-      num :[{phn : "tel:6382658122" , name :"KARPAGAM "}, {phn : "tel:9176284410" , name :"VISHAL "}],
+      num: [
+        { phn: "tel:6382658122", name: "KARPAGAM " },
+        { phn: "tel:9176284410", name: "VISHAL " },
+      ],
 
-      link:"https://forms.gle/Bnha3PpHkNBepKeD9      ",  
+      link: "https://forms.gle/Bnha3PpHkNBepKeD9      ",
     },
     {
       title: "FILMLET",
@@ -279,14 +323,18 @@ export const Projects = () => {
         "Total duration of your short film shouldn't exceed more than 20 minutes which also includes the opening and closing credits.",
         "Top 5 impressive short films will be selected and will be presented before the judges .",
         "Finally one team will be choosen as a winner based on thier judging criteria.",
+        "Participation Certificates will be provided to all the participants.        ",
       ],
       roundDetails: [
         "There is only one round in which top 5 short films will be shortlisted and presented before the judges ",
       ],
-      judgingCriteria: "The final decision will be taken by the invited jury.",
-      num :[{phn : "tel:6369345296" , name :"Giriprasath "}, {phn : "tel:9360034648" , name :"Sanjana "}],
+      judgingCriteria: "The decision made by the judges will be final.      ",
+      num: [
+        { phn: "tel:6369345296", name: "Giriprasath " },
+        { phn: "tel:9360034648", name: "Sanjana " },
+      ],
 
-      link:" https://forms.gle/qhZUPBZhcneNGxqL6",  
+      link: " https://forms.gle/qhZUPBZhcneNGxqL6",
     },
     {
       title: "BUZZ CONCORRENZA",
@@ -310,31 +358,40 @@ export const Projects = () => {
       ],
       roundDetails: [
         "Participants will be qualified on the basis of INSTAGRAM impression. Selected members will participate in ROUND 2. ",
-        "Round 1 qualifiers must create a meme on a given topic. Topic will be given and you can choose your own template. ROUND 3: For Round 2 qualifiers, 5 templates will be given under a specific topic. Participants should create a meme and must have to submit their with in the given time.",
+        "Round 1 qualifiers must create a meme on a given topic. Topic will be given and you can choose your own template. ROUND 3:",
+        " For Round 2 qualifiers, 5 templates will be given under a specific topic. Participants should create a meme and must have to submit their with in the given time.",
       ],
 
       judgingCriteria:
-        "The participants will be judged on the basis of creativity, content, and adherence to the theme.The memes must not be containing any absurd visuals or vulgar language. Final round judgment will be based on overall humor, social media reach and engagement and comments from the followers.",
-        num :[{phn : "tel:8124722810" , name :"Dharshinamoorthi"}, {phn : "tel:8939759393" , name :"Madhu Varshini "}],
+        "The participants will be judged on the basis of creativity, content, and adherence to the theme. Final round judgment will be based on overall humor, social media reach and engagement and comments from the followers.",
+      num: [
+        { phn: "tel:8124722810", name: "Dharshinamoorthi" },
+        { phn: "tel:8939759393", name: "Madhu Varshini " },
+      ],
 
-        link:" https://forms.gle/VwXBHuxfK3mcWpHg7 ",  
-      },
+      link: " https://forms.gle/VwXBHuxfK3mcWpHg7 ",
+    },
     {
       title: "BGMI",
-      description: "Battles ground Mobile India",
+      description:
+        "BGMI is a thrilling mobile game that takes you to the battlegrounds. Battle it out with other players in a realistic and immersive virtual world. With stunning graphics and intense gameplay, BGMI will keep you on the edge of your seat!      ",
       imgUrl: cod,
-      oneLiner: "",
-      rules: ["The matches will be held in 2 modes."],
+      oneLiner:
+        "Last one standing wins: The ultimate battle royale experience in BGMI.      ",
+      rules: ["The event will be conducted in the online mode.      ","Participants can use either mobile or ipad.      ","A BGMI room will be formed and the participants will have to join within the stipulated time. " ,"After registration, participants will be added to a whatsapp group and will be updated about the event there.      " ,"Participation Certificates will be provided to all the participants.      "],
 
       roundDetails: [
         "The 1st match will be a classic match, that is either Karakin or Livik. The top 3 winning squads will be qualified for the next round.",
         "The 2nd match will be held in  TDM mode. Team1 (1st place) will qualify for finals.",
-        "The semi-finals will be  between Team2 (2nd place) & Team3 (3rd place). The winner of the semi-finals will be qualified for the finals.Team1 (1st position) and Team (semifinal winner) will play match 3 in TDM mode. The winner of match 3rd will be declared as the winner.",
+        "The semi-finals will be  between Team2 (2nd place) & Team3 (3rd place). The winner of the semi-finals will be qualified for the finals.Team 1 (1st position) and Team (semifinal winner) will play match 3 in TDM mode. The winner of match 3rd will be declared as the winner.",
       ],
       judgingCriteria: "Based on The performance of the entire Team",
-      num :[{phn : "tel:9087115451" , name :"Ahmed Nafil"}, {phn : "tel:9884212555" , name :"Sujarith"}],
+      num: [
+        { phn: "tel:9087115451", name: "Ahmed Nafil" },
+        { phn: "tel:9884212555", name: "Sujarith" },
+      ],
 
-      link:" https://forms.gle/Aau33ZS9JD94ZFwX8",  
+      link: " https://forms.gle/Aau33ZS9JD94ZFwX8",
     },
   ];
 
@@ -352,6 +409,7 @@ export const Projects = () => {
         "Only Throw bowling is allowed.",
         "The umpire’s decision is final.",
         "No abusive language will be encouraged. If such behavior is observed, the team will be disqualified.",
+        "Participation Certificates will be provided to all the participants",
       ],
 
       roundDetails: [
@@ -359,17 +417,20 @@ export const Projects = () => {
       ],
 
       judgingCriteria: "The final decision will be taken by the invited jury.",
-      num :[{phn : "tel:91775 37341" , name :"Sudha Praveen R"}, {phn : "tel:8438515217" , name :"Heubert Akash"}],
+      num: [
+        { phn: "tel:91775 37341", name: "Sudha Praveen R" },
+        { phn: "tel:8438515217", name: "Heubert Akash" },
+      ],
 
-      link:" https://forms.gle/hci3JwpkHbXJzmVb8",  
+      link: " https://forms.gle/hci3JwpkHbXJzmVb8",
     },
     {
       title: "SmashZone",
       description:
-        "We are thrilled to invite you to our upcoming badminton extravaganza! This is not your typical badminton tournament - we have crafted an event packed with excitement, entertainment, and sportsmanship.",
+        "We are thrilled to invite you to our upcoming badminton extravaganza! Not a typical game, we assure. Can’t wait, register soon!        ",
       imgUrl: batminton,
       oneLiner:
-        "As you walk in here, build your confidence for a feather on your cap by making everyone else's shuttle feathers down. Show them your strength and courage in an exciting match ahead.",
+        "We are thrilled to invite you to our upcoming badminton extravaganza! Not a typical game, we assure. Can’t wait, register soon!  ",
       rules: [
         "Every individual should bring his/her own racquet for the event. Shuttlecocks will be provided by the organizing team.",
 
@@ -393,9 +454,12 @@ export const Projects = () => {
       ],
 
       judgingCriteria: "The final decision will be taken by the invited jury.",
-      num :[{phn : "tel:+919080504831" , name :"Krishna Kumar"}, {phn : "tel:+91 82486 39843" , name :"Sudharshini "}],
+      num: [
+        { phn: "tel:+919080504831", name: "Krishna Kumar" },
+        { phn: "tel:+91 82486 39843", name: "Sudharshini " },
+      ],
 
-      link:" https://forms.gle/DMD9hTsfo3osV1bT8",  
+      link: " https://forms.gle/DMD9hTsfo3osV1bT8",
     },
     {
       title: "FUTSAL",
@@ -412,6 +476,7 @@ export const Projects = () => {
         "In case of a draw, a penalty shootout  will be conducted.",
         "The Referee's decision will be final. ",
         "Refunds will not be available after registration.",
+        "Participation Certificates will be provided to all the participants",
       ],
 
       roundDetails: [
@@ -419,9 +484,12 @@ export const Projects = () => {
       ],
 
       judgingCriteria: "The final decision will be taken by the invited jury.",
-      num :[{phn : "tel:8531021339" , name :"Sam vinston "}, {phn : "tel:7397704994" , name :"Ram prasath"}],
+      num: [
+        { phn: "tel:8531021339", name: "Sam vinston " },
+        { phn: "tel:7397704994", name: "Ram prasath" },
+      ],
 
-      link:"https://forms.gle/njTdZhFGBhiw9QGSA",  
+      link: "https://forms.gle/njTdZhFGBhiw9QGSA",
     },
     {
       title: "VOLLEY",
@@ -438,6 +506,7 @@ export const Projects = () => {
         "The umpire’s decision is final.",
         "The teams should follow their allocated times strictly.",
         " Qualifier rounds have 1 set (21 points) and semi-finals and finals will have 3 sets.",
+        "Participation Certificates will be provided to all the participants",
       ],
 
       roundDetails: [
@@ -445,72 +514,108 @@ export const Projects = () => {
       ],
 
       judgingCriteria: "The final decision will be taken by the invited jury.",
-      num :[{phn : "tel:9025435476" , name :"ANBAZHAGAN S"}, {phn : "tel:8838307489" , name :"Santhosh R"}],
+      num: [
+        { phn: "tel:9025435476", name: "ANBAZHAGAN S" },
+        { phn: "tel:8838307489", name: "Santhosh R" },
+      ],
 
-      link:" https://forms.gle/U8aGxY6B991ZGm4q7",  
+      link: " https://forms.gle/U8aGxY6B991ZGm4q7",
     },
   ];
   const workshops = [
     {
-      title: "  INTERNET OF THINGS & EMBEDDED SYSTEMS",
-      description: "IOT & Embedded Systems workshop",
+      title: "  Internet Of Things & Embedded Systems",
+      description:
+        "IoT and embedded systems control devices to connect and interact over the internet, transforming the way we live and work. They drive innovation across industries, enabling smarter homes, businesses, and cities. The future of IoT and embedded systems looks bright, with opportunities for continued growth and innovation.      ",
       imgUrl: iot,
-
+      oneLiner:
+        "World gets better when it's built by the smartest. If you wanna know and build your own IOT products, register ASAP!      ",
       outcomes: [
-        "Know how to  Design, Code and Build IOT products.",
-        "Learn to code using Arduino IDE.",
+        "Know how to  Design, Code, and Build IOT products.        ",
+        "Learn to code using Arduino IDE.        ",
         "Knowledge about how to work with Micro controllers , Sensors , Relays.",
         "Learn how to connect to cloud IOT Platforms.",
       ],
       pre: ["  Notepads ", "Basics of  Programming "],
-  
-      num :[{phn : "tel:6374412610" , name :"Ranjith Kumar A"}, {phn : "tel:8870310990" , name :"Joseph Peter J"}],
 
-        link:" https://forms.gle/sAM1W3KHq9AtDaQb8",    },
-    {
-      title: "NETWORKING AND CYBERSECURITY",
-      description: "Networking & Cybersecurity workshop",
-      imgUrl: nw,
-      outcomes: [
-        "Know how to  Design, Code and Build IOT products.",
-        "Learn to code using Arduino IDE.",
-        "Knowledge about how to work with Micro controllers , Sensors , Relays.",
-        "Learn how to connect to cloud IOT Platforms.",
+      num: [
+        { phn: "tel:6374412610", name: "Ranjith Kumar A" },
+        { phn: "tel:8870310990", name: "Joseph Peter J" },
       ],
-      pre: ["  Notepads ", "Basics of  Programming "],
-      num :[{phn : "tel: 9360964582  " , name :"Saminathan S"}, {phn : "tel: 8098003617" , name :"Hemaranjani M"}],
 
-        link:"https://forms.gle/k2htwVJWQp3WJYC37",  
+      link: " https://forms.gle/sAM1W3KHq9AtDaQb8",
     },
     {
-      title: "BASICS OF MACHINE LEARNING AND MEDICAL IMAGING",
-      description: "Machine Learning and Medical Imaging Workshop",
+      title: "Networking And Cybersecurity",
+      description:
+        "Networking refers to the communication between devices or systems, enabling the sharing of information and resources. Cybersecurity involves protecting these networks from unauthorized access, data breaches, and cyber attacks. With the increasing use of technology in our daily lives, the importance of secure and reliable networks has become critical. Understanding both networking and cybersecurity is essential for protecting personal and business information.      ",
+      imgUrl: nw,
+      oneLiner:
+        "In the world of tech and the amount of data being shared we need a strong security to integrate into a safe smart world.      ",
+
+      outcomes: [
+        "Get to know about Network Devices And Protocols.        ",
+        "Understand the process of Routing packets across the internet.        ",
+        "Configure Devices In Cisco Packet Tracer.        ",
+        "Knowledge about WLAN And Wi-Fi Attacks.        ",
+        "Awareness about Basic Network Attacks.        ",
+      ],
+      pre: ["Notepads ", "Laptop(Not Mandatory)      "],
+      num: [
+        { phn: "tel: 9360964582  ", name: "Saminathan S" },
+        { phn: "tel: 8098003617", name: "Hemaranjani M" },
+      ],
+
+      link: "https://forms.gle/k2htwVJWQp3WJYC37",
+    },
+    {
+      title: "Basics Of Machine Learning And Medical Imaging",
+      description:
+        "This workshop offers a one-shot introduction to medical image processing, starting from the basics. With a case study-based approach, attendees will have the opportunity to apply their learning in practical settings. Additionally, participants will gain hands-on experience with machine learning and have the chance to work on a mini-project.      ",
       imgUrl: ml,
+      oneLiner:
+        "Get to know about how image processing is done in the field of medicine using machine learning by attending this workshop.      ",
+
       outcomes: [
         "Introduction to Machine Learning in Medical Image Processing.",
         "Introduction to Image processing.",
         "Use of Python for Image processing.",
         "A basic project on Medical Image Processing.",
       ],
-      pre: ["  Notepads ", "Basics of  Programming "],
-      num :[{phn : "tel:8072335322" , name :"Ajaymalolan K V "}, {phn : "tel:9148962377" , name :"Swarshaa S"}],
+      pre: [
+        "Basics of python.      ",
+        "Notepads ",
+        "Laptop(NOT MANDATORY)      ",
+      ],
+      num: [
+        { phn: "tel:8072335322", name: "Ajaymalolan K V " },
+        { phn: "tel:9148962377", name: "Swarshaa S" },
+      ],
 
-      link:" https://forms.gle/9DFv8JSj1JLhzt1W7",  
+      link: " https://forms.gle/9DFv8JSj1JLhzt1W7",
     },
     {
-      title: "MAKE YOUR PCB",
-      description: "design, prototype printed circuit boards (PCBs).",
+      title: "Make Your PCB",
+      description:
+        "PCBs (Printed Circuit Boards) are fundamental to the construction of electronic devices, providing a foundation for connecting and integrating electronic components. The electronic components are integrated into the PCB to design a functional circuit. Proper design and fabrication of PCBs is essential to ensure functionality, reliability, and cost-effectiveness in electronic devices.      ",
       imgUrl: pcb,
-      outcomes: [
-        "Know how to  Design, Code and Build IOT products.",
-        "Learn to code using Arduino IDE.",
-        "Knowledge about how to work with Micro controllers , Sensors , Relays.",
-        "Learn how to connect to cloud IOT Platforms.",
-      ],
-      pre: ["  Notepads ", "Basics of  Programming "],
-      num :[{phn : "tel:8940496469" , name :"Sanjeev V "}, {phn : "tel:9486788449" , name :"Sriram R"}],
+      oneLiner:
+        "Design and experience to build your own pcb and get to know about how it works and is processed. Book your seats soon!      ",
 
-      link:"https://forms.gle/CdM55GzSPgRipQGW9",  
+      outcomes: [
+        "Knowledge about KICAD software.        ",
+        "Experience to debug and analyze the circuit.        ",
+        "Understanding the working and manufacturing process of PCB.",
+        "Ability to design and create your own PCB.        ",
+        "An overall idea about the components used in PCB and their processes.        ",
+      ],
+      pre: ["Notepads ", "Laptop(NOT MANDATORY)      "],
+      num: [
+        { phn: "tel:8940496469", name: "Sanjeev V " },
+        { phn: "tel:9486788449", name: "Sriram R" },
+      ],
+
+      link: "https://forms.gle/CdM55GzSPgRipQGW9",
     },
   ];
   const [showButtonGroup, setShowButtonGroup] = useState(false);
@@ -559,12 +664,10 @@ export const Projects = () => {
   useEffect(() => {
     const timeoutId = setTimeout(() => {
       setShowDiv(true);
-    },3600);
+    }, 3600);
 
     return () => clearTimeout(timeoutId);
   }, []);
-
- 
 
   const borderVariants = {
     animate: {
@@ -577,7 +680,6 @@ export const Projects = () => {
     },
   };
 
- 
   return (
     <div>
       {showDiv ? (

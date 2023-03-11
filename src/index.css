@@ -25,12 +25,34 @@ code {
 }
 
 :root {
-  --primary-color:linear-gradient(to right, #f1e906, #ec6205, #ecca08, #d33e03)
+  --primary-color:linear-gradient(to right, #f1e906, #ec6205, #ecca08, #d33e03);
+  --tertiary-color :linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
 
 }
 
 .btn-primary {
   background-image: var(--primary-color);
+}
+ 
+.btn-tertiary{
+  background-image: var(--tertiary-color);
+}
+
+.text-tertiary{
+  background: var(--tertiary-color);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+ 
+}
+
+.text-primar{
+ 
+  background: var(--primary-color);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+
 }
 
 /* width and height of the scrollbar */
@@ -41,16 +63,26 @@ code {
 
 /* scrollbar track */
 ::-webkit-scrollbar-track {
-  background-color: #f5f5f5;
+  background-color: "#fff";
+
 }
 
 /* scrollbar thumb */
 ::-webkit-scrollbar-thumb {
-  background-color:#f4c90b;
+  background-color: #c93efb;
     border-radius: 3px;
 }
 
 /* scrollbar thumb on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background-color:#FB8A3E;
+  background-color:#7300ff;
+}
+
+ul {
+  list-style: none; /* Remove default list style */
+}
+
+li::before {
+  content: "\2192"; /* Use unicode value for right arrow */
+  margin-right: 0.5em; /* Add some space between the arrow and text */
 }
