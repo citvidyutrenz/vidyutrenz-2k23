@@ -78,3 +78,6 @@ code {
   background-color:#7300ff;
 }
 
+body.offcanvas-open {
+  overflow: visible !important;
+}
