@@ -129,7 +129,7 @@ function NavBar() {
                 <Nav.Link
                   // href="#"
                   className="text-light"
-                  onClick={() => navigate("/events")}
+                  onClick={() => navigate("/")}
                 >
                   <div>Home</div>
                 </Nav.Link>
