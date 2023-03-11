@@ -124,7 +124,7 @@ export const ProjectCard = ({ project, state }) => {
           whileFocus={{ scale: 1.1 }}
           className="d-flex flex-column justify-content-center align-items-center "
         >
-          <h4 className="text-primar text-center mt-5">{project.title}</h4>
+          <h4 className="text-tertiary text-center mt-5" style={{fontFamily:"Tilt Warp"}}>{project.title}</h4>
 
           <img
             src={project.imgUrl}

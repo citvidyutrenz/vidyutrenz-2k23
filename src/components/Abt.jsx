@@ -78,7 +78,7 @@ function Abt() {
                 animate = {{opacity: 1 }}
                 transition={{ delay: index * 0.75 }}
 
-              style={{ fontFamily: "Inconsolata" }} className="text-center">
+              style={{ fontFamily: "Inconsolata" , letterSpacing :"0.05em"  }} className="text-center">
                 {" "}
                 {head.about}
               </motion.h4>

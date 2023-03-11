@@ -55,7 +55,9 @@ export const Projects = () => {
         "On spot registrations are acceptable only if the candidates have a valid soft copy.        ",
       ],
 
-      roundDetails: ["The event has only one round.The participants have to present their paper in front of the judges for at least 5 to 6 minutes and they will be questioned about their paper by the judges for a time limit of 2 minutes.Based on these criteria, winners will be selected.      "],
+      roundDetails: [
+        "The event has only one round.The participants have to present their paper in front of the judges for at least 5 to 6 minutes and they will be questioned about their paper by the judges for a time limit of 2 minutes.Based on these criteria, winners will be selected.      ",
+      ],
 
       judgingCriteria:
         "Presentation will be judged based on the originality of the content, clarity and content delivery. The questions that will be asked by the judges will play a major role.",
@@ -64,7 +66,7 @@ export const Projects = () => {
         { phn: "tel:8778947054", name: "Ariharavelava " },
       ],
 
-      link: " https://forms.gle/WduLM8kZDzxkoVSg7",
+      link: "https://docs.google.com/forms/d/e/1FAIpQLSfREPEj0UwNSq3YjSCOPzsWhrhNHFmpEcew9iV_TxqsoHf0Lg/viewform?usp=sf_link",
     },
     {
       title: "INVENTINO",
@@ -84,15 +86,20 @@ export const Projects = () => {
         "The decision of the Adjudication Panel is final.        ",
       ],
 
-      roundDetails: ["This event consists of only one round." ,"Participants should present their work for 10 to 15 minutes and they will be questioned by the judges for a time limit of 2 minutes.      " ,"The judge's decision will be final.      "],
+      roundDetails: [
+        "This event consists of only one round.",
+        "Participants should present their work for 10 to 15 minutes and they will be questioned by the judges for a time limit of 2 minutes.      ",
+        "The judge's decision will be final.      ",
+      ],
 
-      judgingCriteria: "The most innovative ideas and solutions will stand out.The work will be judged based on the originality of the content, content delivery, and ability to answer the questions presented by the judges.      ",
+      judgingCriteria:
+        "The most innovative ideas and solutions will stand out.The work will be judged based on the originality of the content, content delivery, and ability to answer the questions presented by the judges.      ",
       num: [
         { phn: "tel:9942787733", name: "Ratheesh " },
         { phn: "tel:6379204221", name: "HARI " },
       ],
 
-      link: " https://forms.gle/k5uLNCAnXBUxFR6aA",
+      link: "https://docs.google.com/forms/d/e/1FAIpQLSdeaOv8SZEqCjnATYqu_aFtJ8qj_jdi3AIRQXOP0tStLftQeA/viewform?usp=sf_link      ",
     },
     {
       title: "NYQUIZST",
@@ -121,7 +128,7 @@ export const Projects = () => {
         { phn: "tel:6369395801", name: "LOHITHA " },
       ],
 
-      link: " https://forms.gle/ZE27T8my1t1i4JPx5",
+      link: "https://docs.google.com/forms/d/e/1FAIpQLScYWHCcAsr6PWzjXQrcD57Acv63l8U_l3gpLi1ROvWAjZ0SxQ/viewform?usp=sf_link      ",
     },
     {
       title: "ENIGMA",
@@ -150,7 +157,7 @@ export const Projects = () => {
         { phn: "tel:6380630430", name: "Balaji " },
       ],
 
-      link: " https://forms.gle/hsJcNNdnA7kMYccm9",
+      link: " https://docs.google.com/forms/d/e/1FAIpQLSfNKm1rdAQJAVcIBddvexZToDcFi5lxxZI-rkheBfm-FvzC1A/viewform?usp=sf_link      ",
     },
     {
       title: "RENEGADE",
@@ -179,7 +186,7 @@ export const Projects = () => {
         { phn: "tel:6374965630", name: "Sriman " },
       ],
 
-      link: " https://forms.gle/yvkwp5VJwwShQFiT6",
+      link: "https://docs.google.com/forms/d/e/1FAIpQLSeW63tFFWH2-it_DfFPqHzkGFynIzn4x3eodYOB8_HZg9rdZg/viewform?usp=sf_link",
     },
   ];
 
@@ -213,7 +220,7 @@ export const Projects = () => {
         { phn: "tel: 9500792304", name: "Srivathsan" },
       ],
 
-      link: " https://forms.gle/PSkN6ft5TjZJ4pJw5",
+      link: "https://docs.google.com/forms/d/e/1FAIpQLSe671vkwCPbWwJEpPPYQcOAJOsj2CFaNysXFO-5R9xsFTVgiw/viewform?usp=sf_link      ",
     },
     {
       title: "FOTOGRAFIA",
@@ -242,7 +249,7 @@ export const Projects = () => {
         { phn: "tel:8870877433", name: "KOUSIGA" },
       ],
 
-      link: " https://forms.gle/5HL6xJV9rDoJv5DU9",
+      link: "https://docs.google.com/forms/d/e/1FAIpQLSdMj4gFPYh4uuelaRpXvlnQjAvmsGXuNHlDS8evrUQGT81QIQ/viewform?usp=sf_link",
     },
     {
       title: "FREEZE FRAME",
@@ -275,7 +282,7 @@ export const Projects = () => {
         { phn: "tel:9042188077", name: "M.D.Balaji" },
       ],
 
-      link: " https://forms.gle/xSCK59fcP8No7aWy6",
+      link: " https://docs.google.com/forms/d/e/1FAIpQLSfL7osbpUnegTw04BReW-HzWnGhK6dymWw4i1I6pMm3Utkb6Q/viewform?usp=sf_link",
     },
     {
       title: "FUN FUED",
@@ -308,7 +315,7 @@ export const Projects = () => {
         { phn: "tel:9176284410", name: "VISHAL " },
       ],
 
-      link: "https://forms.gle/Bnha3PpHkNBepKeD9      ",
+      link: "https://docs.google.com/forms/d/e/1FAIpQLSdEte0IBJEvQhY9Mcihsnu2L2wUllqSLXZW0GgseqMh-Gt5Pw/viewform?usp=sf_link   ",
     },
     {
       title: "FILMLET",
@@ -334,7 +341,7 @@ export const Projects = () => {
         { phn: "tel:9360034648", name: "Sanjana " },
       ],
 
-      link: " https://forms.gle/qhZUPBZhcneNGxqL6",
+      link: "https://docs.google.com/forms/d/e/1FAIpQLSfAb3vRhsjEr-KCgu4BWcrl5BxYfoM7ynp0XIMPXHpXLHaS5A/viewform?usp=sf_link      ",
     },
     {
       title: "BUZZ CONCORRENZA",
@@ -369,7 +376,7 @@ export const Projects = () => {
         { phn: "tel:8939759393", name: "Madhu Varshini " },
       ],
 
-      link: " https://forms.gle/VwXBHuxfK3mcWpHg7 ",
+      link: "https://docs.google.com/forms/d/e/1FAIpQLSckCIqFKMRl9VtliKgltv1vZEoIoDqYJGLcWEssect3i5ClXA/viewform?usp=sf_link      ",
     },
     {
       title: "BGMI",
@@ -378,7 +385,13 @@ export const Projects = () => {
       imgUrl: cod,
       oneLiner:
         "Last one standing wins: The ultimate battle royale experience in BGMI.      ",
-      rules: ["The event will be conducted in the online mode.      ","Participants can use either mobile or ipad.      ","A BGMI room will be formed and the participants will have to join within the stipulated time. " ,"After registration, participants will be added to a whatsapp group and will be updated about the event there.      " ,"Participation Certificates will be provided to all the participants.      "],
+      rules: [
+        "The event will be conducted in the online mode.      ",
+        "Participants can use either mobile or ipad.      ",
+        "A BGMI room will be formed and the participants will have to join within the stipulated time. ",
+        "After registration, participants will be added to a whatsapp group and will be updated about the event there.      ",
+        "Participation Certificates will be provided to all the participants.      ",
+      ],
 
       roundDetails: [
         "The 1st match will be a classic match, that is either Karakin or Livik. The top 3 winning squads will be qualified for the next round.",
@@ -391,7 +404,7 @@ export const Projects = () => {
         { phn: "tel:9884212555", name: "Sujarith" },
       ],
 
-      link: " https://forms.gle/Aau33ZS9JD94ZFwX8",
+      link: "https://docs.google.com/forms/d/e/1FAIpQLScUsgeD4T7HPtcDmQA4oWF14KSIy_rgOopwgIWkRPyabfixcw/viewform?usp=sf_link      ",
     },
   ];
 
@@ -422,7 +435,7 @@ export const Projects = () => {
         { phn: "tel:8438515217", name: "Heubert Akash" },
       ],
 
-      link: " https://forms.gle/hci3JwpkHbXJzmVb8",
+      link: " https://docs.google.com/forms/d/e/1FAIpQLSc-oT7J9qNrAmZkA8ten4oZSaPVbUQ1rhgXu97UhXKaTP7lUQ/viewform?usp=sf_link      ",
     },
     {
       title: "SmashZone",
@@ -459,7 +472,7 @@ export const Projects = () => {
         { phn: "tel:+91 82486 39843", name: "Sudharshini " },
       ],
 
-      link: " https://forms.gle/DMD9hTsfo3osV1bT8",
+      link: " https://docs.google.com/forms/d/e/1FAIpQLScAH5X-2cPybzNTAOnWvOOAl8D9dZ_Ll7vBjYu1FR0RcQFfmg/viewform?usp=sf_link",
     },
     {
       title: "FUTSAL",
@@ -489,7 +502,7 @@ export const Projects = () => {
         { phn: "tel:7397704994", name: "Ram prasath" },
       ],
 
-      link: "https://forms.gle/njTdZhFGBhiw9QGSA",
+      link: " https://docs.google.com/forms/d/e/1FAIpQLScDd8FGohI-_akZFGJv-Aa1vRqeSsz_zCJI8v9s7Y6geTiaDA/viewform?usp=sf_link      ",
     },
     {
       title: "VOLLEY",
@@ -519,7 +532,7 @@ export const Projects = () => {
         { phn: "tel:8838307489", name: "Santhosh R" },
       ],
 
-      link: " https://forms.gle/U8aGxY6B991ZGm4q7",
+      link: "https://docs.google.com/forms/d/e/1FAIpQLSdmTASZYWfk205hJpe_zwrppVL26GSkLTMUV4XGEY_5y9k0rQ/viewform?usp=sf_link",
     },
   ];
   const workshops = [
@@ -543,7 +556,7 @@ export const Projects = () => {
         { phn: "tel:8870310990", name: "Joseph Peter J" },
       ],
 
-      link: " https://forms.gle/sAM1W3KHq9AtDaQb8",
+      link: "https://docs.google.com/forms/d/e/1FAIpQLScb1OaJDj9VjUMftWrsFARhWalgLreKz7A3shfkh2upMudfbQ/viewform?usp=sf_link",
     },
     {
       title: "Networking And Cybersecurity",
@@ -566,7 +579,7 @@ export const Projects = () => {
         { phn: "tel: 8098003617", name: "Hemaranjani M" },
       ],
 
-      link: "https://forms.gle/k2htwVJWQp3WJYC37",
+      link: " https://docs.google.com/forms/d/e/1FAIpQLSd-gHjuCW_9P6wmGvk9PoDaUgkj0sjb11ayTSTyHb-sKdoWcA/viewform?usp=sf_link",
     },
     {
       title: "Basics Of Machine Learning And Medical Imaging",
@@ -592,7 +605,7 @@ export const Projects = () => {
         { phn: "tel:9148962377", name: "Swarshaa S" },
       ],
 
-      link: " https://forms.gle/9DFv8JSj1JLhzt1W7",
+      link: "https://docs.google.com/forms/d/e/1FAIpQLSegqH5f93C9Dgp_QdyyUxzaS31GbAszNlGDzhVcD3wcCbiycw/viewform?usp=sf_link",
     },
     {
       title: "Make Your PCB",
@@ -615,7 +628,7 @@ export const Projects = () => {
         { phn: "tel:9486788449", name: "Sriram R" },
       ],
 
-      link: "https://forms.gle/CdM55GzSPgRipQGW9",
+      link: "https://docs.google.com/forms/d/e/1FAIpQLSeJlSUoOSq-rCGvJ-wbVy4K3aXme1FpatZEak6UHetHtGEamg/viewform?usp=sf_link      ",
     },
   ];
   const [showButtonGroup, setShowButtonGroup] = useState(false);
@@ -684,7 +697,6 @@ export const Projects = () => {
     <div>
       {showDiv ? (
         <motion.div animate={{ opacity: 1 }} initial={{ opacity: 0 }}>
-          
           <div className="App overflow-x-hidden">
             <NavBar />
 
@@ -696,9 +708,9 @@ export const Projects = () => {
                     <TrackVisibility>
                       {({ isVisible }) => (
                         <div
-                          className={
-                            isVisible ? "animate__animated animate__fadeIn" : ""
-                          }
+                        // className={
+                        //   isVisible ? "animate__animated animate__fadeIn" : ""
+                        // }
                         >
                           <motion.div
                             className="events_headings"
@@ -728,8 +740,8 @@ export const Projects = () => {
                                       >
                                         <Nav.Link
                                           style={{
-                                            background:
-                                              "linear-gradient(to right, #f1e906, #ec6205, #ecca08, #d33e03)",
+                                            background: "linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%)",
+
                                             WebkitBackgroundClip: "text",
                                             backgroundClip: "text",
                                             color: "transparent",
@@ -748,8 +760,8 @@ export const Projects = () => {
                                       >
                                         <Nav.Link
                                           style={{
-                                            background:
-                                              "linear-gradient(to right, #f1e906, #ec6205, #ecca08, #d33e03)",
+                                            background: "linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%)",
+
                                             WebkitBackgroundClip: "text",
                                             backgroundClip: "text",
                                             color: "transparent",
@@ -773,8 +785,8 @@ export const Projects = () => {
                                       >
                                         <Nav.Link
                                           style={{
-                                            background:
-                                              "linear-gradient(to right, #f1e906, #ec6205, #ecca08, #d33e03)",
+                                            background: "linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%)",
+
                                             WebkitBackgroundClip: "text",
                                             backgroundClip: "text",
                                             color: "transparent",
@@ -793,8 +805,8 @@ export const Projects = () => {
                                       >
                                         <Nav.Link
                                           style={{
-                                            background:
-                                              "linear-gradient(to right, #f1e906, #ec6205, #ecca08, #d33e03)",
+                                            background: "linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%)",
+
                                             WebkitBackgroundClip: "text",
                                             backgroundClip: "text",
                                             color: "transparent",
@@ -866,19 +878,50 @@ export const Projects = () => {
                             >
                               <Tab.Pane eventKey="first">
                                 <Row>
-                                  {technicals.map((project, index) => {
-                                    return (
-                                      <ProjectCard
-                                        key={index}
-                                        state={"technical"}
-                                        project={project}
-                                      />
-                                    );
-                                  })}
+                                  < >
+                                    <h1
+                                      className="mt-5 text-center"
+                                      style={{
+                                        background:
+                                          "linear-gradient(to right, #f1e906, #ec6205, #ecca08, #d33e03)",
+                                        WebkitBackgroundClip: "text",
+                                        backgroundClip: "text",
+                                        color: "transparent",
+                                        fontFamily: "Voice In My Head",
+                                        letterSpacing: "0.15em",
+                                      }}
+                                    >
+                                      Technical
+                                    </h1>
+                                    {technicals.map((project, index) => {
+                                      return (
+                                        <ProjectCard
+                                          key={index}
+                                          state={"technical"}
+                                          project={project}
+                                        />
+                                      );
+                                    })}
+                                  </>
                                 </Row>
                               </Tab.Pane>
                               <Tab.Pane eventKey="second">
                                 <Row>
+                                <>
+                                    <h1
+                                      className="mt-5 text-center"
+                                      style={{
+                                        background:
+                                          "linear-gradient(to right, #f1e906, #ec6205, #ecca08, #d33e03)",
+                                        WebkitBackgroundClip: "text",
+                                        backgroundClip: "text",
+                                        color: "transparent",
+                                        fontFamily: "Voice In My Head",
+                                        letterSpacing: "0.15em",
+                                      }}
+                                    >
+                                     Non-Technical
+                                    </h1>
                                   {nonTechs.map((project, index) => {
                                     return (
                                       <ProjectCard
@@ -888,10 +931,26 @@ export const Projects = () => {
                                       />
                                     );
                                   })}
+                                  </>
                                 </Row>
                               </Tab.Pane>
                               <Tab.Pane eventKey="third">
                                 <Row>
+                                <>
+                                    <h1
+                                      className="mt-5 text-center"
+                                      style={{
+                                        background:
+                                          "linear-gradient(to right, #f1e906, #ec6205, #ecca08, #d33e03)",
+                                        WebkitBackgroundClip: "text",
+                                        backgroundClip: "text",
+                                        color: "transparent",
+                                        fontFamily: "Voice In My Head",
+                                        letterSpacing: "0.15em",
+                                      }}
+                                    >
+                                      Workshops
+                                    </h1>
                                   {workshops.map((project, index) => {
                                     return (
                                       <ProjectCard
@@ -901,10 +960,26 @@ export const Projects = () => {
                                       />
                                     );
                                   })}
+                                  </>
                                 </Row>
                               </Tab.Pane>
                               <Tab.Pane eventKey="fourth">
                                 <Row>
+                                <>
+                                    <h1
+                                      className="mt-5 text-center"
+                                      style={{
+                                        background:
+                                          "linear-gradient(to right, #f1e906, #ec6205, #ecca08, #d33e03)",
+                                        WebkitBackgroundClip: "text",
+                                        backgroundClip: "text",
+                                        color: "transparent",
+                                        fontFamily: "Voice In My Head",
+                                        letterSpacing: "0.15em",
+                                      }}
+                                    >
+                                      Outdoor
+                                    </h1>
                                   {outdoors.map((project, index) => {
                                     return (
                                       <ProjectCard
@@ -914,6 +989,7 @@ export const Projects = () => {
                                       />
                                     );
                                   })}
+                                  </>
                                 </Row>
                               </Tab.Pane>
 

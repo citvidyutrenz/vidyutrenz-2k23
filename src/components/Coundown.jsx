@@ -1,6 +1,7 @@
 import React from "react";
 import { useState, useEffect } from "react";
 import { Container, Row, Col } from 'react-bootstrap';
+import {motion} from "framer-motion"
 
 
 function Coundown() {
@@ -29,8 +30,26 @@ function Coundown() {
     return () => clearInterval(intervalId);
   }, []);
 
+  const variants ={
+    hidden:{
+      opacity:0,
+      scale:0.5
+    },
+    visible:{
+      opacity:1,
+      scale:1,
+      transition:{
+        duration:3
+      }
+    }
+  }
   return (
-    <Container className="bg-dark opactiy-75 py-5" style={{maxWidth:430}}>
+    <motion.div 
+    variants={variants}
+    initial="hidden"
+    animate="visible"
+    >
+    <Container className="bg-dark opacity-90 py-5" style={{maxWidth:425}}>
       <Row className="text-center">
         <Col>
           <h1 className="display-1 text-tertiary">{remainingTime.daysRemaining}</h1>
@@ -50,6 +69,7 @@ function Coundown() {
         </Col>
       </Row>
     </Container>
+    </motion.div>
   );
 }
 
