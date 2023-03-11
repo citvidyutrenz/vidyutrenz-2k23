@@ -34,7 +34,7 @@ export const Skills = () => {
       items: 1,
     },
   };
-  const [ref, inView] = useInView({ threshold: 0.65 });
+  const [ref, inView] = useInView({ threshold: 0.7});
 
   const variants = {
     hidden: { opacity: 0, scale: 0.5 },
@@ -66,11 +66,7 @@ export const Skills = () => {
               >
                 Events
               </h2>
-              <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry.<br></br> Lorem Ipsum has been the industry's standard
-                dummy text.
-              </p>
+             
               <Carousel
                 responsive={responsive}
                 infinite={true}

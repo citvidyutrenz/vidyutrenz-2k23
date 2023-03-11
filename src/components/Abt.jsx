@@ -43,8 +43,6 @@ function Abt() {
 
   return (
     <motion.div
-      // variants={borderVariants}
-      // animate="animate"
       className="mt-5 p-2 m-5"
       style={{ border: "2px solid #B2E2FF", borderRadius: "10px" }}
     >

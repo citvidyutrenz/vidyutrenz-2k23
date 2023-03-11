@@ -22,7 +22,7 @@ const Loader = ({ count = 5 }) => {
     hidden: { opacity: 0, scale: 0.5 },
     visible: {
       opacity: 1,
-      scale: width > 768 ? 1.7 : 1.2,
+      scale: width > 768 ? 1.7 : 1,
       transition: { duration: 1 },
     },
   };

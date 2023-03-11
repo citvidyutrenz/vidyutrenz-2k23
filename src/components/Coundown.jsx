@@ -3,8 +3,8 @@ import { useState, useEffect } from "react";
 import { Container, Row, Col } from 'react-bootstrap';
 
 
-function Coundown({ targetDate }) {
-
+function Coundown() {
+ const targetDate = new Date(2023, 2, 23);
   const calculateRemainingTime = () => {
     const timeRemaining = Date.parse(targetDate) - Date.parse(new Date());
     const daysRemaining = Math.floor(timeRemaining / (1000 * 60 * 60 * 24));
@@ -30,23 +30,23 @@ function Coundown({ targetDate }) {
   }, []);
 
   return (
-    <Container className="bg-dark py-5">
+    <Container className="bg-dark opactiy-75 py-5" style={{maxWidth:430}}>
       <Row className="text-center">
         <Col>
-          <h1 className="display-1">{remainingTime.daysRemaining}</h1>
-          <h6>Days</h6>
+          <h1 className="display-1 text-tertiary">{remainingTime.daysRemaining}</h1>
+          <h6 className="text-tertiary">Days</h6>
         </Col>
         <Col>
-          <h1 className="display-1">{remainingTime.hoursRemaining}</h1>
-          <h6>Hours</h6>
+          <h1 className="display-1 text-tertiary">{remainingTime.hoursRemaining}</h1>
+          <h6 className="text-tertiary">Hours</h6>
         </Col>
         <Col>
-          <h1 className="display-1">{remainingTime.minutesRemaining}</h1>
-          <h6>Minutes</h6>
+          <h1 className="display-1 text-tertiary">{remainingTime.minutesRemaining}</h1>
+          <h6 className="text-tertiary">Minutes</h6>
         </Col>
         <Col>
-          <h1 className="display-1">{remainingTime.secondsRemaining}</h1>
-          <h6>Seconds</h6>
+          <h1 className="display-1 text-tertiary">{remainingTime.secondsRemaining}</h1>
+          <h6 className="text-tertiary">Seconds</h6>
         </Col>
       </Row>
     </Container>
