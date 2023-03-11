@@ -59,6 +59,13 @@ function NavBar() {
   };
 
   const navigate = useNavigate();
+//   const offcanvas = new bootstrap.Offcanvas(document.querySelector('#offcanvasNav'))
+// offcanvas._element.addEventListener('shown.bs.offcanvas', function () {
+//   document.body.style.overflow = 'visible'
+// })
+// offcanvas._element.addEventListener('hidden.bs.offcanvas', function () {
+//   document.body.style.overflow = ''
+// })
 
   return (
     <>
@@ -79,11 +86,12 @@ function NavBar() {
 
             <div className="col">
               <div className="d-flex flex-row-reverse">
+                
                 <Button
                   variant="outline-dark"
                   className="mb-2 mt-4 btn-lg me-2"
                   data-bs-toggle="offcanvas"
-                  href="#offcanvasNav"
+                  // href="#offcanvasNav"
                   role="button"
                   onClick={toggleOffcanvas}
                   expand="lg"
@@ -101,7 +109,7 @@ function NavBar() {
             id="offcanvasNav"
             aria-labelledby="offcanvasNavLabel"
             style={{ background:
-              "linear-gradient(90.21deg, #4A2FBD -5.91%, #AA367C 111.58%)", padding:0 ,margin :0}}
+              "linear-gradient(90.21deg, #4A2FBD -5.91%, #AA367C 111.58%)", padding:0 ,margin :0 , overflow:"visible"}}
 
           >
             <div className="offcanvas-header">
@@ -119,21 +127,21 @@ function NavBar() {
             <div className="offcanvas-body">
               <Nav className="flex-column">
                 <Nav.Link
-                  href="#"
+                  // href="#"
                   className="text-light"
                   onClick={() => navigate("/events")}
                 >
                   <div>Home</div>
                 </Nav.Link>
                 <Nav.Link
-                  href="#"
+                  // href="#"
                   className="text-light"
                   onClick={() => navigate("/about")}
                 >
                   About
                 </Nav.Link>
                 <Nav.Link
-                  href="#"
+                  // href="#"
                   className="text-light"
                   onClick={() => navigate("/events")}
                 >
