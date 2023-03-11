@@ -84,9 +84,9 @@ export const Projects = () => {
         "The decision of the Adjudication Panel is final.        ",
       ],
 
-      roundDetails: [""],
+      roundDetails: ["This event consists of only one round." ,"Participants should present their work for 10 to 15 minutes and they will be questioned by the judges for a time limit of 2 minutes.      " ,"The judge's decision will be final.      "],
 
-      judgingCriteria: "The final decision will be taken by the invited jury.",
+      judgingCriteria: "The most innovative ideas and solutions will stand out.The work will be judged based on the originality of the content, content delivery, and ability to answer the questions presented by the judges.      ",
       num: [
         { phn: "tel:9942787733", name: "Ratheesh " },
         { phn: "tel:6379204221", name: "HARI " },
