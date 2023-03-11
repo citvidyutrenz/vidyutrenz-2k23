@@ -51,7 +51,7 @@ function About() {
           {headers.map((head, index) => {
         return (
           <div className="row justify-content-center">
-            <motion.div className="col-auto mt-3 mb-3 border-info">
+            <motion.div className="col-auto mt-3 mb-3 border-info text-center">
               <motion.h1
                 initial={{ opacity :0,
                   scale :1}}
