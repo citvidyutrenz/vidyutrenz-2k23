@@ -53,6 +53,7 @@ export const Projects = () => {
         "Each team will have a time constraint of 5 to 8 minutes.",
         "The results are accorded to the jury's judgment.",
         "On spot registrations are acceptable only if the candidates have a valid soft copy.        ",
+        "Registration Free"
       ],
 
       roundDetails: [
@@ -329,8 +330,9 @@ export const Projects = () => {
         "Musical videos can also be submitted",
         "Total duration of your short film shouldn't exceed more than 20 minutes which also includes the opening and closing credits.",
         "Top 5 impressive short films will be selected and will be presented before the judges .",
-        "Finally one team will be choosen as a winner based on thier judging criteria.",
+        "Finally one team will be choosen as a winner based on their judging criteria.",
         "Participation Certificates will be provided to all the participants.        ",
+        "Registration Fee Rs.100."
       ],
       roundDetails: [
         "There is only one round in which top 5 short films will be shortlisted and presented before the judges ",
@@ -391,6 +393,7 @@ export const Projects = () => {
         "A BGMI room will be formed and the participants will have to join within the stipulated time. ",
         "After registration, participants will be added to a whatsapp group and will be updated about the event there.      ",
         "Participation Certificates will be provided to all the participants.      ",
+        "Registration Fee Rs.100 Per Team."
       ],
 
       roundDetails: [
@@ -422,7 +425,9 @@ export const Projects = () => {
         "Only Throw bowling is allowed.",
         "The umpire’s decision is final.",
         "No abusive language will be encouraged. If such behavior is observed, the team will be disqualified.",
-        "Participation Certificates will be provided to all the participants",
+        "Participation Certificates will be provided to all the participants"
+        ,"Entry Fee Rs.150 Per Team"
+
       ],
 
       roundDetails: [
@@ -459,7 +464,9 @@ export const Projects = () => {
 
         "Players are also requested to carry their own items like water bottles,towels etc .",
 
-        "Participation Certificates will be provided to all the participants and the winners will be awarded with a special cash prize.",
+        "Participation Certificates will be provided to all the participants and the winners will be awarded with a special cash prize."
+
+        ,"Entry Fee Rs.150 Per Person"
       ],
 
       roundDetails: [
@@ -489,7 +496,8 @@ export const Projects = () => {
         "In case of a draw, a penalty shootout  will be conducted.",
         "The Referee's decision will be final. ",
         "Refunds will not be available after registration.",
-        "Participation Certificates will be provided to all the participants",
+        "Participation Certificates will be provided to all the participants"
+        ,"Entry Fee Rs.300 Per Team"
       ],
 
       roundDetails: [
@@ -519,7 +527,8 @@ export const Projects = () => {
         "The umpire’s decision is final.",
         "The teams should follow their allocated times strictly.",
         " Qualifier rounds have 1 set (21 points) and semi-finals and finals will have 3 sets.",
-        "Participation Certificates will be provided to all the participants",
+        "Participation Certificates will be provided to all the participants"
+        ,"Entry Fee Rs.300 Per Team"
       ],
 
       roundDetails: [
@@ -549,7 +558,7 @@ export const Projects = () => {
         "Knowledge about how to work with Micro controllers , Sensors , Relays.",
         "Learn how to connect to cloud IOT Platforms.",
       ],
-      pre: ["  Notepads ", "Basics of  Programming "],
+      pre: ["  Notepads ", "Basics of  Programming ","Entry Fee Rs.100 Per Person"],
 
       num: [
         { phn: "tel:6374412610", name: "Ranjith Kumar A" },
@@ -573,7 +582,7 @@ export const Projects = () => {
         "Knowledge about WLAN And Wi-Fi Attacks.        ",
         "Awareness about Basic Network Attacks.        ",
       ],
-      pre: ["Notepads ", "Laptop(Not Mandatory)      "],
+      pre: ["Notepads ", "Laptop(Not Mandatory)      ","Entry Fee Rs.100 Per Person"],
       num: [
         { phn: "tel: 9360964582  ", name: "Saminathan S" },
         { phn: "tel: 8098003617", name: "Hemaranjani M" },
@@ -598,7 +607,8 @@ export const Projects = () => {
       pre: [
         "Basics of python.      ",
         "Notepads ",
-        "Laptop(NOT MANDATORY)      ",
+        "Laptop(NOT MANDATORY)      ","Entry Fee Rs.100 Per Person"
+        
       ],
       num: [
         { phn: "tel:8072335322", name: "Ajaymalolan K V " },
@@ -622,7 +632,7 @@ export const Projects = () => {
         "Ability to design and create your own PCB.        ",
         "An overall idea about the components used in PCB and their processes.        ",
       ],
-      pre: ["Notepads ", "Laptop(NOT MANDATORY)      "],
+      pre: ["Notepads ", "Laptop(NOT MANDATORY)      ","Entry Fee Rs.100 Per Person"],
       num: [
         { phn: "tel:8940496469", name: "Sanjeev V " },
         { phn: "tel:9486788449", name: "Sriram R" },
