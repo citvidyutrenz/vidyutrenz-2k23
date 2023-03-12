@@ -173,12 +173,21 @@ export const Footer = () => {
               >
                 Symposium
               </motion.a>
-              {/* <a href=""></a> */}
             </div>
           </div>
         </div>
       </div>
-      {/* <p>&copy; VIDYUTRENZ</p> */}
+      <hr></hr>
+      <p className="text-center mb-2">CopyRight &copy; VIDYUTRENZ'2023 - Developed By <span style={{
+                  background:
+                    "linear-gradient(to right, #f1e906, #ec6205, #ecca08, #d33e03)",
+                  WebkitBackgroundClip: "text",
+                  backgroundClip: "text",
+                  color: "transparent",
+                  letterSpacing: "0.15em",
+                  fontFamily:"Voice in my head"
+                }}> Team VIDYUTRENZ</span> </p>
+      <hr />
     </motion.footer>
   );
 };
