@@ -105,7 +105,7 @@ export const Projects = () => {
     {
       title: "NYQUIZST",
       description:
-        "Nyquizzzst is an exhilarating challenge that tests participant’s ability to creatively redesign a circuit diagram under pressure. With limited time, competitors must tap into their problem-solving skills and innovative thinking to produce an improved circuit design.      ",
+        "Nyquizst is an exhilarating challenge that tests participant’s ability to creatively redesign a circuit diagram under pressure. With limited time, competitors must tap into their problem-solving skills and innovative thinking to produce an improved circuit design.      ",
       imgUrl: nyquizest,
       oneLiner:
         "Design is not just what it looks like and feels like. Design it how it works. Train your hands to design some circuits      ",
@@ -158,7 +158,7 @@ export const Projects = () => {
         { phn: "tel:6380630430", name: "Balaji " },
       ],
 
-      link: " https://docs.google.com/forms/d/e/1FAIpQLSfNKm1rdAQJAVcIBddvexZToDcFi5lxxZI-rkheBfm-FvzC1A/viewform?usp=sf_link      ",
+      link: "https://docs.google.com/forms/d/e/1FAIpQLSfNKm1rdAQJAVcIBddvexZToDcFi5lxxZI-rkheBfm-FvzC1A/viewform?usp=sf_link      ",
     },
     {
       title: "RENEGADE",
@@ -283,7 +283,7 @@ export const Projects = () => {
         { phn: "tel:9042188077", name: "M.D.Balaji" },
       ],
 
-      link: " https://docs.google.com/forms/d/e/1FAIpQLSfL7osbpUnegTw04BReW-HzWnGhK6dymWw4i1I6pMm3Utkb6Q/viewform?usp=sf_link",
+      link: "https://docs.google.com/forms/d/e/1FAIpQLSfL7osbpUnegTw04BReW-HzWnGhK6dymWw4i1I6pMm3Utkb6Q/viewform?usp=sf_link",
     },
     {
       title: "FUN FUED",
@@ -388,7 +388,7 @@ export const Projects = () => {
       oneLiner:
         "Last one standing wins: The ultimate battle royale experience in BGMI.      ",
       rules: [
-        "The event will be conducted in the online mode.      ",
+        "The event will be conducted in both Online and Offline modes      ",
         "Participants can use either mobile or ipad.      ",
         "A BGMI room will be formed and the participants will have to join within the stipulated time. ",
         "After registration, participants will be added to a whatsapp group and will be updated about the event there.      ",
@@ -426,7 +426,7 @@ export const Projects = () => {
         "The umpire’s decision is final.",
         "No abusive language will be encouraged. If such behavior is observed, the team will be disqualified.",
         "Participation Certificates will be provided to all the participants"
-        ,"Entry Fee Rs.150 Per Team"
+        , "Entry Fee Rs.150 Per Team"
 
       ],
 
@@ -440,7 +440,7 @@ export const Projects = () => {
         { phn: "tel:8438515217", name: "Heubert Akash" },
       ],
 
-      link: " https://docs.google.com/forms/d/e/1FAIpQLSc-oT7J9qNrAmZkA8ten4oZSaPVbUQ1rhgXu97UhXKaTP7lUQ/viewform?usp=sf_link      ",
+      link: "https://docs.google.com/forms/d/e/1FAIpQLSc-oT7J9qNrAmZkA8ten4oZSaPVbUQ1rhgXu97UhXKaTP7lUQ/viewform?usp=sf_link      ",
     },
     {
       title: "SmashZone",
@@ -466,7 +466,7 @@ export const Projects = () => {
 
         "Participation Certificates will be provided to all the participants and the winners will be awarded with a special cash prize."
 
-        ,"Entry Fee Rs.150 Per Person"
+        , "Entry Fee Rs.150 Per Person"
       ],
 
       roundDetails: [
@@ -475,11 +475,11 @@ export const Projects = () => {
 
       judgingCriteria: "The final decision will be taken by the invited jury.",
       num: [
-        { phn: "tel:+919080504831", name: "Krishna Kumar" },
+        { phn: "tel:+916380327750", name: "Krishna Kumar" },
         { phn: "tel:+91 82486 39843", name: "Sudharshini " },
       ],
 
-      link: " https://docs.google.com/forms/d/e/1FAIpQLScAH5X-2cPybzNTAOnWvOOAl8D9dZ_Ll7vBjYu1FR0RcQFfmg/viewform?usp=sf_link",
+      link: "https://docs.google.com/forms/d/e/1FAIpQLScAH5X-2cPybzNTAOnWvOOAl8D9dZ_Ll7vBjYu1FR0RcQFfmg/viewform?usp=sf_link",
     },
     {
       title: "FUTSAL",
@@ -497,7 +497,7 @@ export const Projects = () => {
         "The Referee's decision will be final. ",
         "Refunds will not be available after registration.",
         "Participation Certificates will be provided to all the participants"
-        ,"Entry Fee Rs.300 Per Team"
+        , "Entry Fee Rs.300 Per Team"
       ],
 
       roundDetails: [
@@ -510,7 +510,7 @@ export const Projects = () => {
         { phn: "tel:7397704994", name: "Ram prasath" },
       ],
 
-      link: " https://docs.google.com/forms/d/e/1FAIpQLScDd8FGohI-_akZFGJv-Aa1vRqeSsz_zCJI8v9s7Y6geTiaDA/viewform?usp=sf_link      ",
+      link: "https://docs.google.com/forms/d/e/1FAIpQLScDd8FGohI-_akZFGJv-Aa1vRqeSsz_zCJI8v9s7Y6geTiaDA/viewform?usp=sf_link      ",
     },
     {
       title: "VOLLEY",
@@ -528,7 +528,7 @@ export const Projects = () => {
         "The teams should follow their allocated times strictly.",
         " Qualifier rounds have 1 set (21 points) and semi-finals and finals will have 3 sets.",
         "Participation Certificates will be provided to all the participants"
-        ,"Entry Fee Rs.300 Per Team"
+        , "Entry Fee Rs.300 Per Team"
       ],
 
       roundDetails: [
@@ -558,7 +558,7 @@ export const Projects = () => {
         "Knowledge about how to work with Micro controllers , Sensors , Relays.",
         "Learn how to connect to cloud IOT Platforms.",
       ],
-      pre: ["  Notepads ", "Basics of  Programming ","Entry Fee Rs.100 Per Person"],
+      pre: ["  Notepads ", "Basics of  Programming ", "Entry Fee Rs.100 Per Person"],
 
       num: [
         { phn: "tel:6374412610", name: "Ranjith Kumar A" },
@@ -582,13 +582,13 @@ export const Projects = () => {
         "Knowledge about WLAN And Wi-Fi Attacks.        ",
         "Awareness about Basic Network Attacks.        ",
       ],
-      pre: ["Notepads ", "Laptop(Not Mandatory)      ","Entry Fee Rs.100 Per Person"],
+      pre: ["Notepads ", "Laptop(Not Mandatory)      ", "Entry Fee Rs.100 Per Person"],
       num: [
         { phn: "tel: 9360964582  ", name: "Saminathan S" },
         { phn: "tel: 8098003617", name: "Hemaranjani M" },
       ],
 
-      link: " https://docs.google.com/forms/d/e/1FAIpQLSd-gHjuCW_9P6wmGvk9PoDaUgkj0sjb11ayTSTyHb-sKdoWcA/viewform?usp=sf_link",
+      link: "https://docs.google.com/forms/d/e/1FAIpQLSd-gHjuCW_9P6wmGvk9PoDaUgkj0sjb11ayTSTyHb-sKdoWcA/viewform?usp=sf_link",
     },
     {
       title: "Basics Of Machine Learning And Medical Imaging",
@@ -607,8 +607,8 @@ export const Projects = () => {
       pre: [
         "Basics of python.      ",
         "Notepads ",
-        "Laptop(NOT MANDATORY)      ","Entry Fee Rs.100 Per Person"
-        
+        "Laptop(NOT MANDATORY)      ", "Entry Fee Rs.100 Per Person"
+
       ],
       num: [
         { phn: "tel:8072335322", name: "Ajaymalolan K V " },
@@ -632,7 +632,7 @@ export const Projects = () => {
         "Ability to design and create your own PCB.        ",
         "An overall idea about the components used in PCB and their processes.        ",
       ],
-      pre: ["Notepads ", "Laptop(NOT MANDATORY)      ","Entry Fee Rs.100 Per Person"],
+      pre: ["Notepads ", "Laptop(NOT MANDATORY)      ", "Entry Fee Rs.100 Per Person"],
       num: [
         { phn: "tel:8940496469", name: "Sanjeev V " },
         { phn: "tel:9486788449", name: "Sriram R" },
@@ -917,7 +917,7 @@ export const Projects = () => {
                               </Tab.Pane>
                               <Tab.Pane eventKey="second">
                                 <Row>
-                                <>
+                                  <>
                                     <h1
                                       className="mt-5 text-center"
                                       style={{
@@ -930,23 +930,23 @@ export const Projects = () => {
                                         letterSpacing: "0.15em",
                                       }}
                                     >
-                                     Non-Technical
+                                      Non-Technical
                                     </h1>
-                                  {nonTechs.map((project, index) => {
-                                    return (
-                                      <ProjectCard
-                                        key={index}
-                                        state={"non-technical"}
-                                        project={project}
-                                      />
-                                    );
-                                  })}
+                                    {nonTechs.map((project, index) => {
+                                      return (
+                                        <ProjectCard
+                                          key={index}
+                                          state={"non-technical"}
+                                          project={project}
+                                        />
+                                      );
+                                    })}
                                   </>
                                 </Row>
                               </Tab.Pane>
                               <Tab.Pane eventKey="third">
                                 <Row>
-                                <>
+                                  <>
                                     <h1
                                       className="mt-5 text-center"
                                       style={{
@@ -961,21 +961,21 @@ export const Projects = () => {
                                     >
                                       Workshops
                                     </h1>
-                                  {workshops.map((project, index) => {
-                                    return (
-                                      <ProjectCard
-                                        key={index}
-                                        state={"workshop"}
-                                        project={project}
-                                      />
-                                    );
-                                  })}
+                                    {workshops.map((project, index) => {
+                                      return (
+                                        <ProjectCard
+                                          key={index}
+                                          state={"workshop"}
+                                          project={project}
+                                        />
+                                      );
+                                    })}
                                   </>
                                 </Row>
                               </Tab.Pane>
                               <Tab.Pane eventKey="fourth">
                                 <Row>
-                                <>
+                                  <>
                                     <h1
                                       className="mt-5 text-center"
                                       style={{
@@ -990,15 +990,15 @@ export const Projects = () => {
                                     >
                                       Outdoor
                                     </h1>
-                                  {outdoors.map((project, index) => {
-                                    return (
-                                      <ProjectCard
-                                        key={index}
-                                        state={"outdoor"}
-                                        project={project}
-                                      />
-                                    );
-                                  })}
+                                    {outdoors.map((project, index) => {
+                                      return (
+                                        <ProjectCard
+                                          key={index}
+                                          state={"outdoor"}
+                                          project={project}
+                                        />
+                                      );
+                                    })}
                                   </>
                                 </Row>
                               </Tab.Pane>
