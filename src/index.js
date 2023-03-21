@@ -5,6 +5,7 @@ import ReactDOM from 'react-dom';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Projects } from "./components/Projects";
 import About from "./components/About";
+import Sponsors from "./components/Sponsors";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
@@ -15,6 +16,9 @@ export default function App1() {
         <Route path="/" element={<App />}/>
         <Route path="/events" element={<Projects />} />
         <Route path="/about" element={<About />} />
+        <Route path="/sponsors" element={<Sponsors />} />
+
+
 
 
       </Routes>

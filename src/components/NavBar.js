@@ -140,6 +140,13 @@ function NavBar() {
                 >
                   Events
                 </Nav.Link>
+
+                <Nav.Link
+                  className="text-light"
+                  onClick={() => navigate("/sponsors")}
+                >
+                  Sponsors
+                </Nav.Link>
               </Nav>
             </div>
           </div>
@@ -218,6 +225,24 @@ function NavBar() {
 
                   >
                     Events
+                  </motion.div>
+                </Nav.Link>
+
+                <Nav.Link
+                  href="#"
+                  className="text-light ms-2 me-2"
+                  onClick={() => navigate("/sponsors")}
+                >
+                  <motion.div
+                   variants={navbarvariants}
+                   initial="hidden"
+                   animate="visible"
+                   whileHover="hover"
+                   whileFocus="hover"
+                   transition={{ delay: 1.7 }}
+
+                  >
+                    sponsors
                   </motion.div>
                 </Nav.Link>
               </Nav>
