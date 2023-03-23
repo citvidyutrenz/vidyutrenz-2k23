@@ -50,7 +50,7 @@ function Coundown() {
     animate="visible"
     >
     <Container className="bg-dark opacity-90 py-5" style={{maxWidth:425}}>
-      <Row className="text-center">
+      {/* <Row className="text-center">
         <Col>
           <h1 className="display-1 text-tertiary">{remainingTime.daysRemaining}</h1>
           <h6 className="text-tertiary">Days</h6>
@@ -67,7 +67,17 @@ function Coundown() {
           <h1 className="display-1 text-tertiary">{remainingTime.secondsRemaining}</h1>
           <h6 className="text-tertiary">Seconds</h6>
         </Col>
-      </Row>
+      </Row> */}
+
+     <h1   style={{
+                  background:
+                    "linear-gradient(to right, #f1e906, #ec6205, #ecca08, #d33e03)",
+                  WebkitBackgroundClip: "text",
+                  backgroundClip: "text",
+                  color: "transparent",
+                  fontFamily: "Voice In My Head",
+                  letterSpacing: "0.05em", // or any value that suits your design
+                }}>We Are Live Now</h1>
     </Container>
     </motion.div>
   );
